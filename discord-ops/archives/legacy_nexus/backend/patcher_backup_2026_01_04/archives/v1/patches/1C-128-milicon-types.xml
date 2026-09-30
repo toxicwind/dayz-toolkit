@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  DYNAMIC LOCKED CONTAINERS & KEYS - Xbox Safe
+  Enhanced version with tiered rarity and dynamic spawning
+  Generated: 2025-12-24
+-->
+<types>
+  <!-- ========== CONTAINERS ========== -->
+  <!-- Containers spawn via events, not CE. Lifetime set high for persistence -->
+  
+  <type name="Land_ContainerLocked_Blue_DE">
+    <nominal>0</nominal>
+    <lifetime>604800</lifetime> <!-- 1 week -->
+    <restock>0</restock>
+    <min>0</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+    <category name="containers"/>
+  </type>
+  
+  <type name="Land_ContainerLocked_Yellow_DE">
+    <nominal>0</nominal>
+    <lifetime>604800</lifetime>
+    <restock>0</restock>
+    <min>0</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+    <category name="containers"/>
+  </type>
+  
+  <type name="Land_ContainerLocked_Orange_DE">
+    <nominal>0</nominal>
+    <lifetime>604800</lifetime>
+    <restock>0</restock>
+    <min>0</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+    <category name="containers"/>
+  </type>
+  
+  <type name="Land_ContainerLocked_Red_DE">
+    <nominal>0</nominal>
+    <lifetime>604800</lifetime>
+    <restock>0</restock>
+    <min>0</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+    <category name="containers"/>
+  </type>
+
+  <!-- ========== KEYS - TIERED RARITY ========== -->
+  
+  <!-- BLUE KEY: Common (Tier 2/3 Military) -->
+  <type name="ShippingContainerKeys_Blue">
+    <nominal>8</nominal>
+    <lifetime>7200</lifetime> <!-- 2 hours -->
+    <restock>1800</restock> <!-- 30 min restock -->
+    <min>4</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>150</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="1" crafted="0" deloot="0"/>
+    <category name="tools"/>
+    <usage name="Military"/>
+    <usage name="Police"/>
+    <value name="Tier2"/>
+    <value name="Tier3"/>
+  </type>
+  
+  <!-- YELLOW KEY: Uncommon (Tier 3 Military) -->
+  <type name="ShippingContainerKeys_Yellow">
+    <nominal>5</nominal>
+    <lifetime>7200</lifetime>
+    <restock>2400</restock> <!-- 40 min restock -->
+    <min>2</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>180</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="1" crafted="0" deloot="0"/>
+    <category name="tools"/>
+    <usage name="Military"/>
+    <value name="Tier3"/>
+  </type>
+  
+  <!-- ORANGE KEY: Rare (Tier 3/4 Military + Contaminated) -->
+  <type name="ShippingContainerKeys_Orange">
+    <nominal>3</nominal>
+    <lifetime>10800</lifetime> <!-- 3 hours -->
+    <restock>3600</restock> <!-- 1 hour restock -->
+    <min>1</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>220</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="1" crafted="0" deloot="0"/>
+    <category name="tools"/>
+    <usage name="Military"/>
+    <usage name="ContaminatedArea"/>
+    <value name="Tier3"/>
+    <value name="Tier4"/>
+  </type>
+  
+  <!-- RED KEY: Ultra-Rare (Tier 4 Only + Contaminated) -->
+  <type name="ShippingContainerKeys_Red">
+    <nominal>1</nominal>
+    <lifetime>14400</lifetime> <!-- 4 hours -->
+    <restock>7200</restock> <!-- 2 hour restock -->
+    <min>0</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>300</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="1" crafted="0" deloot="0"/>
+    <category name="tools"/>
+    <usage name="Military"/>
+    <usage name="ContaminatedArea"/>
+    <value name="Tier4"/>
+  </type>
+
+</types>

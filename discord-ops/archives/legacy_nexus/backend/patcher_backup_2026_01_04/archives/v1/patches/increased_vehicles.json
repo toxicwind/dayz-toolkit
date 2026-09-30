@@ -1,0 +1,23 @@
+{
+  "id": "increased_vehicles",
+  "name": "Increased Car Spawns",
+  "description": "Boost vehicle spawn rates and make them fully equipped",
+  "target": "db/types.xml",
+  "type": "xml_patch",
+  "items": [
+    "OffroadHatchback",
+    "Sedan_02",
+    "Hatchback_02",
+    "Truck_01_Covered",
+    "Offroad_02",
+    "CivilianSedan",
+    "Truck_02",
+    "Van_01"
+  ],
+  "values": {
+    "nominal_multiplier": 5.0,
+    "min_multiplier": 3.0
+  },
+  "notes": "Increases vehicle nominal values significantly",
+  "enabled": true
+}

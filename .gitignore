@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+build/
+dist/
+
+# Node
+node_modules/
+.next/
+out/
+
+# Env & secrets — never commit
+.env
+.env.local
+*.env.seed
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs & runtime
+*.log
+*.db
+*.sqlite

@@ -1,0 +1,11 @@
+{
+    "GeneralData": {
+        "disableBaseDamage": true,
+        "disablePersonalLight": true
+    },
+    "PlayerData": {
+        "StaminaData": {
+            "staminaMinCap": 10.0
+        }
+    }
+}

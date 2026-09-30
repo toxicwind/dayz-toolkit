@@ -1,0 +1,896 @@
+# Line-by-line audit: pasted(46).txt
+
+Source: `/mnt/data/pasted(46).txt`
+
+Total lines: **839**
+
+## Key-line index (extracted)
+
+| Line | Snippet | Tags |
+|---:|---|---|
+| 1 | GOOPSTA | identity/priority marker |
+| 3 | DUCK | identity/priority marker |
+| 30 | GOOPSTA | identity/priority marker |
+| 32 | DUCK | identity/priority marker |
+| 34 | So I had the coords in wrong and needed to change safe distance | event safe radius |
+| 58 | I adjusted safe distance | event safe radius |
+| 109 | GOOPSTA | identity/priority marker |
+| 111 | DUCK | identity/priority marker |
+| 150 | GOOPSTA | identity/priority marker |
+| 152 | DUCK | identity/priority marker |
+| 231 | GOOPSTA | identity/priority marker |
+| 233 | DUCK | identity/priority marker |
+| 250 | <nominal>0</nominal> | nominal=0 economy gating |
+| 284 | cfgspawnabletypes.xml | cfgspawnabletypes mentions |
+| 285 | cfgspawnabletypes.xml (113 KB) | cfgspawnabletypes mentions |
+| 287 | cfgspawnabletypes.xml (113 KB) | cfgspawnabletypes mentions |
+| 288 | Download cfgspawnabletypes.xml (113 KB)Change language | cfgspawnabletypes mentions |
+| 291 | <event name="Vehicle02Admin"> | admin vehicle event naming |
+| 292 | <pos x="10376.90" z="14214.80" a="63.438690" /> | admin vehicle coordinates/heading |
+| 376 | so he just happened to recognize from doing it in the past safe distance was the issue | event safe radius |
+| 413 | GOOPSTA | identity/priority marker |
+| 415 | DUCK | identity/priority marker |
+| 466 | GOOPSTA | identity/priority marker |
+| 468 | DUCK | identity/priority marker |
+| 519 | GOOPSTA | identity/priority marker |
+| 521 | DUCK | identity/priority marker |
+| 556 | GOOPSTA | identity/priority marker |
+| 558 | DUCK | identity/priority marker |
+| 577 | <event name="StaticContainerLocked"> | locked container system |
+| 583 | <saferadius>500</saferadius> | event safe radius |
+| 584 | <distanceradius>500</distanceradius> | event safe radius |
+| 585 | <cleanupradius>250</cleanupradius> | event safe radius |
+| 591 | <child lootmax="9" lootmin="5" max="12" min="5" type="Land_ContainerLocked_Blue_DE"/> | locked container system |
+| 592 | <child lootmax="9" lootmin="5" max="12" min="5" type="Land_ContainerLocked_Yellow_DE"/> | locked container system |
+| 609 | Congratulations @GOOPSTA, you have reached level 3 in the server QuantumModZ! | identity/priority marker |
+| 611 | GOOPSTA | identity/priority marker |
+| 613 | DUCK | identity/priority marker |
+| 627 | <type name="ShippingContainerKeys_Blue"> | container key restrictions |
+| 640 | <type name="ShippingContainerKeys_Orange"> | container key restrictions |
+| 641 | <nominal>0</nominal> | nominal=0 economy gating |
+| 653 | <type name="ShippingContainerKeys_Red"> | container key restrictions |
+| 654 | <nominal>0</nominal> | nominal=0 economy gating |
+| 666 | <type name="ShippingContainerKeys_Yellow"> | container key restrictions |
+| 763 | GOOPSTA | identity/priority marker |
+| 765 | DUCK | identity/priority marker |
+## Full line-by-line (verbatim)
+
+- L0001: GOOPSTA
+- L0002: 
+- L0003: DUCK
+- L0004:  — 1:18 PMSunday, January 4, 2026 at 1:18 PM
+- L0005: Oh I can explain that
+- L0006: :rofl:
+- L0007: Click to react
+- L0008: :joy:
+- L0009: Click to react
+- L0010: :heart:
+- L0011: Click to react
+- L0012: Add Reaction
+- L0013: Reply
+- L0014: Forward
+- L0015: More
+- L0016: 
+- L0017: dankbutts — 1:18 PMSunday, January 4, 2026 at 1:18 PM
+- L0018: 
+- L0019: :rofl:
+- L0020: Click to react
+- L0021: :joy:
+- L0022: Click to react
+- L0023: :heart:
+- L0024: Click to react
+- L0025: Add Reaction
+- L0026: Edit
+- L0027: Forward
+- L0028: More
+- L0029: 
+- L0030: GOOPSTA
+- L0031: 
+- L0032: DUCK
+- L0033:  — 1:18 PMSunday, January 4, 2026 at 1:18 PM
+- L0034: So I had the coords in wrong and needed to change safe distance
+- L0035: :rofl:
+- L0036: Click to react
+- L0037: :joy:
+- L0038: Click to react
+- L0039: :heart:
+- L0040: Click to react
+- L0041: Add Reaction
+- L0042: Reply
+- L0043: Forward
+- L0044: More
+- L0045: [1:18 PM]Sunday, January 4, 2026 at 1:18 PM
+- L0046: I essentially wasn’t far enough away for the car to register spawning in
+- L0047: :rofl:
+- L0048: Click to react
+- L0049: :joy:
+- L0050: Click to react
+- L0051: :heart:
+- L0052: Click to react
+- L0053: Add Reaction
+- L0054: Reply
+- L0055: Forward
+- L0056: More
+- L0057: [1:18 PM]Sunday, January 4, 2026 at 1:18 PM
+- L0058: I adjusted safe distance
+- L0059: :rofl:
+- L0060: Click to react
+- L0061: :joy:
+- L0062: Click to react
+- L0063: :heart:
+- L0064: Click to react
+- L0065: Add Reaction
+- L0066: Reply
+- L0067: Forward
+- L0068: More
+- L0069: [1:18 PM]Sunday, January 4, 2026 at 1:18 PM
+- L0070: Fixed coords
+- L0071: :rofl:
+- L0072: Click to react
+- L0073: :joy:
+- L0074: Click to react
+- L0075: :heart:
+- L0076: Click to react
+- L0077: Add Reaction
+- L0078: Reply
+- L0079: Forward
+- L0080: More
+- L0081: [1:18 PM]Sunday, January 4, 2026 at 1:18 PM
+- L0082: Created event
+- L0083: [1:18 PM]Sunday, January 4, 2026 at 1:18 PM
+- L0084: Put event in event types
+- L0085: :rofl:
+- L0086: Click to react
+- L0087: :joy:
+- L0088: Click to react
+- L0089: :heart:
+- L0090: Click to react
+- L0091: Add Reaction
+- L0092: Reply
+- L0093: Forward
+- L0094: More
+- L0095: 
+- L0096: dankbutts — 1:18 PMSunday, January 4, 2026 at 1:18 PM
+- L0097: do you have the exact changes on your comp?
+- L0098: :rofl:
+- L0099: Click to react
+- L0100: :joy:
+- L0101: Click to react
+- L0102: :heart:
+- L0103: Click to react
+- L0104: Add Reaction
+- L0105: Edit
+- L0106: Forward
+- L0107: More
+- L0108: 
+- L0109: GOOPSTA
+- L0110: 
+- L0111: DUCK
+- L0112:  — 1:18 PMSunday, January 4, 2026 at 1:18 PM
+- L0113: And fixed spawn able type
+- L0114: :rofl:
+- L0115: Click to react
+- L0116: :joy:
+- L0117: Click to react
+- L0118: :heart:
+- L0119: Click to react
+- L0120: Add Reaction
+- L0121: Reply
+- L0122: Forward
+- L0123: More
+- L0124: 
+- L0125: dankbutts — 1:19 PMSunday, January 4, 2026 at 1:19 PM
+- L0126: throw em here if you do
+- L0127: :rofl:
+- L0128: Click to react
+- L0129: :joy:
+- L0130: Click to react
+- L0131: :heart:
+- L0132: Click to react
+- L0133: Add Reaction
+- L0134: Edit
+- L0135: Forward
+- L0136: More
+- L0137: [1:19 PM]Sunday, January 4, 2026 at 1:19 PM
+- L0138: 
+- L0139: :rofl:
+- L0140: Click to react
+- L0141: :joy:
+- L0142: Click to react
+- L0143: :heart:
+- L0144: Click to react
+- L0145: Add Reaction
+- L0146: Edit
+- L0147: Forward
+- L0148: More
+- L0149: 
+- L0150: GOOPSTA
+- L0151: 
+- L0152: DUCK
+- L0153:  — 1:19 PMSunday, January 4, 2026 at 1:19 PM
+- L0154: So all cats spawn higher rate now
+- L0155: :rofl:
+- L0156: Click to react
+- L0157: :joy:
+- L0158: Click to react
+- L0159: :heart:
+- L0160: Click to react
+- L0161: Add Reaction
+- L0162: Reply
+- L0163: Forward
+- L0164: More
+- L0165: [1:19 PM]Sunday, January 4, 2026 at 1:19 PM
+- L0166: Uh, everything that was applied to the server last night
+- L0167: :rofl:
+- L0168: Click to react
+- L0169: :joy:
+- L0170: Click to react
+- L0171: :heart:
+- L0172: Click to react
+- L0173: Add Reaction
+- L0174: Reply
+- L0175: Forward
+- L0176: More
+- L0177: [1:19 PM]Sunday, January 4, 2026 at 1:19 PM
+- L0178: How much have you changed 
+- L0179: :rofl:
+- L0180: Click to react
+- L0181: :joy:
+- L0182: Click to react
+- L0183: :heart:
+- L0184: Click to react
+- L0185: Add Reaction
+- L0186: Reply
+- L0187: Forward
+- L0188: More
+- L0189: [1:19 PM]Sunday, January 4, 2026 at 1:19 PM
+- L0190: I have like saved files from last night
+- L0191: [1:19 PM]Sunday, January 4, 2026 at 1:19 PM
+- L0192: So not a big issue
+- L0193: :rofl:
+- L0194: Click to react
+- L0195: :joy:
+- L0196: Click to react
+- L0197: :heart:
+- L0198: Click to react
+- L0199: Add Reaction
+- L0200: Reply
+- L0201: Forward
+- L0202: More
+- L0203: [1:19 PM]Sunday, January 4, 2026 at 1:19 PM
+- L0204: But I got it working
+- L0205: 
+- L0206: dankbutts — 1:20 PMSunday, January 4, 2026 at 1:20 PM
+- L0207: yeah thats what i want lol can you send me thosei f you have quick access
+- L0208: :rofl:
+- L0209: Click to react
+- L0210: :joy:
+- L0211: Click to react
+- L0212: :heart:
+- L0213: Click to react
+- L0214: Add Reaction
+- L0215: Edit
+- L0216: Forward
+- L0217: More
+- L0218: [1:20 PM]Sunday, January 4, 2026 at 1:20 PM
+- L0219: the saved files from last night that is
+- L0220: :rofl:
+- L0221: Click to react
+- L0222: :joy:
+- L0223: Click to react
+- L0224: :heart:
+- L0225: Click to react
+- L0226: Add Reaction
+- L0227: Edit
+- L0228: Forward
+- L0229: More
+- L0230: 
+- L0231: GOOPSTA
+- L0232: 
+- L0233: DUCK
+- L0234:  — 1:20 PMSunday, January 4, 2026 at 1:20 PM
+- L0235: Mhm
+- L0236: :rofl:
+- L0237: Click to react
+- L0238: :joy:
+- L0239: Click to react
+- L0240: :heart:
+- L0241: Click to react
+- L0242: Add Reaction
+- L0243: Reply
+- L0244: Forward
+- L0245: More
+- L0246: [1:22 PM]Sunday, January 4, 2026 at 1:22 PM
+- L0247: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+- L0248: <events>
+- L0249:     <event name="AmbientFox">
+- L0250:         <nominal>0</nominal>
+- L0251:         <min>0</min>
+- L0252:         <max>25</max>... (3 KB left)
+- L0253: Expand
+- L0254: Expand (More than 1,132 lines)
+- L0255: View whole file
+- L0256: events.xml
+- L0257: events.xml (53 KB)
+- L0258: 53 KB
+- L0259: events.xml (53 KB)
+- L0260: Download events.xml (53 KB)Change language
+- L0261: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+- L0262: <types>
+- L0263:     <type name="ACOGOptic">
+- L0264:         <nominal>10</nominal>
+- L0265:         <lifetime>14400</lifetime>
+- L0266:         <restock>1800</restock>... (808 KB left)
+- L0267: Expand
+- L0268: Expand (More than 1,396 lines)
+- L0269: View whole file
+- L0270: types.xml
+- L0271: types.xml (858 KB)
+- L0272: 858 KB
+- L0273: types.xml (858 KB)
+- L0274: Download types.xml (858 KB)Change language
+- L0275: <?xml version='1.0' encoding='utf-8'?>
+- L0276: <spawnabletypes>
+- L0277: \t<type name="Barrel_Blue">
+- L0278: \t\t<hoarder/>
+- L0279: \t</type>
+- L0280: \t<type name="Barrel_Green">... (63 KB left)
+- L0281: Expand
+- L0282: Expand (More than 1,796 lines)
+- L0283: View whole file
+- L0284: cfgspawnabletypes.xml
+- L0285: cfgspawnabletypes.xml (113 KB)
+- L0286: 113 KB
+- L0287: cfgspawnabletypes.xml (113 KB)
+- L0288: Download cfgspawnabletypes.xml (113 KB)Change language
+- L0289: <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+- L0290: <eventposdef>
+- L0291:     <event name="Vehicle02Admin">
+- L0292: \t\t<pos x="10376.90" z="14214.80" a="63.438690" />
+- L0293: \t\t</event>
+- L0294: \t<event name="VehicleCivilianSedan">... (32 KB left)
+- L0295: Expand
+- L0296: Expand (More than 953 lines)
+- L0297: View whole file
+- L0298: cfgeventspawns.xml
+- L0299: cfgeventspawns.xml (82 KB)
+- L0300: 82 KB
+- L0301: cfgeventspawns.xml (82 KB)
+- L0302: Download cfgeventspawns.xml (82 KB)Change language
+- L0303: :rofl:
+- L0304: Click to react
+- L0305: :joy:
+- L0306: Click to react
+- L0307: :heart:
+- L0308: Click to react
+- L0309: Add Reaction
+- L0310: Reply
+- L0311: Forward
+- L0312: More
+- L0313: [1:22 PM]Sunday, January 4, 2026 at 1:22 PM
+- L0314: all of this was confirmed working with 100% cars and everything I wanted last night
+- L0315: :rofl:
+- L0316: Click to react
+- L0317: :joy:
+- L0318: Click to react
+- L0319: :heart:
+- L0320: Click to react
+- L0321: Add Reaction
+- L0322: Reply
+- L0323: Forward
+- L0324: More
+- L0325: [1:22 PM]Sunday, January 4, 2026 at 1:22 PM
+- L0326: my plan was to add more cars in today
+- L0327: :rofl:
+- L0328: Click to react
+- L0329: :joy:
+- L0330: Click to react
+- L0331: :heart:
+- L0332: Click to react
+- L0333: Add Reaction
+- L0334: Reply
+- L0335: Forward
+- L0336: More
+- L0337: [1:23 PM]Sunday, January 4, 2026 at 1:23 PM
+- L0338: Sorry I should have updated you :/
+- L0339: :rofl:
+- L0340: Click to react
+- L0341: :joy:
+- L0342: Click to react
+- L0343: :heart:
+- L0344: Click to react
+- L0345: Add Reaction
+- L0346: Reply
+- L0347: Forward
+- L0348: More
+- L0349: [1:23 PM]Sunday, January 4, 2026 at 1:23 PM
+- L0350: I've also got the containers figured out
+- L0351: :rofl:
+- L0352: Click to react
+- L0353: :joy:
+- L0354: Click to react
+- L0355: :heart:
+- L0356: Click to react
+- L0357: Add Reaction
+- L0358: Reply
+- L0359: Forward
+- L0360: More
+- L0361: [1:24 PM]Sunday, January 4, 2026 at 1:24 PM
+- L0362: this dude linked me to a coder discord and they pretty much reviewed the file and found the issue
+- L0363: :rofl:
+- L0364: Click to react
+- L0365: :joy:
+- L0366: Click to react
+- L0367: :heart:
+- L0368: Click to react
+- L0369: Add Reaction
+- L0370: Reply
+- L0371: Forward
+- L0372: More
+- L0373: [1:24 PM]Sunday, January 4, 2026 at 1:24 PM
+- L0374: but like we talked about, I know you underatand coding but the dayZ things are the "variable"
+- L0375: [1:25 PM]Sunday, January 4, 2026 at 1:25 PM
+- L0376: so he just happened to recognize from doing it in the past safe distance was the issue
+- L0377: :rofl:
+- L0378: Click to react
+- L0379: :joy:
+- L0380: Click to react
+- L0381: :heart:
+- L0382: Click to react
+- L0383: Add Reaction
+- L0384: Reply
+- L0385: Forward
+- L0386: More
+- L0387: [1:25 PM]Sunday, January 4, 2026 at 1:25 PM
+- L0388: was coded perfect
+- L0389: :rofl:
+- L0390: Click to react
+- L0391: :joy:
+- L0392: Click to react
+- L0393: :heart:
+- L0394: Click to react
+- L0395: Add Reaction
+- L0396: Reply
+- L0397: Forward
+- L0398: More
+- L0399: 
+- L0400: dankbutts — 1:25 PMSunday, January 4, 2026 at 1:25 PM
+- L0401: thats fine im sorry i jsu twanted to make sure to not lose anything
+- L0402: :rofl:
+- L0403: Click to react
+- L0404: :joy:
+- L0405: Click to react
+- L0406: :heart:
+- L0407: Click to react
+- L0408: Add Reaction
+- L0409: Edit
+- L0410: Forward
+- L0411: More
+- L0412: 
+- L0413: GOOPSTA
+- L0414: 
+- L0415: DUCK
+- L0416:  — 1:26 PMSunday, January 4, 2026 at 1:26 PM
+- L0417: Youre good dude
+- L0418: :rofl:
+- L0419: Click to react
+- L0420: :joy:
+- L0421: Click to react
+- L0422: :heart:
+- L0423: Click to react
+- L0424: Add Reaction
+- L0425: Reply
+- L0426: Forward
+- L0427: More
+- L0428: [1:26 PM]Sunday, January 4, 2026 at 1:26 PM
+- L0429: These are the four file types I fixed.
+- L0430: :rofl:
+- L0431: Click to react
+- L0432: :joy:
+- L0433: Click to react
+- L0434: :heart:
+- L0435: Click to react
+- L0436: Add Reaction
+- L0437: Reply
+- L0438: Forward
+- L0439: More
+- L0440: [1:27 PM]Sunday, January 4, 2026 at 1:27 PM
+- L0441: Doesn't look you've changed any of the files since I have though
+- L0442: :rofl:
+- L0443: Click to react
+- L0444: :joy:
+- L0445: Click to react
+- L0446: :heart:
+- L0447: Click to react
+- L0448: Add Reaction
+- L0449: Reply
+- L0450: Forward
+- L0451: More
+- L0452: 
+- L0453: dankbutts — 1:27 PMSunday, January 4, 2026 at 1:27 PM
+- L0454: no i dont think i did
+- L0455: :rofl:
+- L0456: Click to react
+- L0457: :joy:
+- L0458: Click to react
+- L0459: :heart:
+- L0460: Click to react
+- L0461: Add Reaction
+- L0462: Edit
+- L0463: Forward
+- L0464: More
+- L0465: 
+- L0466: GOOPSTA
+- L0467: 
+- L0468: DUCK
+- L0469:  — 1:27 PMSunday, January 4, 2026 at 1:27 PM
+- L0470: 
+- L0471: :rofl:
+- L0472: Click to react
+- L0473: :joy:
+- L0474: Click to react
+- L0475: :heart:
+- L0476: Click to react
+- L0477: Add Reaction
+- L0478: Reply
+- L0479: Forward
+- L0480: More
+- L0481: [1:27 PM]Sunday, January 4, 2026 at 1:27 PM
+- L0482: All these time stamps are me from last night
+- L0483: :rofl:
+- L0484: Click to react
+- L0485: :joy:
+- L0486: Click to react
+- L0487: :heart:
+- L0488: Click to react
+- L0489: Add Reaction
+- L0490: Reply
+- L0491: Forward
+- L0492: More
+- L0493: 
+- L0494: dankbutts — 1:27 PMSunday, January 4, 2026 at 1:27 PM
+- L0495: its more in the sense of "mmm i hope i didnt after you changed"
+- L0496: :rofl:
+- L0497: Click to react
+- L0498: :joy:
+- L0499: Click to react
+- L0500: :heart:
+- L0501: Click to react
+- L0502: Add Reaction
+- L0503: Edit
+- L0504: Forward
+- L0505: More
+- L0506: [1:27 PM]Sunday, January 4, 2026 at 1:27 PM
+- L0507: lol
+- L0508: :rofl:
+- L0509: Click to react
+- L0510: :joy:
+- L0511: Click to react
+- L0512: :heart:
+- L0513: Click to react
+- L0514: Add Reaction
+- L0515: Edit
+- L0516: Forward
+- L0517: More
+- L0518: 
+- L0519: GOOPSTA
+- L0520: 
+- L0521: DUCK
+- L0522:  — 1:28 PMSunday, January 4, 2026 at 1:28 PM
+- L0523: No no, you good dude.
+- L0524: [1:28 PM]Sunday, January 4, 2026 at 1:28 PM
+- L0525: I felt so silly when I read safe radius..
+- L0526: :rofl:
+- L0527: Click to react
+- L0528: :joy:
+- L0529: Click to react
+- L0530: :heart:
+- L0531: Click to react
+- L0532: Add Reaction
+- L0533: Reply
+- L0534: Forward
+- L0535: More
+- L0536: 
+- L0537: dankbutts — 1:28 PMSunday, January 4, 2026 at 1:28 PM
+- L0538: i went to sleep before that and i havent merged to ftp
+- L0539: [1:28 PM]Sunday, January 4, 2026 at 1:28 PM
+- L0540: so
+- L0541: :rofl:
+- L0542: Click to react
+- L0543: :joy:
+- L0544: Click to react
+- L0545: :heart:
+- L0546: Click to react
+- L0547: Add Reaction
+- L0548: Edit
+- L0549: Forward
+- L0550: More
+- L0551: [1:28 PM]Sunday, January 4, 2026 at 1:28 PM
+- L0552: makes sense
+- L0553: [1:28 PM]Sunday, January 4, 2026 at 1:28 PM
+- L0554: that they arent
+- L0555: 
+- L0556: GOOPSTA
+- L0557: 
+- L0558: DUCK
+- L0559:  — 1:28 PMSunday, January 4, 2026 at 1:28 PM
+- L0560: Dude asked me "How far are you away the car" when I told him it wasnt spawning in.
+- L0561: [1:28 PM]Sunday, January 4, 2026 at 1:28 PM
+- L0562: He goes, Well for one its in the woods beside your base
+- L0563: [1:28 PM]Sunday, January 4, 2026 at 1:28 PM
+- L0564: for two, you aren't going 500M away from your base so it can spawn in
+- L0565: [1:29 PM]Sunday, January 4, 2026 at 1:29 PM
+- L0566: Cause like he read the code
+- L0567: [1:29 PM]Sunday, January 4, 2026 at 1:29 PM
+- L0568: said "all good"
+- L0569: [1:29 PM]Sunday, January 4, 2026 at 1:29 PM
+- L0570: and i was like yea, i validated etc
+- L0571: [1:29 PM]Sunday, January 4, 2026 at 1:29 PM
+- L0572: literally one of those silly things you dont know till you know then you never forget
+- L0573: [1:32 PM]Sunday, January 4, 2026 at 1:32 PM
+- L0574: Forwarded
+- L0575: Oh i see its the keys you send the snippets for. you also need the containers itself in types but they should remain 0 in nominal. only in events its controlled by nominal
+- L0576: [1:32 PM]Sunday, January 4, 2026 at 1:32 PM
+- L0577: <event name="StaticContainerLocked">
+- L0578:         <nominal>16</nominal>
+- L0579:         <min>14</min>
+- L0580:         <max>0</max>
+- L0581:         <lifetime>2400</lifetime>
+- L0582:         <restock>0</restock>
+- L0583:         <saferadius>500</saferadius>
+- L0584:         <distanceradius>500</distanceradius>
+- L0585:         <cleanupradius>250</cleanupradius>
+- L0586:         <flags deletable="1" init_random="0" remove_damaged="0"/>
+- L0587:         <position>fixed</position>
+- L0588:         <limit>child</limit>
+- L0589:         <active>1</active>
+- L0590:         <children>
+- L0591:             <child lootmax="9" lootmin="5" max="12" min="5" type="Land_ContainerLocked_Blue_DE"/>
+- L0592:             <child lootmax="9" lootmin="5" max="12" min="5" type="Land_ContainerLocked_Yellow_DE"/>
+- L0593:         </children>
+- L0594:     </event>
+- L0595: 
+- L0596: Click to react
+- L0597: 
+- L0598: Click to react
+- L0599: 
+- L0600: Click to react
+- L0601: Add Reaction
+- L0602: Edit
+- L0603: Forward
+- L0604: More
+- L0605: 
+- L0606: LevelingBotVERIFIED APP
+- L0607: APP
+- L0608:  — 04:42Sunday, 4 January 2026 04:42
+- L0609: Congratulations @GOOPSTA, you have reached level 3 in the server QuantumModZ!
+- L0610: 
+- L0611: GOOPSTA
+- L0612: 
+- L0613: DUCK
+- L0614: I'm new here, say hi! — 04:42Sunday, 4 January 2026 04:42
+- L0615: So I would add this to the cherno events file correct? I could modify the children to include all (4) colors? (edited)Sunday, 4 January 2026 04:42
+- L0616: 
+- L0617: Click to react
+- L0618: 
+- L0619: Click to react
+- L0620: 
+- L0621: Click to react
+- L0622: Add Reaction
+- L0623: Edit
+- L0624: Forward
+- L0625: More
+- L0626: [04:44]Sunday, 4 January 2026 04:44
+- L0627: <type name="ShippingContainerKeys_Blue">
+- L0628:         <nominal>1</nominal>
+- L0629:         <lifetime>3600</lifetime>
+- L0630:         <restock>1800</restock>
+- L0631:         <min>0</min>
+- L0632:         <quantmin>-1</quantmin>
+- L0633:         <quantmax>-1</quantmax>
+- L0634:         <cost>100</cost>
+- L0635:         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+- L0636:         <category name="tools"/>
+- L0637:         <usage name="Military"/>
+- L0638:         <value name="Tier4"/>
+- L0639:     </type>
+- L0640:     <type name="ShippingContainerKeys_Orange">
+- L0641:         <nominal>0</nominal>
+- L0642:         <lifetime>3600</lifetime>
+- L0643:         <restock>1800</restock>
+- L0644:         <min>0</min>
+- L0645:         <quantmin>-1</quantmin>
+- L0646:         <quantmax>-1</quantmax>
+- L0647:         <cost>100</cost>
+- L0648:         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+- L0649:         <category name="tools"/>
+- L0650:         <usage name="Military"/>
+- L0651:         <value name="Tier4"/>
+- L0652:     </type>
+- L0653:     <type name="ShippingContainerKeys_Red">
+- L0654:         <nominal>0</nominal>
+- L0655:         <lifetime>3600</lifetime>
+- L0656:         <restock>1800</restock>
+- L0657:         <min>0</min>
+- L0658:         <quantmin>-1</quantmin>
+- L0659:         <quantmax>-1</quantmax>
+- L0660:         <cost>100</cost>
+- L0661:         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+- L0662:         <category name="tools"/>
+- L0663:         <usage name="Military"/>
+- L0664:         <value name="Tier4"/>
+- L0665:     </type>
+- L0666:     <type name="ShippingContainerKeys_Yellow">
+- L0667:         <nominal>1</nominal>
+- L0668:         <lifetime>3600</lifetime>
+- L0669:         <restock>1800</restock>
+- L0670:         <min>0</min>
+- L0671:         <quantmin>-1</quantmin>
+- L0672:         <quantmax>-1</quantmax>
+- L0673:         <cost>100</cost>
+- L0674:         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+- L0675:         <category name="tools"/>
+- L0676:         <usage name="Military"/>
+- L0677:         <value name="Tier4"/>
+- L0678: 
+- L0679: Click to react
+- L0680: 
+- L0681: Click to react
+- L0682: 
+- L0683: Click to react
+- L0684: Add Reaction
+- L0685: Edit
+- L0686: Forward
+- L0687: More
+- L0688: [04:44]Sunday, 4 January 2026 04:44
+- L0689: Add this to types?
+- L0690: 
+- L0691: Click to react
+- L0692: 
+- L0693: Click to react
+- L0694: 
+- L0695: Click to react
+- L0696: Add Reaction
+- L0697: Edit
+- L0698: Forward
+- L0699: More
+- L0700: [04:46]Sunday, 4 January 2026 04:46
+- L0701: How does it know what to put in the containers?
+- L0702: 
+- L0703: Click to react
+- L0704: 
+- L0705: Click to react
+- L0706: 
+- L0707: Click to react
+- L0708: Add Reaction
+- L0709: Edit
+- L0710: Forward
+- L0711: More
+- L0712: [04:46]Sunday, 4 January 2026 04:46
+- L0713: and if I wanted to add lets say MJ packs to containers how would I do that?
+- L0714: :rofl:
+- L0715: Click to react
+- L0716: :joy:
+- L0717: Click to react
+- L0718: :heart:
+- L0719: Click to react
+- L0720: Add Reaction
+- L0721: Reply
+- L0722: Forward
+- L0723: More
+- L0724: [1:33 PM]Sunday, January 4, 2026 at 1:33 PM
+- L0725: Sorry, I know that may be a useless wall of text, wanted to provide more insight if I could
+- L0726: :rofl:
+- L0727: Click to react
+- L0728: :joy:
+- L0729: Click to react
+- L0730: :heart:
+- L0731: Click to react
+- L0732: Add Reaction
+- L0733: Reply
+- L0734: Forward
+- L0735: More
+- L0736: [1:33 PM]Sunday, January 4, 2026 at 1:33 PM
+- L0737: It makes a lot more sense now
+- L0738: :rofl:
+- L0739: Click to react
+- L0740: :joy:
+- L0741: Click to react
+- L0742: :heart:
+- L0743: Click to react
+- L0744: Add Reaction
+- L0745: Reply
+- L0746: Forward
+- L0747: More
+- L0748: 
+- L0749: dankbutts — 1:34 PMSunday, January 4, 2026 at 1:34 PM
+- L0750: no you are good lol
+- L0751: :rofl:
+- L0752: Click to react
+- L0753: :joy:
+- L0754: Click to react
+- L0755: :heart:
+- L0756: Click to react
+- L0757: Add Reaction
+- L0758: Edit
+- L0759: Forward
+- L0760: More
+- L0761: NEW
+- L0762: 
+- L0763: GOOPSTA
+- L0764: 
+- L0765: DUCK
+- L0766:  — 1:35 PMSunday, January 4, 2026 at 1:35 PM
+- L0767: So like, in order for an event to spawn it has to exist as an “event.xml” then in order to get it to spawn you have to set it to spawn (set coords etc) in cfgeventspawns, then to get the containers or cars to register items or “equipped” you adjust types.xml (edited)Sunday, January 4, 2026 at 1:36 PM
+- L0768: :rofl:
+- L0769: Click to react
+- L0770: :joy:
+- L0771: Click to react
+- L0772: :heart:
+- L0773: Click to react
+- L0774: Add Reaction
+- L0775: Reply
+- L0776: Forward
+- L0777: More
+- L0778: [1:36 PM]Sunday, January 4, 2026 at 1:36 PM
+- L0779: I understand the parent thing more
+- L0780: :rofl:
+- L0781: Click to react
+- L0782: :joy:
+- L0783: Click to react
+- L0784: :heart:
+- L0785: Click to react
+- L0786: Add Reaction
+- L0787: Reply
+- L0788: Forward
+- L0789: More
+- L0790: [1:36 PM]Sunday, January 4, 2026 at 1:36 PM
+- L0791: Cause if the information doesn’t exist in the event as a parent the event spawn can see it to call on it
+- L0792: :rofl:
+- L0793: Click to react
+- L0794: :joy:
+- L0795: Click to react
+- L0796: :heart:
+- L0797: Click to react
+- L0798: Add Reaction
+- L0799: Reply
+- L0800: Forward
+- L0801: More
+- L0802: [1:36 PM]Sunday, January 4, 2026 at 1:36 PM
+- L0803: Cause it’s like not in the pool of options in it’s head
+- L0804: :rofl:
+- L0805: Click to react
+- L0806: :joy:
+- L0807: Click to react
+- L0808: :heart:
+- L0809: Click to react
+- L0810: Add Reaction
+- L0811: Reply
+- L0812: Forward
+- L0813: More
+- L0814: [1:38 PM]Sunday, January 4, 2026 at 1:38 PM
+- L0815: So by adjusting types.xml cars and boats I fixed wild spawns and trader spawns to have full parts etc
+- L0816: :rofl:
+- L0817: Click to react
+- L0818: :joy:
+- L0819: Click to react
+- L0820: :heart:
+- L0821: Click to react
+- L0822: Add Reaction
+- L0823: Reply
+- L0824: Forward
+- L0825: More
+- L0826: [1:39 PM]Sunday, January 4, 2026 at 1:39 PM
+- L0827: So I just need to add an event for each vehicle type I want to spawn in and set coords
+- L0828: :rofl:
+- L0829: Click to react
+- L0830: :joy:
+- L0831: Click to react
+- L0832: :heart:
+- L0833: Click to react
+- L0834: Add Reaction
+- L0835: Reply
+- L0836: Forward
+- L0837: More
+- L0838: [1:39 PM]Sunday, January 4, 2026 at 1:39 PM
+- L0839: I’m going to likely replace the build trailers with pre-built build trucks that have a 4H (server reset) timer on then

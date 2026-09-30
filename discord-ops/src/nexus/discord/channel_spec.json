@@ -1,0 +1,93 @@
+{
+    "target_category_id": 1454365349918277704,
+    "permissions": {
+        "sync_enabled": true,
+        "default_lockdown": true,
+        "bot_overrides": [
+            "send_messages",
+            "embed_links",
+            "attach_files",
+            "pin_messages"
+        ]
+    },
+    "channels": {
+        "ops.status": {
+            "name": "🟢-server-status",
+            "type": "text",
+            "topic": "Live Server Status & Health | Managed by Chronos",
+            "position": 0,
+            "legacy_id": "1452830719582933054",
+            "slowmode": 60
+        },
+        "ops.killfeed": {
+            "name": "💀-killfeed",
+            "type": "text",
+            "topic": "Live Killfeed stream",
+            "position": 1,
+            "legacy_id": "1454356540587905075",
+            "slowmode": 5,
+            "retention_days": 7
+        },
+        "ops.deathfeed": {
+            "name": "⚰️-deathfeed",
+            "type": "text",
+            "topic": "Legacy Deaths & Combat Logs",
+            "position": 2,
+            "retention_days": 14
+        },
+        "ops.admin_log": {
+            "name": "🛡️-admin-log",
+            "type": "text",
+            "topic": "Admin Actions & Audit Log",
+            "position": 3,
+            "legacy_id": "1452830604633571348"
+        },
+        "ops.loot_events": {
+            "name": "💰-loot-events",
+            "type": "text",
+            "topic": "High tier loot spawns and cycling",
+            "position": 4
+        },
+        "ops.changefeed": {
+            "name": "📝-changelog",
+            "type": "text",
+            "topic": "Automated Changelog",
+            "position": 5
+        },
+        "ops.livefeed": {
+            "name": "📡-live-feed",
+            "type": "text",
+            "topic": "Real-time raw event stream",
+            "position": 6
+        },
+        "ops.livepoller": {
+            "name": "📊-live-poller",
+            "type": "text",
+            "topic": "Live Poller Diagnostics",
+            "position": 7,
+            "legacy_id": "1459130454874525739"
+        },
+        "ops.todo": {
+            "name": "📋-ops-todo",
+            "type": "text",
+            "topic": "Operational Todos",
+            "position": 8
+        },
+        "ops.missions": {
+            "name": "🗺️-mission-events",
+            "type": "text",
+            "topic": "Live DayZ Mission Events & Seasonal Triggers",
+            "position": 9,
+            "webhooks": [
+                "ChronosMissionFeed"
+            ]
+        },
+        "ops.metrics": {
+            "name": "📊-metrics",
+            "type": "text",
+            "topic": "Live Metrics Gauge | Managed by Chronos",
+            "position": 15,
+            "gauge": true
+        }
+    }
+}

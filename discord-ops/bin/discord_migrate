@@ -1,0 +1,90 @@
+#!/usr/bin/env python3
+import argparse
+import asyncio
+import logging
+import os
+import sys
+from pathlib import Path
+
+# Fix path to allow imports from src
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+from src.mildlyawesome.config import load_settings
+from src.mildlyawesome.discord_registry import DiscordRegistry
+import discord
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s: %(message)s")
+log = logging.getLogger("migrator")
+
+class MigratorClient(discord.Client):
+    def __init__(self, registry: DiscordRegistry, dry_run: bool, guild_id: int, purge: bool):
+        intents = discord.Intents.default()
+        intents.guilds = True
+        super().__init__(intents=intents)
+        self.registry = registry
+        self.dry_run = dry_run
+        self.target_guild_id = guild_id
+        self.purge = purge
+        self.done = asyncio.Event()
+
+    async def on_ready(self):
+        log.info(f"Logged in as {self.user}")
+        guild = self.get_guild(self.target_guild_id)
+        if not guild:
+            log.error(f"Guild {self.target_guild_id} not found!")
+            await self.close()
+            return
+
+        report = await self.registry.sync(guild, dry_run=self.dry_run)
+        
+        if self.purge:
+            log.info("Executing Log Retention (Purge)...")
+            purge_report = await self.registry.purge_stale_logs(guild, dry_run=self.dry_run)
+            report["PURGE_REPORT"] = purge_report
+
+        print("\n=== MIGRATION REPORT ===")
+        for k, v in report.items():
+            print(f"{k}: {v}")
+        print("========================\n")
+        
+        await self.close()
+
+async def main():
+    parser = argparse.ArgumentParser(description="DayZ Discord Reconstitution Migrator")
+    parser.add_argument("--dry-run", action="store_true", help="Audit mode (no changes)")
+    parser.add_argument("--apply", action="store_true", help="Apply changes (creation/locking)")
+    parser.add_argument("--purge", action="store_true", help="Execute log retention (purge stale messages)")
+    args = parser.parse_args()
+
+    if not args.apply and not args.dry_run and not args.purge:
+        # Default to dry-run if neither specified, but explicit is better
+        print("Defaulting to --dry-run. Use --apply to execute.")
+        args.dry_run = True
+    elif args.purge and not args.apply and not args.dry_run:
+        # If only --purge is specified, it should also be a dry-run by default
+        print("Defaulting to --dry-run for purge. Use --apply to execute.")
+        args.dry_run = True
+
+    settings = load_settings()
+    repo_root = Path(__file__).resolve().parent.parent
+    registry = DiscordRegistry(repo_root)
+    
+    if not settings.discord_token:
+        log.error("No Discord Token found in settings/env.")
+        sys.exit(1)
+        
+    client = MigratorClient(registry, dry_run=not args.apply, guild_id=settings.discord_guild_id, purge=args.purge)
+    try:
+        async with client:
+            await client.start(settings.discord_token)
+    except KeyboardInterrupt:
+        pass
+
+if __name__ == "__main__":
+    if os.name == "posix":
+        # Make executable if it isn't
+        import stat
+        st = os.stat(__file__)
+        os.chmod(__file__, st.st_mode | stat.S_IEXEC)
+        
+    asyncio.run(main())

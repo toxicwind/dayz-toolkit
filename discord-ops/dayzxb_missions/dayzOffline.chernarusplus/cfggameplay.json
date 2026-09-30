@@ -1,0 +1,42 @@
+{
+  "PlayerData": {
+    "StaminaData": {
+      "sprintStaminaModifierErc": 0,
+      "sprintStaminaModifierCro": 0,
+      "staminaMax": 1200,
+      "staminaKgToStaminaPercentPenalty": 0,
+      "sprintSwimmingStaminaModifier": 0,
+      "sprintLadderStaminaModifier": 0,
+      "meleeStaminaModifier": 0,
+      "obstacleTraversalStaminaModifier": 0,
+      "holdBreathStaminaModifier": 0
+    },
+    "spawnGearPresetFiles": [
+      "custom/EZStreet_Loadout_Fresh.json"
+    ]
+  },
+  "GeneralData": {
+    "disableBaseDamage": true,
+    "disableContainerDamage": true
+  },
+  "BaseBuildingData": {
+    "HologramData": {
+      "disableIsCollidingBBoxCheck": true,
+      "disableIsCollidingPlayerCheck": true,
+      "disableIsClippingRoofCheck": true,
+      "disableIsBaseViableCheck": true,
+      "disableIsCollidingGPlotCheck": true,
+      "disableIsCollidingAngleCheck": true,
+      "disableIsPlacementPermittedCheck": true,
+      "disableHeightPlacementCheck": true,
+      "disableIsUnderwaterCheck": true,
+      "disableIsInTerrainCheck": true
+    }
+  },
+  "MapData": {
+    "ignoreMapOwnership": true,
+    "ignoreNavItemsOwnership": true,
+    "displayPlayerPosition": true,
+    "displayNavInfo": true
+  }
+}

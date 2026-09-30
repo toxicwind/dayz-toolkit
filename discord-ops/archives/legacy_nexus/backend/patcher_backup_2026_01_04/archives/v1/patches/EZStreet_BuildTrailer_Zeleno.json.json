@@ -1,0 +1,7 @@
+{
+    "id": "ezstreet_buildtrailer_zeleno",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/EZStreet_BuildTrailer_Zeleno.json",
+    "target": "custom/EZStreet_BuildTrailer_Zeleno.json",
+    "enabled": true
+}

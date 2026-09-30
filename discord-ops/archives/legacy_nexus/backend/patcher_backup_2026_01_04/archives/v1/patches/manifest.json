@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "DayZ Server Patch Manifest - Modular Feature Toggles",
+    "generatedAt": "2025-12-24"
+  },
+  "patches": [
+    {
+      "file": "1C-128-milicon-events.xml.json",
+      "enabled": true,
+      "category": "tony_128"
+    },
+    {
+      "file": "1C-128-milicon-types.xml.json",
+      "enabled": true,
+      "category": "tony_128"
+    },
+    {
+      "file": "1C-128-rubberboats-spawnabletypes.xml.json",
+      "enabled": true,
+      "category": "tony_128"
+    },
+    {
+      "file": "1C-vehicles-types.xml.json",
+      "enabled": true,
+      "category": "tony_128"
+    },
+    {
+      "file": "bear_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/bear_territories.xml"
+    },
+    {
+      "file": "cattle_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/cattle_territories.xml"
+    },
+    {
+      "file": "cfggameplay_raw.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Normalize cfggameplay.json structure"
+    },
+    {
+      "file": "cfglimitsdefinitionuser.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for cfglimitsdefinitionuser.xml"
+    },
+    {
+      "file": "cfgspawnabletypes.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for cfgspawnabletypes.xml"
+    },
+    {
+      "file": "cfgweather.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for cfgweather.xml"
+    },
+    {
+      "file": "domestic_animals_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/domestic_animals_territories.xml"
+    },
+    {
+      "file": "events.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for db/events.xml"
+    },
+    {
+      "file": "globals.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for db/globals.xml"
+    },
+    {
+      "file": "hare_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/hare_territories.xml"
+    },
+    {
+      "file": "hatchback_nominals.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Repair Hatchback nominals"
+    },
+    {
+      "file": "hen_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/hen_territories.xml"
+    },
+    {
+      "file": "init.c.json",
+      "enabled": true,
+      "category": "tony_128"
+    },
+    {
+      "file": "mapclusterproto.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for mapclusterproto.xml"
+    },
+    {
+      "file": "mapgroupdirt.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for mapgroupdirt.xml"
+    },
+    {
+      "file": "mapgroupproto.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for mapgroupproto.xml"
+    },
+    {
+      "file": "messages.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for db/messages.xml"
+    },
+    {
+      "file": "pig_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/pig_territories.xml"
+    },
+    {
+      "file": "red_deer_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/red_deer_territories.xml"
+    },
+    {
+      "file": "restore_admin_hatchback.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Restore VehicleAdminHatchback02 event"
+    },
+    {
+      "file": "restore_hatchback_spawns.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Restore VehicleAdminHatchback02 spawns"
+    },
+    {
+      "file": "roe_deer_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/roe_deer_territories.xml"
+    },
+    {
+      "file": "sheep_goat_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/sheep_goat_territories.xml"
+    },
+    {
+      "file": "wild_boar_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/wild_boar_territories.xml"
+    },
+    {
+      "file": "wolf_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/wolf_territories.xml"
+    },
+    {
+      "file": "zombie_territories.json",
+      "enabled": true,
+      "category": "tony_128",
+      "description": "Tony's customization for env/zombie_territories.xml"
+    },
+    {
+      "file": "EZStreet_AdminBase.json.json",
+      "enabled": true,
+      "category": "ezstreet_custom",
+      "description": "Custom object placement: EZStreet_AdminBase"
+    },
+    {
+      "file": "EZStreet_BuildTrailer_Ropka.json.json",
+      "enabled": true,
+      "category": "ezstreet_custom",
+      "description": "Custom object placement: EZStreet_BuildTrailer_Ropka"
+    },
+    {
+      "file": "EZStreet_BuildTrailer_Zap.json.json",
+      "enabled": true,
+      "category": "ezstreet_custom",
+      "description": "Custom object placement: EZStreet_BuildTrailer_Zap"
+    },
+    {
+      "file": "EZStreet_BuildTrailer_Zeleno.json.json",
+      "enabled": true,
+      "category": "ezstreet_custom",
+      "description": "Custom object placement: EZStreet_BuildTrailer_Zeleno"
+    },
+    {
+      "file": "EZStreet_FightCage_Nwaf.json.json",
+      "enabled": true,
+      "category": "ezstreet_custom",
+      "description": "Custom object placement: EZStreet_FightCage_Nwaf"
+    },
+    {
+      "file": "EZStreet_Loadout_Fresh.json.json",
+      "enabled": true,
+      "category": "ezstreet_custom",
+      "description": "Custom object placement: EZStreet_Loadout_Fresh"
+    },
+    {
+      "file": "EZStreet_NovoCustom_Hippie.json.json",
+      "enabled": true,
+      "category": "ezstreet_custom",
+      "description": "Custom object placement: EZStreet_NovoCustom_Hippie"
+    },
+    {
+      "file": "EZStreet_TopoCustom_Dylan.json.json",
+      "enabled": true,
+      "category": "ezstreet_custom",
+      "description": "Custom object placement: EZStreet_TopoCustom_Dylan"
+    },
+    {
+      "file": "EZStreet_Trader.json.json",
+      "enabled": true,
+      "category": "ezstreet_custom",
+      "description": "Custom object placement: EZStreet_Trader"
+    },
+    {
+      "file": "EZStreet_bm_Trader.json.json",
+      "enabled": true,
+      "category": "ezstreet_custom",
+      "description": "Custom object placement: EZStreet_bm_Trader"
+    },
+    {
+      "file": "boats_equipped.json",
+      "enabled": true,
+      "category": "vehicles"
+    },
+    {
+      "file": "cars_fully_equipped.json",
+      "enabled": true,
+      "category": "vehicles"
+    },
+    {
+      "file": "add_fox_territories.json",
+      "enabled": true,
+      "category": "world"
+    },
+    {
+      "file": "map_custom_missions.json",
+      "enabled": true,
+      "category": "world"
+    },
+    {
+      "file": "map_locked_containers.json",
+      "enabled": true,
+      "category": "world"
+    },
+    {
+      "file": "map_trader_zone.json",
+      "enabled": true,
+      "category": "world"
+    },
+    {
+      "file": "wire_object_spawners.json",
+      "enabled": true,
+      "category": "world"
+    },
+    {
+      "file": "disable_xmas_loot.json",
+      "enabled": true,
+      "category": "economy"
+    },
+    {
+      "file": "increased_animals.json",
+      "enabled": true,
+      "category": "economy"
+    },
+    {
+      "file": "increased_vehicles.json",
+      "enabled": true,
+      "category": "economy"
+    },
+    {
+      "file": "loot_pool_additions.json",
+      "enabled": true,
+      "category": "economy",
+      "description": "Add MJ packs, cigarettes, container keys to loot"
+    },
+    {
+      "file": "pristine_loot.json",
+      "enabled": true,
+      "category": "economy"
+    },
+    {
+      "file": "sanitize_animal_events.json",
+      "enabled": true,
+      "category": "economy"
+    },
+    {
+      "file": "vehicle_transit_bus.json",
+      "enabled": true,
+      "category": "economy"
+    },
+    {
+      "file": "build_anywhere.json",
+      "enabled": true,
+      "category": "gameplay"
+    },
+    {
+      "file": "custom_loadout.json",
+      "enabled": true,
+      "category": "gameplay"
+    },
+    {
+      "file": "map_player_position.json",
+      "enabled": true,
+      "category": "gameplay"
+    },
+    {
+      "file": "no_base_damage.json",
+      "enabled": true,
+      "category": "gameplay",
+      "description": "Prevents base structures from taking damage"
+    },
+    {
+      "file": "no_container_damage.json",
+      "enabled": false,
+      "category": "gameplay",
+      "description": "Disables damage to containers and storage items"
+    },
+    {
+      "file": "no_food_decay.json",
+      "enabled": true,
+      "category": "gameplay"
+    },
+    {
+      "file": "no_weather.json",
+      "enabled": true,
+      "category": "gameplay"
+    },
+    {
+      "file": "unlimited_stamina.json",
+      "enabled": true,
+      "category": "gameplay",
+      "description": "Disables stamina depletion for unlimited sprinting"
+    },
+    {
+      "file": "20_welcome_messages.json",
+      "enabled": true,
+      "category": "core"
+    },
+    {
+      "file": "08_vehicles_equipped.json",
+      "enabled": false,
+      "category": "legacy",
+      "deprecated": true,
+      "superseded_by": "18_cars_fully_equipped"
+    },
+    {
+      "file": "add_locked_containers_event.json",
+      "enabled": true,
+      "category": "ezstreet_features",
+      "description": "Inject Locked Container Event"
+    },
+    {
+      "file": "boost_heli_crashes.json",
+      "enabled": true,
+      "category": "ezstreet_features",
+      "description": "Boost Heli Crashes"
+    },
+    {
+      "file": "disable_dynamic_gas.json",
+      "enabled": true,
+      "category": "ezstreet_features",
+      "description": "Disable Dynamic Gas"
+    },
+    {
+      "file": "enable_container_damage.json",
+      "enabled": true,
+      "category": "ezstreet_features",
+      "description": "Enable container damage"
+    },
+    {
+      "file": "no_fog.json",
+      "enabled": true,
+      "category": "ezstreet_features",
+      "description": "Disable Fog"
+    }
+  ],
+  "categories": {
+    "core": "Server-level guards and flags",
+    "gameplay": "Player mechanics (stamina, base rules, map UI, etc.)",
+    "economy": "Loot, vehicles, animals",
+    "world": "World/object spawners, environment",
+    "vehicles": "Spawn and equipment for vehicles/boats",
+    "legacy": "Deprecated historical patches (kept for provenance)"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "cars_fully_equipped",
+  "name": "Cars Fully Equipped",
+  "description": "Spawn every car class with all required parts attached and a gas can in cargo.",
+  "target": "cfgspawnabletypes.xml",
+  "type": "xml_patch",
+  "notes": "Covers all car classes present in staging cfgspawnabletypes.xml.",
+  "enabled": true
+}

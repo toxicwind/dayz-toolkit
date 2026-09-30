@@ -1,0 +1,14 @@
+{
+    "ops": [
+        {
+            "op": "set_attr",
+            "xpath": ".//event[@name='StaticContaminatedArea']",
+            "set": {
+                "active": "0",
+                "nominal": "0",
+                "min": "0",
+                "max": "0"
+            }
+        }
+    ]
+}

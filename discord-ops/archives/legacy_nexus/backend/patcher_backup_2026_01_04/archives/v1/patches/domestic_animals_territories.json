@@ -1,0 +1,6 @@
+{
+    "id": "tony_domestic_animals_territories",
+    "target": "env/domestic_animals_territories.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

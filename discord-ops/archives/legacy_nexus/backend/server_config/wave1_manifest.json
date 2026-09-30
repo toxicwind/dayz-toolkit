@@ -1,0 +1,31 @@
+{
+    "wave": "1",
+    "status": "deployed",
+    "patches": [
+        {
+            "id": "hardening_personal_light",
+            "file": "cfggameplay.json",
+            "status": "SUCCESS"
+        },
+        {
+            "id": "hardening_base_damage",
+            "file": "cfggameplay.json",
+            "status": "SUCCESS"
+        },
+        {
+            "id": "hardening_stamina_cap",
+            "file": "cfggameplay.json",
+            "status": "SUCCESS"
+        },
+        {
+            "id": "perf_zombie_limit",
+            "file": "globals.xml",
+            "status": "SUCCESS"
+        },
+        {
+            "id": "hardening_animal_max",
+            "file": "globals.xml",
+            "status": "SUCCESS"
+        }
+    ]
+}

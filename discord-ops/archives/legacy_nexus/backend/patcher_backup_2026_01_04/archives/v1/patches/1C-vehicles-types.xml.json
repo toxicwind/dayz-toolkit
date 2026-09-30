@@ -1,0 +1,7 @@
+{
+    "id": "tony_raw_1C-vehicles-types",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/1C-vehicles-types.xml",
+    "target": "custom/1C-vehicles-types.xml",
+    "enabled": true
+}

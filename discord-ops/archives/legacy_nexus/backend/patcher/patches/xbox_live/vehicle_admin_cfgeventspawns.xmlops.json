@@ -1,0 +1,31 @@
+{
+  "ops": [
+    {
+      "op": "remove",
+      "xpath": ".//event[@name='VehicleHatchback02Admin']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//event[@name='VehicleAdminHatchback02']"
+    },
+    {
+      "op": "upsert",
+      "parent_xpath": ".",
+      "tag": "event",
+      "key_attrs": {
+        "name": "Vehicle02Admin"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "pos",
+          "attributes": {
+            "x": "10376.90",
+            "z": "14214.80",
+            "a": "63.438690"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "ops": [
+    {
+      "op": "set_text",
+      "xpath": ".//event[@name='StaticHeliCrash']/nominal",
+      "text": "8"
+    }
+  ]
+}

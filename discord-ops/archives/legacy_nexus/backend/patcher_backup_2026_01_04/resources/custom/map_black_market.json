@@ -1,0 +1,52 @@
+{
+    "Objects": [
+        {
+            "name": "Land_Misc_Well_Pump_Yellow",
+            "pos": [
+                8500.0,
+                50.0,
+                13500.0
+            ],
+            "ypr": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": "BLACK_MARKET_MARKER"
+        },
+        {
+            "name": "Land_Container_1Mo",
+            "pos": [
+                8502.0,
+                50.0,
+                13502.0
+            ],
+            "ypr": [
+                45.0,
+                0.0,
+                0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": "BLACK_MARKET_CONTAINER_1"
+        },
+        {
+            "name": "Land_Container_1Mo",
+            "pos": [
+                8498.0,
+                50.0,
+                13502.0
+            ],
+            "ypr": [
+                -45.0,
+                0.0,
+                0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": "BLACK_MARKET_CONTAINER_2"
+        }
+    ]
+}

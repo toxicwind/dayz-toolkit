@@ -1,0 +1,14 @@
+{
+  "types.xml": {
+    "source": "exploration/tony-fixes/original_files/types.xml",
+    "target": "db/types.xml",
+    "reason": "Car/boat full parts configuration",
+    "changes": "Removes container key spawn categories, adds full vehicle parts"
+  },
+  "cfgspawnabletypes.xml": {
+    "source": "exploration/tony-fixes/original_files/cfgspawnabletypes.xml",
+    "target": "cfgspawnabletypes.xml",
+    "reason": "Major rewrite with hoarder tags",
+    "changes": "+1820 lines, adds hoarder containers, attachment configurations"
+  }
+}

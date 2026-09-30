@@ -1,0 +1,6 @@
+{
+    "id": "tony_wild_boar_territories",
+    "target": "env/wild_boar_territories.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

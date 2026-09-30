@@ -1,0 +1,90 @@
+{
+  "ops": [
+    {
+      "op": "remove",
+      "xpath": ".//event[@name='VehicleHatchback02Admin']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//event[@name='VehicleAdminHatchback02']"
+    },
+    {
+      "op": "upsert",
+      "parent_xpath": ".",
+      "tag": "event",
+      "key_attrs": {
+        "name": "Vehicle02Admin"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "1"
+        },
+        {
+          "tag": "min",
+          "text": "1"
+        },
+        {
+          "tag": "max",
+          "text": "1"
+        },
+        {
+          "tag": "lifetime",
+          "text": "300"
+        },
+        {
+          "tag": "restock",
+          "text": "0"
+        },
+        {
+          "tag": "saferadius",
+          "text": "500"
+        },
+        {
+          "tag": "distanceradius",
+          "text": "500"
+        },
+        {
+          "tag": "cleanupradius",
+          "text": "200"
+        },
+        {
+          "tag": "flags",
+          "attributes": {
+            "deletable": "0",
+            "init_random": "0",
+            "remove_damaged": "1"
+          }
+        },
+        {
+          "tag": "position",
+          "text": "fixed"
+        },
+        {
+          "tag": "limit",
+          "text": "mixed"
+        },
+        {
+          "tag": "active",
+          "text": "1"
+        },
+        {
+          "tag": "children",
+          "children": [
+            {
+              "tag": "child",
+              "attributes": {
+                "lootmax": "0",
+                "lootmin": "0",
+                "max": "1",
+                "min": "1",
+                "type": "Hatchback_02"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

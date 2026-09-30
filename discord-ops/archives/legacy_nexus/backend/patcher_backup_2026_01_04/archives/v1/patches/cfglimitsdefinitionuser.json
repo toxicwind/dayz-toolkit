@@ -1,0 +1,6 @@
+{
+    "id": "tony_cfglimitsdefinitionuser",
+    "target": "cfglimitsdefinitionuser.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

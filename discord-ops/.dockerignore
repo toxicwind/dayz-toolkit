@@ -1,0 +1,13 @@
+**/node_modules
+**/.next
+**/*.tar
+**/*.tar.gz
+**/*.log
+.git
+frontend/
+backups/
+exploration/
+archives/
+vendor/
+copilot_consolidated_prompts.txt
+dashboard/.next_BLOCKER_*

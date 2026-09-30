@@ -1,0 +1,506 @@
+{
+  "source": "backend/patcher/patches/tony_128",
+  "generated_at": "2026-01-02T22:21:00Z",
+  "file_count": 79,
+  "items": [
+    {
+      "path": "cfggameplay.json.patch",
+      "sha256_16": "c3327e1b92d525f5",
+      "size_bytes": 6173,
+      "type": "patch"
+    },
+    {
+      "path": "cfggameplay_patch.json",
+      "sha256_16": "6c61d2aa64591db8",
+      "size_bytes": 5116,
+      "type": "json"
+    },
+    {
+      "path": "cfglimitsdefinitionuser.json",
+      "sha256_16": "503fdafa2022d88c",
+      "size_bytes": 135,
+      "type": "json"
+    },
+    {
+      "path": "cfglimitsdefinitionuser_data.xml",
+      "sha256_16": "41382af595a10aa0",
+      "size_bytes": 1070,
+      "type": "xml",
+      "xml_nodes": 33
+    },
+    {
+      "path": "cfgspawnabletypes.json",
+      "sha256_16": "cc004d43abadd1dd",
+      "size_bytes": 123,
+      "type": "json"
+    },
+    {
+      "path": "cfgspawnabletypes_data.xml",
+      "sha256_16": "ba17b12f864a4287",
+      "size_bytes": 121307,
+      "type": "xml",
+      "xml_nodes": 2663
+    },
+    {
+      "path": "cfgweather.json",
+      "sha256_16": "5c1938ddc151c160",
+      "size_bytes": 109,
+      "type": "json"
+    },
+    {
+      "path": "cfgweather_data.xml",
+      "sha256_16": "9a88fc8900e0fdf5",
+      "size_bytes": 4360,
+      "type": "xml",
+      "xml_nodes": 34
+    },
+    {
+      "path": "custom/1C-128-milicon-events.xml",
+      "sha256_16": "5c3d9fc6616d7393",
+      "size_bytes": 1342,
+      "type": "xml",
+      "xml_nodes": 19
+    },
+    {
+      "path": "custom/1C-128-milicon-events.xml.json",
+      "sha256_16": "0afc0c6e23e3fd39",
+      "size_bytes": 224,
+      "type": "json"
+    },
+    {
+      "path": "custom/1C-128-milicon-types.xml",
+      "sha256_16": "08c90cd0c982095b",
+      "size_bytes": 4167,
+      "type": "xml",
+      "xml_nodes": 94
+    },
+    {
+      "path": "custom/1C-128-milicon-types.xml.json",
+      "sha256_16": "784c05887056357f",
+      "size_bytes": 221,
+      "type": "json"
+    },
+    {
+      "path": "custom/1C-128-rubberboats-spawnabletypes.xml",
+      "sha256_16": "bc735a5e35f9af5f",
+      "size_bytes": 965,
+      "type": "xml",
+      "xml_nodes": 21
+    },
+    {
+      "path": "custom/1C-128-rubberboats-spawnabletypes.xml.json",
+      "sha256_16": "8daed66feca2850b",
+      "size_bytes": 260,
+      "type": "json"
+    },
+    {
+      "path": "custom/1C-vehicles-types.xml",
+      "sha256_16": "8ed55edb120923c3",
+      "size_bytes": 3675,
+      "type": "xml",
+      "xml_nodes": 81
+    },
+    {
+      "path": "custom/1C-vehicles-types.xml.json",
+      "sha256_16": "5d9b3fe514236847",
+      "size_bytes": 212,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_AdminBase.json",
+      "sha256_16": "70e68eceb88df3d0",
+      "size_bytes": 56323,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_AdminBase.json.json",
+      "sha256_16": "47c522ddfddea10d",
+      "size_bytes": 208,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_BuildTrailer_Ropka.json",
+      "sha256_16": "afd27741c22cbd34",
+      "size_bytes": 65449,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_BuildTrailer_Ropka.json.json",
+      "sha256_16": "b92ab1db6784e237",
+      "size_bytes": 235,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_BuildTrailer_Zap.json",
+      "sha256_16": "432dbdb7c51cc103",
+      "size_bytes": 67823,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_BuildTrailer_Zap.json.json",
+      "sha256_16": "029611d88247d6a8",
+      "size_bytes": 229,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_BuildTrailer_Zeleno.json",
+      "sha256_16": "8c5173cf1f24c5f1",
+      "size_bytes": 65146,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_BuildTrailer_Zeleno.json.json",
+      "sha256_16": "5f77f77218f66817",
+      "size_bytes": 238,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_FightCage_Nwaf.json",
+      "sha256_16": "9935f36f64d559d4",
+      "size_bytes": 56992,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_FightCage_Nwaf.json.json",
+      "sha256_16": "d961af443654ad79",
+      "size_bytes": 223,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_Loadout_Fresh.json",
+      "sha256_16": "da5832cd45fe3153",
+      "size_bytes": 7291,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_Loadout_Fresh.json.json",
+      "sha256_16": "b564b7a5c0d7daa8",
+      "size_bytes": 220,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_NovoCustom_Hippie.json",
+      "sha256_16": "e1a93756ae6d7174",
+      "size_bytes": 54445,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_NovoCustom_Hippie.json.json",
+      "sha256_16": "223303de2b430d27",
+      "size_bytes": 232,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_TopoCustom_Dylan.json",
+      "sha256_16": "53155d7e3281115d",
+      "size_bytes": 29602,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_TopoCustom_Dylan.json.json",
+      "sha256_16": "4b56e3cf918f0b90",
+      "size_bytes": 229,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_Trader.json",
+      "sha256_16": "604c32c044b8a1b9",
+      "size_bytes": 187833,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_Trader.json.json",
+      "sha256_16": "aafe2317ffa94853",
+      "size_bytes": 199,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_bm_Trader.json",
+      "sha256_16": "aa1d53d153428c1c",
+      "size_bytes": 146070,
+      "type": "json"
+    },
+    {
+      "path": "custom/EZStreet_bm_Trader.json.json",
+      "sha256_16": "8a0c6177497d59f8",
+      "size_bytes": 208,
+      "type": "json"
+    },
+    {
+      "path": "custom/LockedContainers_Spawns.json",
+      "sha256_16": "f32c7fec928d7f2a",
+      "size_bytes": 345025,
+      "type": "json"
+    },
+    {
+      "path": "custom/rescue.json",
+      "sha256_16": "98385172acbd9732",
+      "size_bytes": 2860,
+      "type": "json"
+    },
+    {
+      "path": "custom/safe_zones.json",
+      "sha256_16": "67152b193fd61c30",
+      "size_bytes": 1825,
+      "type": "json"
+    },
+    {
+      "path": "db/events.json",
+      "sha256_16": "6a2bce87161f23aa",
+      "size_bytes": 104,
+      "type": "json"
+    },
+    {
+      "path": "db/events.xml.patch",
+      "sha256_16": "2e421761be4a962c",
+      "size_bytes": 6294,
+      "type": "patch"
+    },
+    {
+      "path": "db/events_data.xml",
+      "sha256_16": "313b4c691bc772f4",
+      "size_bytes": 46730,
+      "type": "xml",
+      "xml_nodes": 1063
+    },
+    {
+      "path": "db/globals.json",
+      "sha256_16": "06e0b801ad4adbc8",
+      "size_bytes": 106,
+      "type": "json"
+    },
+    {
+      "path": "db/globals.xml.patch",
+      "sha256_16": "7509211a104dd4a6",
+      "size_bytes": 307,
+      "type": "patch"
+    },
+    {
+      "path": "db/globals_data.xml",
+      "sha256_16": "84bbe7ac5e794ae0",
+      "size_bytes": 1669,
+      "type": "xml",
+      "xml_nodes": 31
+    },
+    {
+      "path": "db/messages.json",
+      "sha256_16": "4b094c29db789587",
+      "size_bytes": 178,
+      "type": "json"
+    },
+    {
+      "path": "db/messages_data.xml",
+      "sha256_16": "b35af953169429e7",
+      "size_bytes": 637,
+      "type": "xml",
+      "xml_nodes": 15
+    },
+    {
+      "path": "env/bear_territories.json",
+      "sha256_16": "b6a29122e44d2df8",
+      "size_bytes": 125,
+      "type": "json"
+    },
+    {
+      "path": "env/bear_territories_data.xml",
+      "sha256_16": "349613a756ea422f",
+      "size_bytes": 7036,
+      "type": "xml",
+      "xml_nodes": 85
+    },
+    {
+      "path": "env/cattle_territories.json",
+      "sha256_16": "62dfa160f95661cd",
+      "size_bytes": 129,
+      "type": "json"
+    },
+    {
+      "path": "env/cattle_territories_data.xml",
+      "sha256_16": "7961ac4a0924e26f",
+      "size_bytes": 21581,
+      "type": "xml",
+      "xml_nodes": 255
+    },
+    {
+      "path": "env/domestic_animals_territories.json",
+      "sha256_16": "306d0631c050ff95",
+      "size_bytes": 149,
+      "type": "json"
+    },
+    {
+      "path": "env/domestic_animals_territories_data.xml",
+      "sha256_16": "78d67848af1181c2",
+      "size_bytes": 21581,
+      "type": "xml",
+      "xml_nodes": 255
+    },
+    {
+      "path": "env/hare_territories.json",
+      "sha256_16": "c56a3dd248eeb9e3",
+      "size_bytes": 125,
+      "type": "json"
+    },
+    {
+      "path": "env/hare_territories_data.xml",
+      "sha256_16": "375d5668587c4945",
+      "size_bytes": 81587,
+      "type": "xml",
+      "xml_nodes": 884
+    },
+    {
+      "path": "env/hen_territories.json",
+      "sha256_16": "72de2e02a18b3f4e",
+      "size_bytes": 123,
+      "type": "json"
+    },
+    {
+      "path": "env/hen_territories_data.xml",
+      "sha256_16": "d7cbdb04fd843697",
+      "size_bytes": 39176,
+      "type": "xml",
+      "xml_nodes": 483
+    },
+    {
+      "path": "env/pig_territories.json",
+      "sha256_16": "2e780098126080ca",
+      "size_bytes": 123,
+      "type": "json"
+    },
+    {
+      "path": "env/pig_territories_data.xml",
+      "sha256_16": "6e6f0153de8ce14b",
+      "size_bytes": 18086,
+      "type": "xml",
+      "xml_nodes": 213
+    },
+    {
+      "path": "env/red_deer_territories.json",
+      "sha256_16": "125f91da95717073",
+      "size_bytes": 133,
+      "type": "json"
+    },
+    {
+      "path": "env/red_deer_territories_data.xml",
+      "sha256_16": "5d3f949da326d5a7",
+      "size_bytes": 24929,
+      "type": "xml",
+      "xml_nodes": 291
+    },
+    {
+      "path": "env/roe_deer_territories.json",
+      "sha256_16": "53f362212e1cb4e9",
+      "size_bytes": 133,
+      "type": "json"
+    },
+    {
+      "path": "env/roe_deer_territories_data.xml",
+      "sha256_16": "830f229a6af44f24",
+      "size_bytes": 27138,
+      "type": "xml",
+      "xml_nodes": 317
+    },
+    {
+      "path": "env/sheep_goat_territories.json",
+      "sha256_16": "aaf00a2194449d44",
+      "size_bytes": 137,
+      "type": "json"
+    },
+    {
+      "path": "env/sheep_goat_territories_data.xml",
+      "sha256_16": "65497fdfb917e195",
+      "size_bytes": 15254,
+      "type": "xml",
+      "xml_nodes": 183
+    },
+    {
+      "path": "env/wild_boar_territories.json",
+      "sha256_16": "686bbe1ef2337a1c",
+      "size_bytes": 135,
+      "type": "json"
+    },
+    {
+      "path": "env/wild_boar_territories_data.xml",
+      "sha256_16": "06983084577f3318",
+      "size_bytes": 20259,
+      "type": "xml",
+      "xml_nodes": 238
+    },
+    {
+      "path": "env/wolf_territories.json",
+      "sha256_16": "ede5f85ee6dfc2d2",
+      "size_bytes": 125,
+      "type": "json"
+    },
+    {
+      "path": "env/wolf_territories_data.xml",
+      "sha256_16": "679cc970e45d1109",
+      "size_bytes": 27416,
+      "type": "xml",
+      "xml_nodes": 301
+    },
+    {
+      "path": "env/zombie_territories.json",
+      "sha256_16": "23879030907b5bc9",
+      "size_bytes": 129,
+      "type": "json"
+    },
+    {
+      "path": "env/zombie_territories_data.xml",
+      "sha256_16": "940062454ecad866",
+      "size_bytes": 78175,
+      "type": "xml",
+      "xml_nodes": 780
+    },
+    {
+      "path": "init.c",
+      "sha256_16": "a1a0a4dadf95cf73",
+      "size_bytes": 2691,
+      "type": "c"
+    },
+    {
+      "path": "init.c.json",
+      "sha256_16": "78c815d900cf7c6b",
+      "size_bytes": 155,
+      "type": "json"
+    },
+    {
+      "path": "mapclusterproto.json",
+      "sha256_16": "bb14de3a8f488d7d",
+      "size_bytes": 119,
+      "type": "json"
+    },
+    {
+      "path": "mapclusterproto_data.xml",
+      "sha256_16": "0f10df5ad5736c5d",
+      "size_bytes": 34675,
+      "type": "xml",
+      "xml_nodes": 454
+    },
+    {
+      "path": "mapgroupdirt.json",
+      "sha256_16": "8dcfe479c57cfe14",
+      "size_bytes": 113,
+      "type": "json"
+    },
+    {
+      "path": "mapgroupdirt_data.xml",
+      "sha256_16": "67b677b61f090e3b",
+      "size_bytes": 52,
+      "type": "xml",
+      "xml_nodes": 1
+    },
+    {
+      "path": "mapgroupproto.json",
+      "sha256_16": "bd40414434d09fb2",
+      "size_bytes": 115,
+      "type": "json"
+    },
+    {
+      "path": "mapgroupproto_data.xml",
+      "sha256_16": "f9144d2ea2381783",
+      "size_bytes": 1178310,
+      "type": "xml",
+      "xml_nodes": 16892
+    }
+  ]
+}

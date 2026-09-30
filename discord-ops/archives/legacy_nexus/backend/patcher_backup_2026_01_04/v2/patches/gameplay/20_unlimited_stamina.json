@@ -1,0 +1,10 @@
+{
+    "staminaData": {
+        "sprintStaminaModifierErc": 0.0,
+        "sprintStaminaModifierCro": 0.0,
+        "staminaWeightLimitThreshold": 6000.0,
+        "staminaMax": 100.0,
+        "staminaKgToStaminaPercentPenalty": 0.0,
+        "staminaMinCap": 5.0
+    }
+}

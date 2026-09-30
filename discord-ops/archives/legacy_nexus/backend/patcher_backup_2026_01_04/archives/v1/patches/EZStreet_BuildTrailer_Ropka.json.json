@@ -1,0 +1,7 @@
+{
+    "id": "ezstreet_buildtrailer_ropka",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/EZStreet_BuildTrailer_Ropka.json",
+    "target": "custom/EZStreet_BuildTrailer_Ropka.json",
+    "enabled": true
+}

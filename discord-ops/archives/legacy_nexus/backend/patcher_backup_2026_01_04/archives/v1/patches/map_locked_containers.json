@@ -1,0 +1,10 @@
+{
+    "id": "map_locked_containers",
+    "name": "Locked Container Spawns",
+    "description": "Copy static locked container placements into mission custom/ and wire into object spawners.",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/map_locked_containers.json",
+    "target": "custom/map_locked_containers.json",
+    "enabled": true,
+    "category": "world"
+}

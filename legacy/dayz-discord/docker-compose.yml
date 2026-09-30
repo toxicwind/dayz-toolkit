@@ -1,0 +1,112 @@
+services:
+  bot:
+    build: .
+    container_name: nexus_bot
+    restart: unless-stopped
+    ports:
+      - "43300:43200"
+      - "43301:9110"
+    environment:
+      - CONFIG_SERVICE=ezstreet
+      - CONFIG_ENV=dev
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://localhost:43300}
+      - DISABLE_FTP_PUSH=1
+      - ENABLE_SELFPLAY=true
+      - PYTHONUNBUFFERED=1
+      - DISCORD_TOKEN=${EZSTREET_DISCORD_TOKEN}
+    volumes:
+      - .:/app
+      - ./config:/config:ro
+      - ./state:/app/state
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:43200/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - nexus_net
+
+  dashboard:
+    build:
+      context: ./dashboard/nexus_dashboard
+      dockerfile: Dockerfile
+    container_name: nexus_dashboard
+    restart: unless-stopped
+    ports:
+      - "43302:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://localhost:43302}
+      - BACKEND_URL=http://nexus_bot:43200
+      - WATCHPACK_POLLING=true
+    volumes:
+      - ./dashboard/nexus_dashboard:/app
+      - /app/node_modules
+    networks:
+      - nexus_net
+    depends_on:
+      - bot
+      - mysql
+      - redis
+
+  redis:
+    image: redis:7-alpine
+    container_name: nexus_redis
+    restart: unless-stopped
+    ports:
+      - "43303:6379"
+    networks:
+      - nexus_net
+
+  mysql:
+    image: mysql:8.0
+    container_name: nexus_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+#       MYSQL_DATABASE: dayz_ops
+      MYSQL_USER: dayz
+      MYSQL_PASSWORD: ${EZSTREET_MYSQL_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "43304:3306"
+    networks:
+      - nexus_net
+
+  control_plane:
+    build:
+      context: ./services/control_plane
+      dockerfile: Dockerfile
+    image: control-plane:latest
+    container_name: control_plane
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - BASE_URL=https://agent.mildlyawesome.com
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
+      - LOG_LEVEL=info
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/health" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    volumes:
+      - control_plane_data:/app/data
+    networks:
+      - nexus_net
+    depends_on:
+      - redis
+      - mysql
+
+networks:
+  nexus_net:
+    driver: bridge
+
+volumes:
+  mysql_data:
+
+  control_plane_data:

@@ -1,0 +1,6 @@
+{
+    "id": "tony_events",
+    "target": "db/events.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

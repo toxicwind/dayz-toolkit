@@ -1,0 +1,19 @@
+{
+    "ops": [
+        {
+            "op": "set_attr",
+            "xpath": ".//fog/limits",
+            "set": {
+                "min": "0.0",
+                "max": "0.0"
+            }
+        },
+        {
+            "op": "set_attr",
+            "xpath": ".//fog/current",
+            "set": {
+                "actual": "0.0"
+            }
+        }
+    ]
+}

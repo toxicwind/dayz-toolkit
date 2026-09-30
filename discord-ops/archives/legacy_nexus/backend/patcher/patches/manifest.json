@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "name": "xbox_only_tony_goopsta_rollup",
+    "build_date": "2026-01-05",
+    "intent": "Xbox / Nitrado mission patcher rollup. No PC mods, no init.c dependencies.",
+    "sources": [
+      "patchercomp.zip (Tony/Goopsta Jan 4 2026 fixes + live_xbox patch prototypes)",
+      "dayz_json_patcher_bundle.zip (patch runner + baseline mission folder)"
+    ]
+  },
+  "patches": [
+    {
+      "name": "xbox_lockedcontainers_copy_json",
+      "description": "Copy LockedContainers_Spawns.json into mission custom/ so it can be referenced by object spawner config. (Disabled by default; enable only if you are NOT using CE event spawns for StaticContainerLocked.)",
+      "type": "raw_copy",
+      "target": "custom/LockedContainers_Spawns.json",
+      "file": "../assets/custom/LockedContainers_Spawns.json",
+      "enabled": false,
+      "order": 900,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "xbox_cfggameplay_enable_objectspawner_lockedcontainers",
+      "description": "Append LockedContainers_Spawns.json to WorldsData.objectSpawnersArr (non-destructive append_unique). (Disabled by default; enable only if you are NOT using CE event spawns for StaticContainerLocked.)",
+      "type": "json_ops",
+      "target": "cfggameplay.json",
+      "file": "xbox_live/cfggameplay_objectspawner_append.jsonops.json",
+      "enabled": false,
+      "order": 900,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "xbox_vehicle02admin_events_definition",
+      "description": "Create/refresh db/events.xml event Vehicle02Admin with safe radius 500 and a Hatchback_02 child.",
+      "type": "xml_ops",
+      "target": "db/events.xml",
+      "file": "xbox_live/vehicle_admin_events.xmlops.json",
+      "enabled": true,
+      "order": 20,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "xbox_vehicle02admin_eventpos",
+      "description": "Create/refresh cfgeventspawns.xml event Vehicle02Admin at (x=10376.90 z=14214.80 a=63.438690). Removes old admin-hatchback event names if present.",
+      "type": "xml_ops",
+      "target": "cfgeventspawns.xml",
+      "file": "xbox_live/vehicle_admin_cfgeventspawns.xmlops.json",
+      "enabled": true,
+      "order": 30,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "xbox_container_keys_unrestrict",
+      "description": "Remove accidental Military/Weapons/Tier4 restrictions on ShippingContainerKeys_* entries in db/types.xml (if present).",
+      "type": "xml_ops",
+      "target": "db/types.xml",
+      "file": "xbox_live/container_keys_types.xmlops.json",
+      "enabled": true,
+      "order": 40,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "xbox_locked_container_types_nominal0",
+      "description": "Upsert Land_ContainerLocked_*_DE type entries with nominal=0 (event/object-spawner controlled).",
+      "type": "xml_ops",
+      "target": "db/types.xml",
+      "file": "xbox_live/container_locked_types_nominal0.xmlops.json",
+      "enabled": true,
+      "order": 45,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "xbox_globals_counts_goopsta",
+      "description": "Apply Goopsta/Tony globals.xml counts: ZombieMaxCount=1234, AnimalMaxCount=200, LootDamageMin=0.0, LootDamageMax=0.82.",
+      "type": "xml_ops",
+      "target": "db/globals.xml",
+      "file": "xbox_live/globals_counts.xmlops.json",
+      "enabled": true,
+      "order": 60,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "xbox_stamina_100",
+      "description": "Set cfggameplay.json PlayerData.StaminaData.StaminaMax=100.0.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "xbox_live/cfggameplay_stamina_100.jsonmerge.json",
+      "enabled": true,
+      "order": 70,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "xbox_staticcontainerlocked_events_definition",
+      "description": "Upsert db/events.xml event StaticContainerLocked (vanilla Sakhal locked containers event definition).",
+      "type": "xml_ops",
+      "target": "db/events.xml",
+      "file": "xbox_live/locked_containers_event.xmlops.json",
+      "enabled": true,
+      "order": 25,
+      "strict": "warn",
+      "conflicts": []
+    }
+  ]
+}

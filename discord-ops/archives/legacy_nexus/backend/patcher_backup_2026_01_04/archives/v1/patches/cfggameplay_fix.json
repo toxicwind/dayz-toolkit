@@ -1,0 +1,7 @@
+{
+    "id": "tony_cfggameplay_fix",
+    "target": "cfggameplay.json",
+    "type": "script",
+    "description": "Fix cfggameplay.json structure by removing empty root key and enforcing Build Anywhere",
+    "script_file": "scripts/fix_cfggameplay.py"
+}

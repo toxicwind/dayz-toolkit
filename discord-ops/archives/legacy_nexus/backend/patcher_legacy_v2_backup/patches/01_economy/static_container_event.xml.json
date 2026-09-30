@@ -1,0 +1,11 @@
+{
+    "description": "Tony's StaticContainerLocked Event (Jan 4 2026)",
+    "target_file": "db/events.xml",
+    "operations": [
+        {
+            "op": "add",
+            "xpath": "/events",
+            "element": "    <event name=\"StaticContainerLocked\">\n        <nominal>16</nominal>\n        <min>14</min>\n        <max>0</max>\n        <lifetime>2400</lifetime>\n        <restock>0</restock>\n        <saferadius>500</saferadius>\n        <distanceradius>500</distanceradius>\n        <cleanupradius>250</cleanupradius>\n        <flags deletable=\"1\" init_random=\"0\" remove_damaged=\"0\"/>\n        <position>fixed</position>\n        <limit>child</limit>\n        <active>1</active>\n        <children>\n            <child lootmax=\"9\" lootmin=\"5\" max=\"12\" min=\"5\" type=\"Land_ContainerLocked_Blue_DE\"/>\n            <child lootmax=\"9\" lootmin=\"5\" max=\"12\" min=\"5\" type=\"Land_ContainerLocked_Yellow_DE\"/>\n        </children>\n    </event>"
+        }
+    ]
+}

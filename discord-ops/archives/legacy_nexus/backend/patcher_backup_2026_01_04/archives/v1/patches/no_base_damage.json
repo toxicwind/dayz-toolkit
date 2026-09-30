@@ -1,0 +1,12 @@
+{
+    "id": "no_base_damage",
+    "name": "No Base Damage",
+    "description": "Disable damage to player bases and structures",
+    "target": "cfggameplay.json",
+    "path": "GeneralData",
+    "values": {
+        "disableBaseDamage": true
+    },
+    "enabled": true,
+    "type": "json_merge"
+}

@@ -1,0 +1,6 @@
+{
+    "id": "tony_sheep_goat_territories",
+    "target": "env/sheep_goat_territories.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

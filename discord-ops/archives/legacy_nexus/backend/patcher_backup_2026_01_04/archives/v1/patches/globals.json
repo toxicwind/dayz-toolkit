@@ -1,0 +1,6 @@
+{
+    "id": "tony_globals",
+    "target": "db/globals.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

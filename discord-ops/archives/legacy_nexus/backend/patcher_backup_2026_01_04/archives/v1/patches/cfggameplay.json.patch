@@ -1,0 +1,239 @@
+[
+    {
+        "op": "replace",
+        "path": "/GeneralData/disableBaseDamage",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/GeneralData/disableContainerDamage",
+        "value": true
+    },
+    {
+        "op": "add",
+        "path": "/PlayerData/spawnGearPresetFiles",
+        "value": [
+            "custom/EZStreet_Loadout_Fresh.json"
+        ]
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/staminaMax",
+        "value": 1200.0
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/staminaWeightLimitThreshold",
+        "value": 6000
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/sprintStaminaModifierErc",
+        "value": 0.0
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/obstacleTraversalStaminaModifier",
+        "value": 0.0
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/staminaKgToStaminaPercentPenalty",
+        "value": 0.0
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/meleeStaminaModifier",
+        "value": 0.0
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/staminaMinCap",
+        "value": 5
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/sprintSwimmingStaminaModifier",
+        "value": 0.0
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/sprintStaminaModifierCro",
+        "value": 0.0
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/holdBreathStaminaModifier",
+        "value": 0.0
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/sprintLadderStaminaModifier",
+        "value": 0.0
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/ShockHandlingData/shockRefillSpeedConscious",
+        "value": 5
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/ShockHandlingData/shockRefillSpeedUnconscious",
+        "value": 1
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/DrowningData/staminaDepletionSpeed",
+        "value": 10
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/DrowningData/healthDepletionSpeed",
+        "value": 10
+    },
+    {
+        "op": "replace",
+        "path": "/PlayerData/DrowningData/shockDepletionSpeed",
+        "value": 10
+    },
+    {
+        "op": "replace",
+        "path": "/UIData/HitIndicationData/hitDirectionScatter",
+        "value": 10
+    },
+    {
+        "op": "replace",
+        "path": "/UIData/HitIndicationData/hitDirectionMaxDuration",
+        "value": 2
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/ConstructionData/disablePerformRoofCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/ConstructionData/disableIsCollidingCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/ConstructionData/disableDistanceCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/HologramData/disableIsCollidingAngleCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/HologramData/disableHeightPlacementCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/HologramData/disableIsInTerrainCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/HologramData/disableIsCollidingPlayerCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/HologramData/disableIsCollidingGPlotCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/HologramData/disableIsPlacementPermittedCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/HologramData/disableIsCollidingBBoxCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/HologramData/disableIsClippingRoofCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/HologramData/disableIsBaseViableCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/BaseBuildingData/HologramData/disableIsUnderwaterCheck",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/MapData/displayPlayerPosition",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/MapData/ignoreMapOwnership",
+        "value": true
+    },
+    {
+        "op": "replace",
+        "path": "/MapData/ignoreNavItemsOwnership",
+        "value": true
+    },
+    {
+        "op": "add",
+        "path": "/WorldsData/objectSpawnersArr/0",
+        "value": "custom/EZStreet_bm_Trader.json"
+    },
+    {
+        "op": "add",
+        "path": "/WorldsData/objectSpawnersArr/1",
+        "value": "custom/EZStreet_Trader.json"
+    },
+    {
+        "op": "add",
+        "path": "/WorldsData/objectSpawnersArr/2",
+        "value": "custom/EZStreet_AdminBase.json"
+    },
+    {
+        "op": "add",
+        "path": "/WorldsData/objectSpawnersArr/3",
+        "value": "custom/EZStreet_BuildTrailer_Zap.json"
+    },
+    {
+        "op": "add",
+        "path": "/WorldsData/objectSpawnersArr/4",
+        "value": "custom/EZStreet_FightCage_Nwaf.json"
+    },
+    {
+        "op": "add",
+        "path": "/WorldsData/objectSpawnersArr/5",
+        "value": "custom/EZStreet_TopoCustom_Dylan.json"
+    },
+    {
+        "op": "add",
+        "path": "/WorldsData/objectSpawnersArr/6",
+        "value": "custom/EZStreet_BuildTrailer_Gorka.json"
+    },
+    {
+        "op": "add",
+        "path": "/WorldsData/objectSpawnersArr/7",
+        "value": "custom/EZStreet_BuildTrailer_Zeleno.json"
+    },
+    {
+        "op": "add",
+        "path": "/WorldsData/objectSpawnersArr/8",
+        "value": "custom/EZStreet_NovoCustom_Hippie.json"
+    },
+    {
+        "op": "add",
+        "path": "/WorldsData/objectSpawnersArr/9",
+        "value": "custom/rescue.json"
+    }
+]

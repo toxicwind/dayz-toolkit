@@ -1,0 +1,8 @@
+{
+  "PlayerData": {
+    "ShockHandlingData": {
+      "shockRefillSpeedConscious": 10.0,
+      "shockRefillSpeedUnconscious": 3.0
+    }
+  }
+}

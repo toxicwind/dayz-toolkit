@@ -1,0 +1,23 @@
+{
+    "id": "no_fog",
+    "type": "xml_patch",
+    "target": "cfgweather.xml",
+    "description": "Removes fog completely from the server.",
+    "ops": [
+        {
+            "xpath": "//fog/limits",
+            "action": "replace_attribute",
+            "attributes": {
+                "min": "0.0",
+                "max": "0.0"
+            }
+        },
+        {
+            "xpath": "//fog/current",
+            "action": "replace_attribute",
+            "attributes": {
+                "actual": "0.0"
+            }
+        }
+    ]
+}

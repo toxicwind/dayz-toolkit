@@ -1,0 +1,10 @@
+{
+    "id": "map_trader_zone",
+    "name": "EZStreet Trader Zone Map",
+    "description": "Copy trader compound object spawner into mission custom/ and wire into WorldsData.objectSpawnersArr.",
+    "type": "raw_copy",
+    "source": "backend/patcher/resources/custom/map_trader.json",
+    "target": "custom/map_trader.json",
+    "enabled": true,
+    "category": "world"
+}

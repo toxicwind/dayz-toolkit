@@ -1,0 +1,7 @@
+{
+  "PlayerData": {
+    "MovementData": {
+      "allowStaminaAffectInertia": false
+    }
+  }
+}

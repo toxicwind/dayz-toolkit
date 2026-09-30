@@ -1,0 +1,12 @@
+[
+    {
+        "op": "replace",
+        "path": "/*[@name='FoodDecay']",
+        "value": "<var name=\"FoodDecay\" type=\"0\" value=\"0\"/>"
+    },
+    {
+        "op": "replace",
+        "path": "/*[@name='LootDamageMax']",
+        "value": "<var name=\"LootDamageMax\" type=\"1\" value=\"0.0\"/>"
+    }
+]

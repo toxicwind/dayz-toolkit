@@ -1,0 +1,13 @@
+{
+    "ops": [
+        {
+            "op": "set_attr",
+            "xpath": ".//event[@name='StaticHeliCrash']",
+            "set": {
+                "nominal": "15",
+                "min": "10",
+                "max": "20"
+            }
+        }
+    ]
+}

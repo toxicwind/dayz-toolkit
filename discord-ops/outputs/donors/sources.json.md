@@ -1,0 +1,90 @@
+# Donor: dashboard/config/sources.json
+
+```text
+{
+  "version": "1.28",
+  "lastUpdated": "2025-12-24",
+  "description": "DayZ Dashboard Source Configuration",
+  
+  "sources": {
+    "vanilla": {
+      "label": "Vanilla (Official)",
+      "path": "/dayz_workspace/dayz_vanilla_files/dayzOffline.chernarusplus",
+      "branch": "1.28",
+      "readonly": true
+    },
+    "ftp": {
+      "label": "FTP Server (Live)",
+      "path": "/dayz_workspace/dayzxb_missions/dayzOffline.chernarusplus",
+      "branch": "custom-1.28",
+      "readonly": false
+    },
+    "generated": {
+      "label": "Generated Spawns",
+      "path": "/dayz_workspace",
+      "files": [
+        "LockedContainers_Spawns.json",
+        "Loot_Presets_Library.json"
+      ]
+    }
+  },
+  
+  "patchFiles": [
+    {
+      "name": "EZADMIN Base (Hobo).json",
+      "type": "static",
+      "description": "Base building objects"
+    },
+    {
+      "name": "EZStreet bm Trader.json",
+      "type": "static",
+      "description": "Trader inventory including Keys"
+    },
+    {
+      "name": "LockedContainers_Spawns.json",
+      "type": "generated",
+      "description": "Randomized locked container spawns",
+      "generator": "generate_spawns.js"
+    }
+  ],
+  
+  "mods": {
+    "locked_containers_1.28": {
+      "name": "Locked Military Containers",
+      "version": "1.28",
+      "source": "scalespeeder/DayZ-CHERNARUS-locked-military-containers-and-keys-Server-Mod-Files-and-Code",
+      "files": {
+        "types": "custom/1C-128-milicon-types.xml",
+        "events": "custom/1C-128-milicon-events.xml"
+      },
+      "containers": [
+        "Land_ContainerLocked_Blue_DE",
+        "Land_ContainerLocked_Yellow_DE",
+        "Land_ContainerLocked_Red_DE",
+        "Land_ContainerLocked_Orange_DE"
+      ],
+      "keys": [
+        "ShippingContainerKeys_Blue",
+        "ShippingContainerKeys_Yellow",
+        "ShippingContainerKeys_Red",
+        "ShippingContainerKeys_Orange"
+      ]
+    }
+  },
+  
+  "diffs": {
+    "path": "/dayz_workspace/diffs",
+    "compareBase": "vanilla",
+    "compareTarget": "ftp"
+  }
+}
+
+```
+
+---
+
+{
+  "source": "dashboard/config/sources.json",
+  "size": 2020,
+  "mtime": "2026-01-08T05:46:26.251593Z"
+}

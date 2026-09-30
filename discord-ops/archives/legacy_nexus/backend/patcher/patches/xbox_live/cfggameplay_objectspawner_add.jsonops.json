@@ -1,0 +1,9 @@
+{
+  "ops": [
+    {
+      "op": "append_unique",
+      "path": "/WorldsData/objectSpawnersArr",
+      "value": "custom/LockedContainers_Spawns.json"
+    }
+  ]
+}

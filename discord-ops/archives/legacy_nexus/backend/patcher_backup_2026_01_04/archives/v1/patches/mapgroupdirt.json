@@ -1,0 +1,6 @@
+{
+    "id": "tony_mapgroupdirt",
+    "target": "mapgroupdirt.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

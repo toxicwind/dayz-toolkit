@@ -1,0 +1,11 @@
+{
+    "id": "test_fail_xpath",
+    "type": "xml_patch",
+    "target": "db/types.xml",
+    "complex_patches": [
+        {
+            "xpath": "//type[@name='NON_EXISTENT_GHOST_CAR']/nominal",
+            "text": "666"
+        }
+    ]
+}

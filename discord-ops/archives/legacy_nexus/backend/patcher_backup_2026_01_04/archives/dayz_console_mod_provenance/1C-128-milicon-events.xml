@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events>
+  <event name="StaticContainerLocked">
+    <nominal>30</nominal>
+    <min>18</min>
+    <max>30</max>
+    <lifetime>604800</lifetime>
+    <restock>0</restock>
+    <saferadius>250</saferadius>
+    <distanceradius>600</distanceradius>
+    <cleanupradius>200</cleanupradius>
+    <flags deletable="0" init_random="0" remove_damaged="0"/>
+    <position>fixed</position>
+    <limit>mixed</limit>
+    <active>1</active>
+    <children>
+    <child type="Land_ContainerLocked_Blue_DE" min="25" max="0"/>
+    <child type="Land_ContainerLocked_Yellow_DE" min="25" max="0"/>
+    <child type="Land_ContainerLocked_Red_DE" min="25" max="0"/>
+    <child type="Land_ContainerLocked_Orange_DE" min="25" max="0"/>
+    </children>
+  </event>
+</events>

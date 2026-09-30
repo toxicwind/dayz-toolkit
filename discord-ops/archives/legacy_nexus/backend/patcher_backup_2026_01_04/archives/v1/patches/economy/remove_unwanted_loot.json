@@ -1,0 +1,9 @@
+{
+    "id": "remove_unwanted_loot",
+    "name": "Remove Unwanted Loot Items",
+    "description": "Remove cargo nets, chemlights, pox balls, pox grenades, and flags from loot pool by setting nominal=0",
+    "target": "types.xml",
+    "type": "xml_patch",
+    "notes": "GOOPSTA requirement: clean up loot pool",
+    "enabled": true
+}

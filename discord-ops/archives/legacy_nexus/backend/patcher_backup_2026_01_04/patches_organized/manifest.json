@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "name": "ezstreet_patch_collection",
+    "organized_date": "2026-01-04",
+    "base": "dayzOffline.chernarusplus",
+    "platform": "xbox",
+    "note": "Consolidated patches from multiple sources"
+  },
+  "categories": {
+    "tony_fixes": "Tony's tested changes from Jan 4, 2026",
+    "ezstreet_live": "Currently active on live server",
+    "live_xbox": "Consolidated Xbox/Nitrado rollout (GOOPSTA/Tony + live overrides)",
+    "economy": "Loot, zombies, animals, events",
+    "gameplay": "Building, stamina, movement, shock",
+    "vehicles": "Car/boat configuration",
+    "world": "Weather, temperature, wetness",
+    "ui": "HUD, map, indicators",
+    "disabled": "Available but not currently used"
+  },
+  "sources": {
+    "reference_patches": "Downloaded JSON patcher bundle (disabled by default)",
+    "tony_fixes": "GOOPSTA's tested changes from Jan 4, 2026",
+    "ezstreet_live": "Currently active patches on live FTP server"
+  },
+  "patch_groups": [
+    {
+      "name": "Tony's Fixes (Jan 4, 2026)",
+      "category": "tony_fixes",
+      "status": "TESTED - READY TO APPLY",
+      "patches": [
+        {
+          "file": "tony_fixes/vehicle_admin.xml.json",
+          "target": "cfgeventspawns.xml",
+          "enabled": true,
+          "priority": 1
+        },
+        {
+          "file": "tony_fixes/container_keys.xml.json",
+          "target": "db/types.xml",
+          "enabled": true,
+          "priority": 2
+        },
+        {
+          "file": "tony_fixes/_FULL_FILE_REPLACEMENTS.json",
+          "note": "Metadata for wholesale file copies",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "name": "Live Server Active Patches",
+      "category": "ezstreet_live",
+      "status": "CURRENTLY ACTIVE",
+      "patches": [
+        {
+          "file": "ezstreet_live/cfggameplay.json.patch_gameplay_settings.json",
+          "target": "cfggameplay.json",
+          "enabled": true,
+          "note": "StaminaMax=100.0"
+        },
+        {
+          "file": "ezstreet_live/db/globals.xml.patch_manual_override.json",
+          "target": "db/globals.xml",
+          "enabled": true,
+          "note": "ZombieMaxCount=1234, AnimalMaxCount=200, LootDamage=0.0-0.82"
+        }
+      ]
+    },
+    {
+      "name": "Live Xbox Rollup",
+      "category": "live_xbox",
+      "status": "READY",
+      "note": "Exact copies of Tony/GOOPSTA + live stamina/globals for Xbox deployment",
+      "patches": [
+        {
+          "file": "live_xbox/vehicle_admin.xml.json",
+          "target": "cfgeventspawns.xml",
+          "enabled": true,
+          "priority": 1
+        },
+        {
+          "file": "live_xbox/container_keys.xml.json",
+          "target": "db/types.xml",
+          "enabled": true,
+          "priority": 2
+        },
+        {
+          "file": "live_xbox/cfggameplay.json.patch_gameplay_settings.json",
+          "target": "cfggameplay.json",
+          "enabled": true,
+          "priority": 3
+        },
+        {
+          "file": "live_xbox/db/globals.xml.patch_manual_override.json",
+          "target": "db/globals.xml",
+          "enabled": true,
+          "priority": 4
+        }
+      ]
+    }
+  ]
+}

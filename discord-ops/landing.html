@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mildlyawesome.com</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+            cursor: none;
+        }
+        #cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #0f0;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: transform 0.1s;
+        }
+        .glitch {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8vw;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+            animation: glitch 1s infinite;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 2px 2px #f0f, -2px -2px #0ff; }
+            25% { text-shadow: -2px 2px #f0f, 2px -2px #0ff; }
+            50% { text-shadow: 2px -2px #f0f, -2px 2px #0ff; }
+            75% { text-shadow: -2px -2px #f0f, 2px 2px #0ff; }
+            100% { text-shadow: 2px 2px #f0f, -2px -2px #0ff; }
+        }
+        .matrix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        .secret {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        body:hover .secret { opacity: 0.3; }
+        .portal {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #f0f 0%, transparent 70%);
+            animation: pulse 2s infinite;
+            pointer-events: none;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.5); opacity: 0.8; }
+        }
+        .timestamp {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div id="cursor"></div>
+    <canvas class="matrix"></canvas>
+    <div class="glitch" id="text">MILDLY</div>
+    <div class="timestamp" id="time"></div>
+    <div class="secret">nothing to see here. move along.</div>
+
+    <script>
+        // Custom cursor
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', e => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Matrix rain
+        const canvas = document.querySelector('.matrix');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const chars = '01アイウエオカキクケコサシスセソタチツテト';
+        const fontSize = 14;
+        const columns = canvas.width / fontSize;
+        const drops = Array(Math.floor(columns)).fill(1);
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#0f0';
+            ctx.font = fontSize + 'px monospace';
+            for (let i = 0; i < drops.length; i++) {
+                const text = chars[Math.floor(Math.random() * chars.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            }
+        }
+        setInterval(drawMatrix, 33);
+
+        // Glitch text rotation
+        const words = ['MILDLY', 'AWESOME', 'CHAOS', 'VOID', 'MILDLYAWESOME', '???'];
+        let idx = 0;
+        setInterval(() => {
+            document.getElementById('text').textContent = words[idx++ % words.length];
+        }, 2000);
+
+        // Random portals
+        setInterval(() => {
+            const portal = document.createElement('div');
+            portal.className = 'portal';
+            portal.style.left = Math.random() * window.innerWidth + 'px';
+            portal.style.top = Math.random() * window.innerHeight + 'px';
+            document.body.appendChild(portal);
+            setTimeout(() => portal.remove(), 2000);
+        }, 3000);
+
+        // Timestamp
+        setInterval(() => {
+            const now = new Date();
+            document.getElementById('time').textContent = 
+                `UNIX: ${Math.floor(now.getTime() / 1000)} | ${now.toISOString()}`;
+        }, 100);
+
+        // Easter egg: Konami code
+        let keys = [];
+        const konami = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+        document.addEventListener('keydown', e => {
+            keys.push(e.key);
+            keys = keys.slice(-10);
+            if (keys.join(',') === konami.join(',')) {
+                document.body.style.background = '#f0f';
+                setTimeout(() => document.body.style.background = '#000', 200);
+            }
+        });
+
+        // Click to invert
+        let inverted = false;
+        document.addEventListener('click', () => {
+            inverted = !inverted;
+            document.body.style.filter = inverted ? 'invert(1)' : 'invert(0)';
+        });
+    </script>
+</body>
+</html>

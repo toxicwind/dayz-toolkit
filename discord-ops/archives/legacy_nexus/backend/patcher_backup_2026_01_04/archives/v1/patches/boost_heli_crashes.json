@@ -1,0 +1,16 @@
+{
+    "id": "boost_heli_crashes",
+    "type": "xml_patch",
+    "target": "db/events.xml",
+    "description": "Boost helicopter crash spawn count.",
+    "complex_patches": [
+        {
+            "xpath": "//event[@name='StaticHeliCrash']",
+            "values": {
+                "nominal": "15",
+                "min": "10",
+                "max": "20"
+            }
+        }
+    ]
+}

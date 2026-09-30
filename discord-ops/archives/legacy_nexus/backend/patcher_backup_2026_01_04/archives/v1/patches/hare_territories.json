@@ -1,0 +1,6 @@
+{
+    "id": "tony_hare_territories",
+    "target": "env/hare_territories.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

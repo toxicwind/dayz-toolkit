@@ -1,0 +1,23 @@
+{
+    "id": "object_spawners_arr",
+    "name": "Wire custom map object spawners",
+    "description": "Ensure WorldsData.objectSpawnersArr includes all EZStreet custom spawner JSON (trader zone, locked containers, custom missions).",
+    "target": "cfggameplay.json",
+    "path": "WorldsData",
+    "values": {
+        "objectSpawnersArr": [
+            "custom/EZStreet_bm_Trader.json",
+            "custom/EZStreet_Trader.json",
+            "custom/EZStreet_AdminBase.json",
+            "custom/EZStreet_BuildTrailer_Zap.json",
+            "custom/EZStreet_FightCage_Nwaf.json",
+            "custom/EZStreet_TopoCustom_Dylan.json",
+            "custom/map_trader.json",
+            "custom/map_locked_containers.json",
+            "custom/map_missions.json"
+        ]
+    },
+    "enabled": true,
+    "category": "world",
+    "type": "json_merge"
+}

@@ -1,0 +1,872 @@
+{
+  "ops": [
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback']//item[@name='HatchbackWheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback_Blue']//item[@name='HatchbackWheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback_Blue']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback_Blue']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback_Blue']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback_Blue']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback_White']//item[@name='HatchbackWheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback_White']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback_White']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback_White']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='OffroadHatchback_White']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Offroad_02']//item[@name='Offroad_02_Wheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Offroad_02']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Offroad_02']//item[@name='GlowPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Offroad_02']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Offroad_02']//item[@name='Offroad_02_Door_1_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Offroad_02']//item[@name='Offroad_02_Door_1_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Offroad_02']//item[@name='Offroad_02_Door_2_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Offroad_02']//item[@name='Offroad_02_Door_2_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Offroad_02']//item[@name='Offroad_02_Hood']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Offroad_02']//item[@name='Offroad_02_Trunk']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='CivSedanWheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='CivSedanDoors_BackLeft']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='CivSedanDoors_BackRight']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='CivSedanDoors_CoDriver']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='CivSedanDoors_Driver']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='CivSedanHood']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan']//item[@name='CivSedanTrunk']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='CivSedanWheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='CivSedanDoors_BackLeft']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='CivSedanDoors_BackRight']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='CivSedanDoors_CoDriver']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='CivSedanDoors_Driver']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='CivSedanHood']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Wine']//item[@name='CivSedanTrunk']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='CivSedanWheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='CivSedanDoors_BackLeft']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='CivSedanDoors_BackRight']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='CivSedanDoors_CoDriver']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='CivSedanDoors_Driver']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='CivSedanHood']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CivilianSedan_Black']//item[@name='CivSedanTrunk']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='Hatchback_02_Wheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='Hatchback_02_Door_1_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='Hatchback_02_Door_1_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='Hatchback_02_Door_2_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='Hatchback_02_Door_2_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='Hatchback_02_Hood']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02']//item[@name='Hatchback_02_Trunk']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='Hatchback_02_Wheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='Hatchback_02_Door_1_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='Hatchback_02_Door_1_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='Hatchback_02_Door_2_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='Hatchback_02_Door_2_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='Hatchback_02_Hood']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Black']//item[@name='Hatchback_02_Trunk']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='Hatchback_02_Wheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='Hatchback_02_Door_1_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='Hatchback_02_Door_1_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='Hatchback_02_Door_2_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='Hatchback_02_Door_2_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='Hatchback_02_Hood']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Hatchback_02_Blue']//item[@name='Hatchback_02_Trunk']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='Sedan_02_Wheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='Sedan_02_Door_1_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='Sedan_02_Door_1_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='Sedan_02_Door_2_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='Sedan_02_Door_2_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='Sedan_02_Hood']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02']//item[@name='Sedan_02_Trunk']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='Sedan_02_Wheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='Sedan_02_Door_1_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='Sedan_02_Door_1_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='Sedan_02_Door_2_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='Sedan_02_Door_2_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='Sedan_02_Hood']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Red']//item[@name='Sedan_02_Trunk']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='Sedan_02_Wheel']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='CarRadiator']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='CarBattery']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='SparkPlug']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='HeadlightH7']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='Sedan_02_Door_1_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='Sedan_02_Door_1_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='Sedan_02_Door_2_1']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='Sedan_02_Door_2_2']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='Sedan_02_Hood']",
+      "set": {
+        "chance": "1.00"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='Sedan_02_Grey']//item[@name='Sedan_02_Trunk']",
+      "set": {
+        "chance": "1.00"
+      }
+    }
+  ]
+}

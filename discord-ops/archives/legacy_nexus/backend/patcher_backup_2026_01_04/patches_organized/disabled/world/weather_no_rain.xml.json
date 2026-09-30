@@ -1,0 +1,38 @@
+{
+  "ops": [
+    {
+      "op": "set_attr",
+      "xpath": ".//rain/current",
+      "set": {
+        "actual": "0.0",
+        "time": "0",
+        "duration": "32768"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//rain/limits",
+      "set": {
+        "min": "0.0",
+        "max": "0.0"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//rain/changelimits",
+      "set": {
+        "min": "0.0",
+        "max": "0.0"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//rain/thresholds",
+      "set": {
+        "min": "1.0",
+        "max": "1.0",
+        "end": "0"
+      }
+    }
+  ]
+}

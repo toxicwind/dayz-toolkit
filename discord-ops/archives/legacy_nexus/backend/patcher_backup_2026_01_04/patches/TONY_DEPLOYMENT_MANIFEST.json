@@ -1,0 +1,51 @@
+{
+  "deployment_name": "tony_fixes_jan4_2026",
+  "description": "Tony's tested configuration changes from Jan 4, 2026",
+  "tested_by": "GOOPSTA (Tony)",
+  "test_date": "2026-01-04 night",
+  "test_results": "100% cars spawning confirmed",
+  "patches": [
+    {
+      "name": "tony_vehicle_admin",
+      "file": "backend/patcher/patches/tony_vehicle_admin.json",
+      "priority": 1,
+      "safe": true,
+      "description": "Replace admin vehicle spawn"
+    },
+    {
+      "name": "tony_container_keys",
+      "file": "backend/patcher/patches/tony_container_keys.json",
+      "priority": 2,
+      "safe": true,
+      "description": "Fix container key spawn categories"
+    },
+    {
+      "name": "tony_spawnable_types",
+      "file": "backend/patcher/patches/tony_spawnable_types.json",
+      "priority": 3,
+      "safe": false,
+      "description": "Major spawnable types overhaul - REQUIRES REVIEW",
+      "note": "Consider full file replacement"
+    }
+  ],
+  "files_to_copy_wholesale": [
+    {
+      "source": "exploration/tony-fixes/original_files/types.xml",
+      "target": "db/types.xml",
+      "reason": "Car/boat parts configuration - too complex for patching",
+      "backup_required": true
+    },
+    {
+      "source": "exploration/tony-fixes/original_files/cfgspawnabletypes.xml",
+      "target": "cfgspawnabletypes.xml",
+      "reason": "Major rewrite with hoarder tags",
+      "backup_required": true
+    }
+  ],
+  "exclude_files": [
+    {
+      "file": "exploration/tony-fixes/original_files/events.xml",
+      "reason": "Contains NaN values - use live baseline instead"
+    }
+  ]
+}

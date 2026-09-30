@@ -1,0 +1,198 @@
+---
+tasks:
+  - key: unlimited_stamina
+    title: "Unlimited stamina"
+    priority: P0
+    status: ready
+    scope: >-
+      Raise or disable stamina drain so survivors can sprint continuously on the live server without
+      mods or admin commands.
+    surface: >-
+      cfggameplay.json > PlayerData > StaminaData (maxStamina, staminaDepletionSpeed, regen settings)
+      plus serverDZ.cfg enableCfgGameplay flag.
+    acceptance: >-
+      After a restart, a fresh character can sprint with 8+ kg inventory for five minutes with no
+      exhaustion while server console logs show the cfgGameplay override loading without errors.
+    owner:
+  - key: fresh_spawn_loadout
+    title: "Fresh spawn loadout"
+    priority: P1
+    status: ready
+    scope: >-
+      Ship a curated fresh spawn preset so new characters begin with radio, food, and starter tools
+      without relying on random CLE pulls.
+    surface: >-
+      missions/<terrain>/db/spawnPresets/*.json preset files referenced by cfggameplay.json
+      PlayerData.spawnGearPresetFiles.
+    acceptance: >-
+      Two consecutive fresh spawns receive identical defined gear and server script logs confirm the
+      preset JSON file loaded successfully.
+    owner:
+  - key: build_anywhere
+    title: "Build anywhere"
+    priority: P0
+    status: ready
+    scope: >-
+      Re-enable base building in problem areas by disabling hologram placement restrictions while
+      keeping exploit checks off only where needed.
+    surface: >-
+      cfggameplay.json > BaseBuildingData > HologramData (disableBaseBuildingRestrictions,
+      disableIsCollidingBBoxCheck, disableIsCollidingPlayerCheck).
+    acceptance: >-
+      QA can place a fence kit on uneven rocks behind Black Market without "Cannot place object"
+      and server logs show cfggameplay applied for the active mission.
+    owner:
+  - key: map_position_direction
+    title: "Fix map position/direction"
+    priority: P0
+    status: ready
+    scope: >-
+      Ensure all players can open the map and see their position/heading regardless of owning a
+      physical map item.
+    surface: >-
+      cfggameplay.json > MapData (ignoreMapOwnership, displayPlayerPosition, displayMapStats,
+      reduceMapItemLockouts per-terrain as needed).
+    acceptance: >-
+      After restart, pressing `M` on a new spawn shows the player arrow and bearing overlay on the
+      in-game map for both Chernarus and any hosted DLC terrains.
+    owner:
+  - key: pristine_loot_policy
+    title: "Pristine loot policy"
+    priority: P1
+    status: ready
+    scope: >-
+      Define whether all CLE loot spawns pristine or within a tight damage band so gear feels fresh
+      without breaking balance.
+    surface: >-
+      globals.xml <damage> settings (lootMinDamage, lootMaxDamage) plus validation script/output
+      included in tooling.
+    acceptance: >-
+      Five random world spawns inspected via admin camera all show 100% health and automated
+      validation run logs the configured global bounds before restart.
+    owner:
+  - key: remove_bad_loot
+    title: "Remove pox/chemlight/xmas loot"
+    priority: P1
+    status: ready
+    scope: >-
+      Eliminate undesired clutter items (cannabis buds, pox injectors, chemlights, cargo nets, Xmas
+      lights) from the economy so they never spawn from CLE.
+    surface: >-
+      db/types.xml entries for the specified classnames (nominal, min, usage, category) plus
+      mapgrouppos overrides if required.
+    acceptance: >-
+      CLE preview or community economy viewer shows each listed classname with nominal 0 and no
+      active events after reload; live loot sweep finds none.
+    owner:
+  - key: add_curated_loot
+    title: "Add MJ packs / cigs / keys"
+    priority: P1
+    status: ready
+    scope: >-
+      Introduce MJ packs, cigarette packs, and container keys with sane spawn rates to support new
+      gameplay loops.
+    surface: >-
+      db/types.xml additions for each classname plus usage/category tags and, if needed,
+      events.xml hooks for special key containers.
+    acceptance: >-
+      CLE dump shows new classnames with expected nominal counts and a 10-minute admin sweep finds at
+      least one of the new items per class.
+    owner:
+  - key: cars_spawn_complete
+    title: "Cars spawn complete"
+    priority: P1
+    status: ready
+    scope: >-
+      Make all drivable cars appear with full panels, wheels, battery, spark plug, radiator, and
+      fluids so players can drive immediately.
+    surface: >-
+      cfgspawnabletypes.xml attachment/cargo definitions for each vehicle class plus matching
+      events.xml vehicle counts and restock timers.
+    acceptance: >-
+      After wiping vehicle spawns, the first spawned Olga and Gunter both appear with all slots
+      filled and ready-to-drive status confirmed via admin panel.
+    owner:
+  - key: boats_ready_with_fuel
+    title: "Boats spawn equipped + fuel"
+    priority: P1
+    status: ready
+    scope: >-
+      Ensure boats spawn with spark plug (or battery) installed and a fuel level high enough to leave
+      the dock without admin help.
+    surface: >-
+      cfgspawnabletypes.xml for boat classes plus any init script or mission event required to set
+      fluid levels post-spawn.
+    acceptance: >-
+      New boat spawn contains the ignition component plus at least 50% fuel as visible in vehicle UI
+      for two consecutive restarts.
+    owner:
+  - key: trader_and_black_market
+    title: "Trader + Black Market"
+    priority: P2
+    status: ready
+    scope: >-
+      Deploy the selected trader mods, configure buy/sell tables, and tie them into CE + safezone
+      rules so both public trader and black market function predictably.
+    surface: >-
+      mod configs (TraderConfig.txt / JSON), trader position files, safezone/godmode rules, and any
+      CE adjustments for stock items.
+    acceptance: >-
+      Trader NPCs appear at the configured coordinates, menus show populated stock, and a full buy +
+      sell transaction logs to server console without script errors.
+    owner:
+  - key: locked_military_containers
+    title: "Locked military containers event"
+    priority: P2
+    status: ready
+    scope: >-
+      Introduce locked military container events with defined spawn points, required keys, and loot
+      contents.
+    surface: >-
+      events.xml new event definition, cfgeventspawns.xml coordinates, plus supporting types.xml
+      entries and key item wiring.
+    acceptance: >-
+      After restart, `event status` shows the new container event active and a spawned container
+      requires a matching key before loot becomes accessible.
+    owner:
+  - key: gas_zones_policy
+    title: "Gas zones policy"
+    priority: P2
+    status: ready
+    scope: >-
+      Limit active gas zones to the agreed list (Tisy + Rify) or replace them with updated
+      coordinates while disabling all others.
+    surface: >-
+      cfgcontaminatedareas.json (or mission-specific contaminatedAreaManager configs) plus related
+      events entries for the terrains in rotation.
+    acceptance: >-
+      After server restart, only the chosen coordinates show gas particle effects and Geiger hits;
+      random patrols elsewhere remain clear across two restarts.
+    owner:
+  - key: increase_heli_crashes
+    title: "Increase heli crashes"
+    priority: P2
+    status: ready
+    scope: >-
+      Raise helicopter crash event counts/restock so high-tier loot remains attainable without
+      over-saturating the map.
+    surface: >-
+      events.xml definitions for StaticHeliCrash (and variants) plus cfgeventspawns.xml spawn lists
+      if additional positions are needed.
+    acceptance: >-
+      CLE statistics show the higher nominal count and QA finds at least two heli crashes within the
+      first 45 minutes after a clean restart.
+    owner:
+  - key: lower_misc_clothes_spawns
+    title: "Lower misc/clothes spawn rate"
+    priority: P1
+    status: ready
+    scope: >-
+      Reduce spawn pressure for generic clothing and miscellaneous junk so higher-value loot can
+      appear without increasing total CLE budget.
+    surface: >-
+      types.xml category entries for clothing/misc classes (nominal, min, restock timers) and any
+      category tag adjustments required.
+    acceptance: >-
+      CLE diff before/after shows reduced nominal counts for targeted categories and live testing
+      sees fewer duplicate clothing piles in starter towns.
+    owner:

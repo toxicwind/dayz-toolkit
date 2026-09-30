@@ -1,0 +1,14 @@
+{
+    "id": "custom_loadout",
+    "name": "Custom Loadout",
+    "description": "Custom spawn gear for fresh spawns",
+    "target": "cfggameplay.json",
+    "path": "PlayerData",
+    "values": {
+        "spawnGearPresetFiles": [
+            "custom/EZStreet_Loadout_Fresh.json"
+        ]
+    },
+    "enabled": true,
+    "type": "json_merge"
+}

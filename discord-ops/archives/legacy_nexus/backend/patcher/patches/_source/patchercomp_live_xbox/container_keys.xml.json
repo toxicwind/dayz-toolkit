@@ -1,0 +1,47 @@
+{
+  "description": "Fix container keys - remove weapon/military/tier4 tags",
+  "tested": "2026-01-04 night by GOOPSTA",
+  "keys": [
+    "ShippingContainerKeys_Orange",
+    "ShippingContainerKeys_Yellow",
+    "ShippingContainerKeys_Blue"
+  ],
+  "operations": [
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Orange']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Orange']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Orange']/value[@name='Tier4']"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Yellow']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Yellow']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Yellow']/value[@name='Tier4']"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Blue']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Blue']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Blue']/value[@name='Tier4']"
+    }
+  ]
+}

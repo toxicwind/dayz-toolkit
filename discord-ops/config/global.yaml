@@ -1,0 +1,29 @@
+# Global Configuration
+nitrado:
+  api_token: "yuZzSgKGyRczGisJtlhEWuFXxoPH8mATaoLl83un7Sb5A5fKVtZMnC-HFAlhV5Kex-slb7PS_ABt-4q8YkyMv5tiTjwIzIQoWeDJ"
+  # Default/Fallback Service ID (can be overridden by tenant)
+  service_id: 18302446
+  email: "Higlak115@gmail.com"
+  password: "REDACTED"
+
+dashboard:
+  enabled: true
+  port: 18789
+  public_https_port: 18783
+  secret_key: "e39ab368f70aacec72725fe8f5a21b15003ef114bc362ddbca0df13923c10c77"
+
+metrics:
+  enabled: true
+  port: 9110
+
+data_repos:
+  dayz_vanilla:
+    url: "https://github.com/BohemiaInteractive/DayZ-Central-Economy.git"
+    path: "data/dayz_vanilla/official_repo"
+    branch: "master"
+
+
+logging:
+  level: "info"
+  to_file: true
+  to_discord: true

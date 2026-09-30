@@ -1,0 +1,6 @@
+{
+    "id": "tony_bear_territories",
+    "target": "env/bear_territories.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

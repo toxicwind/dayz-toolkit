@@ -1,0 +1,92 @@
+{
+  "ops": [
+    {
+      "op": "upsert",
+      "parent_xpath": ".",
+      "tag": "event",
+      "key_attrs": {
+        "name": "StaticContainerLocked"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "16"
+        },
+        {
+          "tag": "min",
+          "text": "14"
+        },
+        {
+          "tag": "max",
+          "text": "0"
+        },
+        {
+          "tag": "lifetime",
+          "text": "2400"
+        },
+        {
+          "tag": "restock",
+          "text": "0"
+        },
+        {
+          "tag": "saferadius",
+          "text": "500"
+        },
+        {
+          "tag": "distanceradius",
+          "text": "500"
+        },
+        {
+          "tag": "cleanupradius",
+          "text": "250"
+        },
+        {
+          "tag": "flags",
+          "attributes": {
+            "deletable": "1",
+            "init_random": "0",
+            "remove_damaged": "0"
+          }
+        },
+        {
+          "tag": "position",
+          "text": "fixed"
+        },
+        {
+          "tag": "limit",
+          "text": "child"
+        },
+        {
+          "tag": "active",
+          "text": "1"
+        },
+        {
+          "tag": "children",
+          "children": [
+            {
+              "tag": "child",
+              "attributes": {
+                "lootmax": "9",
+                "lootmin": "5",
+                "max": "12",
+                "min": "5",
+                "type": "Land_ContainerLocked_Blue_DE"
+              }
+            },
+            {
+              "tag": "child",
+              "attributes": {
+                "lootmax": "9",
+                "lootmin": "5",
+                "max": "12",
+                "min": "5",
+                "type": "Land_ContainerLocked_Yellow_DE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

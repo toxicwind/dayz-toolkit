@@ -1,0 +1,11 @@
+{
+    "id": "hatchback_nominals",
+    "type": "xml_patch",
+    "target": "db/types.xml",
+    "description": "Increase nominals for Hatchback_02 to fix spawn blocking",
+    "complex_patches": [
+        { "xpath": "//type[@name='Hatchback_02']/nominal", "text": "2" },
+        { "xpath": "//type[@name='Hatchback_02_Black']/nominal", "text": "2" },
+        { "xpath": "//type[@name='Hatchback_02_Blue']/nominal", "text": "2" }
+    ]
+}

@@ -1,0 +1,8 @@
+[
+    {
+        "op": "set_attr",
+        "xpath": "//var[@name='ZombieMaxCount']",
+        "attr": "value",
+        "value": "800"
+    }
+]

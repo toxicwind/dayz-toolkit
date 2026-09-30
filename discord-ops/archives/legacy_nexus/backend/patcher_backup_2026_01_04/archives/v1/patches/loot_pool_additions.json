@@ -1,0 +1,23 @@
+{
+    "id": "loot_pool_additions",
+    "name": "Add Custom Items to Loot",
+    "description": "Add MJ packs, cigarettes, container keys to loot pool",
+    "target": "types.xml",
+    "operations": [
+        {
+            "type": "boost_spawn_rate",
+            "items": [
+                "Cannabis",
+                "Canteen",
+                "Cigarettes",
+                "CigarettePack_Chernamorka",
+                "CigarettePack_Партизан",
+                "CigarettePack_Maxim",
+                "KeyCard"
+            ],
+            "nominal_multiplier": 5.0,
+            "min_multiplier": 3.0
+        }
+    ],
+    "enabled": true
+}

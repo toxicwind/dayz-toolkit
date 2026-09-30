@@ -1,0 +1,121 @@
+tasks:
+  - id: 1
+    description: "Implement Nitrado API Auth pooling"
+    priority: extreme
+  - id: 2
+    description: "Donor pattern: Killfeed log streaming (from SowinskiBraeden/dayz-reforger)"
+    priority: high
+  - id: 3
+    description: "Implement Mission Pattern: Treasure Hunt (emergent)"
+    priority: high
+  - id: 4
+    description: "Implement Mission Pattern: King of the Hill (emergent)"
+    priority: high
+  - id: 5
+    description: "Donor pattern: RCON Cross-chat (from CarimDayZ/carim-discord-bot)"
+    priority: medium
+  - id: 6
+    description: "Implement Global Stats Dashboard integration"
+    priority: medium
+  - id: 7
+    description: "Implement Alt Account Detection (pattern donor: Sat727)"
+    priority: high
+  - id: 8
+    description: "Implement Faction Management UI"
+    priority: high
+  - id: 9
+    description: "Donor pattern: CFTools Data API integration (from Ariastarcos/cftools-discord-bot)"
+    priority: medium
+  - id: 10
+    description: "Implement Automated Server Reboots via Nitrado API"
+    priority: medium
+  - id: 11
+    description: "Implement Player Reputation System"
+    priority: low
+  - id: 12
+    description: "Implement Market/Economy System (Discord Integration)"
+    priority: high
+  - id: 13
+    description: "Implement In-game Bounty System"
+    priority: high
+  - id: 14
+    description: "Implement Automated Support Ticket mapping to Discord"
+    priority: medium
+  - id: 15
+    description: "Implement Server Health Monitoring (Resource Usage)"
+    priority: medium
+  - id: 16
+    description: "Implement Geofenced Alerts (Player Proximity)"
+    priority: low
+  - id: 17
+    description: "Implement VPPAdminTools Log integration"
+    priority: high
+  - id: 18
+    description: "Implement Donor Perks automated provisioning"
+    priority: high
+  - id: 19
+    description: "Implement Multi-deployment Sync (Cross-server chat)"
+    priority: medium
+  - id: 20
+    description: "Implement End-to-end Verification Suite for modern infra"
+    priority: extreme
+  - id: 21
+    description: "Productionize: WebSocket-based live killfeed component (Next.js)"
+    priority: extreme
+  - id: 22
+    description: "Productionize: Redis-backed event bus for cross-agent signaling"
+    priority: extreme
+  - id: 23
+    description: "Productionize: Shadcn Delta-updates for real-time dashboard tables"
+    priority: high
+  - id: 24
+    description: "Productionize: Advanced Killfeed (Weapon Icons + Map Coordinates)"
+    priority: high
+  - id: 25
+    description: "Productionize: Automated Mission 'Treasure Hunt' with Webhook signaling"
+    priority: high
+  - id: 26
+    description: "Productionize: Secure Clerk-to-Bot RBAC synchronization"
+    priority: extreme
+  - id: 27
+    description: "Productionize: Nitrado Log-streaming sidecar (Buffered/Reliable)"
+    priority: extreme
+  - id: 28
+    description: "Productionize: Global Leaderboard with ELO/MMR ranking system"
+    priority: high
+  - id: 29
+    description: "Productionize: Automated Base-raid detection alerts (Discord)"
+    priority: high
+  - id: 30
+    description: "Productionize: Web-based RCON Console with command history"
+    priority: medium
+  - id: 31
+    description: "Productionize: Player Proximity Alerts (Heatmap integration)"
+    priority: medium
+  - id: 32
+    description: "Productionize: Automated Server Performance Tuning (Nitrado API)"
+    priority: medium
+  - id: 33
+    description: "Productionize: Multi-cluster 'MildlyAwesome' mesh sync (Cross-server chat)"
+    priority: high
+  - id: 34
+    description: "Productionize: Comprehensive Audit Logging (Dokploy + Bot)"
+    priority: medium
+  - id: 35
+    description: "Productionize: Self-healing Proxy (Traefik + Cloudflare fallback)"
+    priority: extreme
+  - id: 36
+    description: "Productionize: CI/CD Pipeline for zero-downtime dashboard updates"
+    priority: high
+  - id: 37
+    description: "Productionize: Advanced PII Scrubbing for public killfeeds"
+    priority: high
+  - id: 38
+    description: "Productionize: In-game Item Market with Discord Wallet integration"
+    priority: high
+  - id: 39
+    description: "Productionize: Automated Bug/Crash reporting from server logs"
+    priority: medium
+  - id: 40
+    description: "Productionize: Fix Python Import Errors (modules/backend resolution)"
+    priority: extreme

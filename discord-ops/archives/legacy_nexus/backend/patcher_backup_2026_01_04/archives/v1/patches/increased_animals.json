@@ -1,0 +1,14 @@
+{
+  "id": "increased_animals",
+  "name": "Increased Animals",
+  "description": "Boost animal spawn rates in events.xml",
+  "target": "db/events.xml",
+  "type": "xml_patch",
+  "xpath": "//event[contains(@name, 'Animal')]",
+  "values": {
+    "nominal_multiplier": 3.0,
+    "min_multiplier": 2.0
+  },
+  "notes": "Modifies nominal/min values for animal events",
+  "enabled": true
+}

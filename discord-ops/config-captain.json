@@ -1,0 +1,393 @@
+{
+	"namespace": "captain",
+	"pro": {
+		"installationId": "e17b3be0-aa19-4fa7-8436-916377fcd190"
+	},
+	"featureFlags": {
+		"isProEnabled": true
+	},
+	"customDomain": "rover.mildlyawesome.com",
+	"emailAddress": "deverchrisortega@gmail.com",
+	"hasRootSsl": true,
+	"forceRootSsl": true,
+	"hashedPassword": "$2a$10$A9OBO1kAERDPPxvnRS2pPuqCxGJhnTv.r4MshRrYzBQ0j2u9hps8i",
+	"appDefinitions": {
+		"reverse-effusiongallery": {
+			"hasPersistentData": false,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "UPSTREAM_HTTP_ADDRESS",
+					"value": "http://172.96.160.178:17110"
+				},
+				{
+					"key": "CLIENT_MAX_BODY_SIZE",
+					"value": "1256M"
+				}
+			],
+			"volumes": [],
+			"ports": [],
+			"tags": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2023-10-23T03:30:12.671Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2023-10-23T03:30:17.166Z",
+					"deployedImageName": "caprover/nginx-reverse-proxy:1-74ec02a",
+					"gitHash": ""
+				},
+				{
+					"version": 2,
+					"timeStamp": "2023-10-24T09:49:41.640Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:2",
+					"gitHash": ""
+				},
+				{
+					"version": 3,
+					"timeStamp": "2023-10-24T09:56:09.871Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:3",
+					"gitHash": ""
+				},
+				{
+					"version": 4,
+					"timeStamp": "2023-10-29T18:35:53.842Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:4",
+					"gitHash": ""
+				},
+				{
+					"version": 5,
+					"timeStamp": "2024-01-17T18:45:40.566Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:5",
+					"gitHash": ""
+				},
+				{
+					"version": 6,
+					"timeStamp": "2024-01-17T18:48:06.896Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:6",
+					"gitHash": ""
+				},
+				{
+					"version": 7,
+					"timeStamp": "2024-01-17T18:48:36.144Z",
+					"deployedImageName": "caprover/nginx-reverse-proxy:1-74ec02a",
+					"gitHash": ""
+				},
+				{
+					"version": 8,
+					"timeStamp": "2024-01-17T18:49:14.284Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:8",
+					"gitHash": ""
+				},
+				{
+					"version": 9,
+					"timeStamp": "2024-01-17T18:49:18.492Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:9",
+					"gitHash": ""
+				},
+				{
+					"version": 10,
+					"timeStamp": "2024-01-17T18:49:35.116Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:10",
+					"gitHash": ""
+				},
+				{
+					"version": 11,
+					"timeStamp": "2024-01-17T18:49:38.649Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:11",
+					"gitHash": ""
+				},
+				{
+					"version": 12,
+					"timeStamp": "2024-01-17T18:49:41.483Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:12",
+					"gitHash": ""
+				},
+				{
+					"version": 13,
+					"timeStamp": "2024-01-17T18:49:51.649Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:13",
+					"gitHash": ""
+				},
+				{
+					"version": 14,
+					"timeStamp": "2024-01-17T18:49:56.777Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:14",
+					"gitHash": ""
+				},
+				{
+					"version": 15,
+					"timeStamp": "2024-01-17T18:50:02.084Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:15",
+					"gitHash": ""
+				},
+				{
+					"version": 16,
+					"timeStamp": "2024-01-17T18:50:06.538Z",
+					"deployedImageName": "img-captain-reverse-effusiongallery:16",
+					"gitHash": ""
+				}
+			],
+			"deployedVersion": 16,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "galleryeffusion.com",
+					"hasSsl": true
+				},
+				{
+					"publicDomain": "www.galleryeffusion.com",
+					"hasSsl": true
+				}
+			],
+			"hasDefaultSubDomainSsl": true,
+			"redirectDomain": "galleryeffusion.com",
+			"forceSsl": true,
+			"websocketSupport": false,
+			"containerHttpPort": 17110,
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			},
+			"customNginxConfig": "<%\nif (s.forceSsl) {\n%>\n    server {\n\n        listen       80;\n\n        server_name  <%-s.publicDomain%>;\n\n        # Used by Lets Encrypt\n        location /.well-known/acme-challenge/ {\n            root <%-s.staticWebRoot%>;\n        }\n\n        # Used by CapRover for health check\n        location /.well-known/captain-identifier {\n            root <%-s.staticWebRoot%>;\n        }\n\n        location / {\n            return 302 https://$http_host$request_uri;\n        }\n    }\n<%\n}\n%>\n\n\nserver {\n\n    <%\n    if (!s.forceSsl) {\n    %>\n        listen       80;\n    <%\n    }\n    if (s.hasSsl) {\n    %>\n        listen              443 ssl http2;\n        ssl_certificate     <%-s.crtPath%>;\n        ssl_certificate_key <%-s.keyPath%>;\n    <%\n    }\n    %>\n\n        client_max_body_size 500m;\n\n        server_name  <%-s.publicDomain%>;\n\n        # 127.0.0.11 is DNS set up by Docker, see:\n        # https://docs.docker.com/engine/userguide/networking/configure-dns/\n        # https://github.com/moby/moby/issues/20026\n        resolver 127.0.0.11 valid=10s;\n        # IMPORTANT!! If you are here from an old thread to set a custom port, you do not need to modify this port manually here!!\n        # Simply change the Container HTTP Port from the dashboard HTTP panel\n        set $upstream http://172.96.160.178:17110;\n\n        location / {\n\n\n\t<%\n\tif (s.redirectToPath) {\n\t%>\n\t    return 302 <%-s.redirectToPath%>;\n\t<%\n\t} else {\n\t%>\n\n\t\t    <%\n\t\t    if (s.httpBasicAuthPath) {\n\t\t    %>\n\t\t\t    auth_basic           \"Restricted Access\";\n\t\t\t    auth_basic_user_file <%-s.httpBasicAuthPath%>; \n\t\t    <%\n\t\t    }\n\t\t    %>\n\n\t\t\t    proxy_pass $upstream;\n\t\t\t    proxy_set_header Host $host;\n\t\t\t    proxy_set_header X-Real-IP $remote_addr;\n\t\t\t    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n\t\t\t    proxy_set_header X-Forwarded-Proto https;\n\n\t\t    <%\n\t\t    if (s.websocketSupport) {\n\t\t    %>\n\t\t\t    proxy_set_header Upgrade $http_upgrade;\n\t\t\t    proxy_set_header Connection \"upgrade\";\n\t\t\t    proxy_http_version 1.1;\n\t\t    <%\n\t\t    }\n\t\t    %>\n    \n    \n\t<%\n\t}\n\t%>\n\t\n        }\n\n        # Used by Lets Encrypt\n        location /.well-known/acme-challenge/ {\n            root <%-s.staticWebRoot%>;\n        }\n        \n        # Used by CapRover for health check\n        location /.well-known/captain-identifier {\n            root <%-s.staticWebRoot%>;\n        }\n\n        error_page 502 /captain_502_custom_error_page.html;\n        location = /captain_502_custom_error_page.html {\n                root <%-s.customErrorPagesDirectory%>;\n                internal;\n        }\n}\n"
+		},
+		"mysticfoxmyco-web": {
+			"hasPersistentData": false,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "UPSTREAM_HTTP_ADDRESS",
+					"value": "http://172.96.160.178:17210"
+				},
+				{
+					"key": "CLIENT_MAX_BODY_SIZE",
+					"value": "3256M"
+				}
+			],
+			"volumes": [],
+			"ports": [],
+			"tags": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2024-02-18T20:52:08.973Z",
+					"deployedImageName": "img-captain-mysticfoxmyco-web:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2024-02-18T20:52:13.237Z",
+					"deployedImageName": "caprover/nginx-reverse-proxy:latest",
+					"gitHash": ""
+				}
+			],
+			"deployedVersion": 1,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "mysticfoxmyco.com",
+					"hasSsl": true
+				},
+				{
+					"publicDomain": "www.mysticfoxmyco.com",
+					"hasSsl": true
+				}
+			],
+			"hasDefaultSubDomainSsl": true,
+			"redirectDomain": "mysticfoxmyco.com",
+			"forceSsl": true,
+			"websocketSupport": false,
+			"containerHttpPort": 80,
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			},
+			"customNginxConfig": "<%\nif (s.forceSsl) {\n%>\n    server {\n\n        listen       80;\n\n        server_name  <%-s.publicDomain%>;\n\n        # Used by Lets Encrypt\n        location /.well-known/acme-challenge/ {\n            root <%-s.staticWebRoot%>;\n        }\n\n        # Used by CapRover for health check\n        location /.well-known/captain-identifier {\n            root <%-s.staticWebRoot%>;\n        }\n\n        location / {\n            return 302 https://$http_host$request_uri;\n        }\n    }\n<%\n}\n%>\n\n\nserver {\n\n    <%\n    if (!s.forceSsl) {\n    %>\n        listen       80;\n    <%\n    }\n    if (s.hasSsl) {\n    %>\n        listen              443 ssl http2;\n        ssl_certificate     <%-s.crtPath%>;\n        ssl_certificate_key <%-s.keyPath%>;\n    <%\n    }\n    %>\n\n        client_max_body_size 500m;\n\n        server_name  <%-s.publicDomain%>;\n\n        # 127.0.0.11 is DNS set up by Docker, see:\n        # https://docs.docker.com/engine/userguide/networking/configure-dns/\n        # https://github.com/moby/moby/issues/20026\n        resolver 127.0.0.11 valid=10s;\n        # IMPORTANT!! If you are here from an old thread to set a custom port, you do not need to modify this port manually here!!\n        # Simply change the Container HTTP Port from the dashboard HTTP panel\n        set $upstream http://172.96.160.178:17210;\n\n        location / {\n\n\n\t<%\n\tif (s.redirectToPath) {\n\t%>\n\t    return 302 <%-s.redirectToPath%>;\n\t<%\n\t} else {\n\t%>\n\n\t\t    <%\n\t\t    if (s.httpBasicAuthPath) {\n\t\t    %>\n\t\t\t    auth_basic           \"Restricted Access\";\n\t\t\t    auth_basic_user_file <%-s.httpBasicAuthPath%>; \n\t\t    <%\n\t\t    }\n\t\t    %>\n\n\t\t\t    proxy_pass $upstream;\n\t\t\t    proxy_set_header Host $host;\n\t\t\t    proxy_set_header X-Real-IP $remote_addr;\n\t\t\t    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n\t\t\t    proxy_set_header X-Forwarded-Proto https;\n\n\t\t    <%\n\t\t    if (s.websocketSupport) {\n\t\t    %>\n\t\t\t    proxy_set_header Upgrade $http_upgrade;\n\t\t\t    proxy_set_header Connection \"upgrade\";\n\t\t\t    proxy_http_version 1.1;\n\t\t    <%\n\t\t    }\n\t\t    %>\n    \n    \n\t<%\n\t}\n\t%>\n\t\n        }\n\n        # Used by Lets Encrypt\n        location /.well-known/acme-challenge/ {\n            root <%-s.staticWebRoot%>;\n        }\n        \n        # Used by CapRover for health check\n        location /.well-known/captain-identifier {\n            root <%-s.staticWebRoot%>;\n        }\n\n        error_page 502 /captain_502_custom_error_page.html;\n        location = /captain_502_custom_error_page.html {\n                root <%-s.customErrorPagesDirectory%>;\n                internal;\n        }\n}\n"
+		},
+		"arlockworks-web": {
+			"hasPersistentData": false,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "UPSTREAM_HTTP_ADDRESS",
+					"value": "http://172.96.160.178:17310"
+				},
+				{
+					"key": "CLIENT_MAX_BODY_SIZE",
+					"value": "4256M"
+				}
+			],
+			"volumes": [],
+			"ports": [],
+			"tags": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2025-04-29T01:24:03.905Z",
+					"deployedImageName": "img-captain-arlockworks-web:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2025-04-29T01:24:08.603Z",
+					"deployedImageName": "caprover/nginx-reverse-proxy:1-ef5ffcb",
+					"gitHash": ""
+				}
+			],
+			"deployedVersion": 1,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "arlockworks.com",
+					"hasSsl": true
+				},
+				{
+					"publicDomain": "www.arlockworks.com",
+					"hasSsl": true
+				}
+			],
+			"hasDefaultSubDomainSsl": true,
+			"redirectDomain": "",
+			"forceSsl": true,
+			"websocketSupport": false,
+			"containerHttpPort": 80,
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			},
+			"customNginxConfig": "<%\nif (s.forceSsl) {\n%>\n    server {\n\n        listen       80;\n\n        server_name  <%-s.publicDomain%>;\n\n        # Used by Lets Encrypt\n        location /.well-known/acme-challenge/ {\n            root <%-s.staticWebRoot%>;\n        }\n\n        # Used by CapRover for health check\n        location /.well-known/captain-identifier {\n            root <%-s.staticWebRoot%>;\n        }\n\n        location / {\n            return 302 https://$http_host$request_uri;\n        }\n    }\n<%\n}\n%>\n\n\nserver {\n\n    <%\n    if (!s.forceSsl) {\n    %>\n        listen       80;\n    <%\n    }\n    if (s.hasSsl) {\n    %>\n        listen              443 ssl http2;\n        ssl_certificate     <%-s.crtPath%>;\n        ssl_certificate_key <%-s.keyPath%>;\n    <%\n    }\n    %>\n\n        client_max_body_size 500m;\n\n        server_name  <%-s.publicDomain%>;\n\n        # 127.0.0.11 is DNS set up by Docker, see:\n        # https://docs.docker.com/engine/userguide/networking/configure-dns/\n        # https://github.com/moby/moby/issues/20026\n        resolver 127.0.0.11 valid=10s;\n        # IMPORTANT!! If you are here from an old thread to set a custom port, you do not need to modify this port manually here!!\n        # Simply change the Container HTTP Port from the dashboard HTTP panel\n        set $upstream http://172.96.160.178:17310;\n\n        location / {\n\n\n\t<%\n\tif (s.redirectToPath) {\n\t%>\n\t    return 302 <%-s.redirectToPath%>;\n\t<%\n\t} else {\n\t%>\n\n\t\t    <%\n\t\t    if (s.httpBasicAuthPath) {\n\t\t    %>\n\t\t\t    auth_basic           \"Restricted Access\";\n\t\t\t    auth_basic_user_file <%-s.httpBasicAuthPath%>; \n\t\t    <%\n\t\t    }\n\t\t    %>\n\n\t\t\t    proxy_pass $upstream;\n\t\t\t    proxy_set_header Host $host;\n\t\t\t    proxy_set_header X-Real-IP $remote_addr;\n\t\t\t    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n\t\t\t    proxy_set_header X-Forwarded-Proto https;\n\n\t\t    <%\n\t\t    if (s.websocketSupport) {\n\t\t    %>\n\t\t\t    proxy_set_header Upgrade $http_upgrade;\n\t\t\t    proxy_set_header Connection \"upgrade\";\n\t\t\t    proxy_http_version 1.1;\n\t\t    <%\n\t\t    }\n\t\t    %>\n    \n    \n\t<%\n\t}\n\t%>\n\t\n        }\n\n        # Used by Lets Encrypt\n        location /.well-known/acme-challenge/ {\n            root <%-s.staticWebRoot%>;\n        }\n        \n        # Used by CapRover for health check\n        location /.well-known/captain-identifier {\n            root <%-s.staticWebRoot%>;\n        }\n\n        error_page 502 /captain_502_custom_error_page.html;\n        location = /captain_502_custom_error_page.html {\n                root <%-s.customErrorPagesDirectory%>;\n                internal;\n        }\n}\n"
+		},
+		"effusion-labs": {
+			"hasPersistentData": false,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "UPSTREAM_HTTP_ADDRESS",
+					"value": "http://172.96.160.178:18400"
+				},
+				{
+					"key": "CLIENT_MAX_BODY_SIZE",
+					"value": "1256M"
+				}
+			],
+			"volumes": [],
+			"ports": [],
+			"tags": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2025-07-04T02:53:15.154Z",
+					"deployedImageName": "img-captain-effusion-labs:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2025-07-04T02:53:19.562Z",
+					"deployedImageName": "caprover/nginx-reverse-proxy:1-ef5ffcb",
+					"gitHash": ""
+				},
+				{
+					"version": 2,
+					"timeStamp": "2026-01-09T03:23:46.710Z",
+					"deployedImageName": "img-captain-effusion-labs:2",
+					"gitHash": ""
+				}
+			],
+			"deployedVersion": 2,
+			"notExposeAsWebApp": false,
+			"customDomain": [
+				{
+					"publicDomain": "effusionlabs.com",
+					"hasSsl": true
+				}
+			],
+			"hasDefaultSubDomainSsl": true,
+			"redirectDomain": "",
+			"forceSsl": true,
+			"websocketSupport": false,
+			"containerHttpPort": 80,
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			},
+			"customNginxConfig": "<%\nif (s.forceSsl) {\n%>\n    server {\n\n        listen       80;\n\n        server_name  <%-s.publicDomain%>;\n\n        # Used by Lets Encrypt\n        location /.well-known/acme-challenge/ {\n            root <%-s.staticWebRoot%>;\n        }\n\n        # Used by CapRover for health check\n        location /.well-known/captain-identifier {\n            root <%-s.staticWebRoot%>;\n        }\n\n        location / {\n            return 302 https://$http_host$request_uri;\n        }\n    }\n<%\n}\n%>\n\n\nserver {\n\n    <%\n    if (!s.forceSsl) {\n    %>\n        listen       80;\n    <%\n    }\n    if (s.hasSsl) {\n    %>\n        listen              443 ssl http2;\n        ssl_certificate     <%-s.crtPath%>;\n        ssl_certificate_key <%-s.keyPath%>;\n    <%\n    }\n    %>\n\n        client_max_body_size 500m;\n\n        server_name  <%-s.publicDomain%>;\n\n        # 127.0.0.11 is DNS set up by Docker, see:\n        # https://docs.docker.com/engine/userguide/networking/configure-dns/\n        # https://github.com/moby/moby/issues/20026\n        resolver 127.0.0.11 valid=10s;\n        # IMPORTANT!! If you are here from an old thread to set a custom port, you do not need to modify this port manually here!!\n        # Simply change the Container HTTP Port from the dashboard HTTP panel\n        set $upstream http://172.96.160.178:18400;\n\n        location / {\n\n\n\t<%\n\tif (s.redirectToPath) {\n\t%>\n\t    return 302 <%-s.redirectToPath%>;\n\t<%\n\t} else {\n\t%>\n\n\t\t    <%\n\t\t    if (s.httpBasicAuthPath) {\n\t\t    %>\n\t\t\t    auth_basic           \"Restricted Access\";\n\t\t\t    auth_basic_user_file <%-s.httpBasicAuthPath%>; \n\t\t    <%\n\t\t    }\n\t\t    %>\n\n\t\t\t    proxy_pass $upstream;\n\t\t\t    proxy_set_header Host $host;\n\t\t\t    proxy_set_header X-Real-IP $remote_addr;\n\t\t\t    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n\t\t\t    proxy_set_header X-Forwarded-Proto https;\n\n\t\t    <%\n\t\t    if (s.websocketSupport) {\n\t\t    %>\n\t\t\t    proxy_set_header Upgrade $http_upgrade;\n\t\t\t    proxy_set_header Connection \"upgrade\";\n\t\t\t    proxy_http_version 1.1;\n\t\t    <%\n\t\t    }\n\t\t    %>\n    \n    \n\t<%\n\t}\n\t%>\n\t\n        }\n\n        # Used by Lets Encrypt\n        location /.well-known/acme-challenge/ {\n            root <%-s.staticWebRoot%>;\n        }\n        \n        # Used by CapRover for health check\n        location /.well-known/captain-identifier {\n            root <%-s.staticWebRoot%>;\n        }\n\n        error_page 502 /captain_502_custom_error_page.html;\n        location = /captain_502_custom_error_page.html {\n                root <%-s.customErrorPagesDirectory%>;\n                internal;\n        }\n}\n"
+		},
+		"twest": {
+			"hasPersistentData": false,
+			"description": "",
+			"instanceCount": 1,
+			"captainDefinitionRelativeFilePath": "./captain-definition",
+			"networks": [
+				"captain-overlay-network"
+			],
+			"envVars": [
+				{
+					"key": "UPSTREAM_HTTP_ADDRESS",
+					"value": "http://172.96.160.178:18400/"
+				},
+				{
+					"key": "CLIENT_MAX_BODY_SIZE",
+					"value": "256M"
+				}
+			],
+			"volumes": [],
+			"ports": [],
+			"tags": [],
+			"versions": [
+				{
+					"version": 0,
+					"timeStamp": "2025-07-04T17:58:14.689Z",
+					"deployedImageName": "img-captain-twest:0",
+					"gitHash": ""
+				},
+				{
+					"version": 1,
+					"timeStamp": "2025-07-04T17:58:19.111Z",
+					"deployedImageName": "caprover/nginx-reverse-proxy:1-ef5ffcb",
+					"gitHash": ""
+				}
+			],
+			"deployedVersion": 1,
+			"notExposeAsWebApp": false,
+			"customDomain": [],
+			"hasDefaultSubDomainSsl": false,
+			"redirectDomain": "",
+			"forceSsl": false,
+			"websocketSupport": false,
+			"containerHttpPort": 80,
+			"preDeployFunction": "",
+			"serviceUpdateOverride": "",
+			"appDeployTokenConfig": {
+				"enabled": false
+			}
+		}
+	}
+}

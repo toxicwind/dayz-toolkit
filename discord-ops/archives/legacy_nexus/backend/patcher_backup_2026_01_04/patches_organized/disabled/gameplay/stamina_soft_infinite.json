@@ -1,0 +1,16 @@
+{
+  "PlayerData": {
+    "StaminaData": {
+      "staminaWeightLimitThreshold": 999999999.0,
+      "staminaKgToStaminaPercentPenalty": 0.0,
+      "staminaMax": 500.0,
+      "sprintStaminaModifierErc": 0.05,
+      "sprintStaminaModifierCro": 0.05,
+      "sprintSwimmingStaminaModifier": 0.05,
+      "sprintLadderStaminaModifier": 0.05,
+      "meleeStaminaModifier": 0.05,
+      "obstacleTraversalStaminaModifier": 0.05,
+      "holdBreathStaminaModifier": 0.05
+    }
+  }
+}

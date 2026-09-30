@@ -1,0 +1,8 @@
+{
+  "PlayerData": {
+    "MovementData": {
+      "timeToSprint": 0.2,
+      "timeToStrafeSprint": 0.15
+    }
+  }
+}

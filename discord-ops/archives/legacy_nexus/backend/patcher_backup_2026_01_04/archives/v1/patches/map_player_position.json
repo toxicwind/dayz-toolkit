@@ -1,0 +1,18 @@
+{
+    "id": "map_player_position",
+    "name": "Show Player Position On Map",
+    "description": "Show player position + facing direction on the map; do not require owning map/nav items.",
+    "target": "cfggameplay.json",
+    "path": "MapData",
+    "remove": [
+        "displayNavigationInfo"
+    ],
+    "values": {
+        "ignoreMapOwnership": true,
+        "ignoreNavItemsOwnership": true,
+        "displayPlayerPosition": true,
+        "displayNavInfo": true
+    },
+    "enabled": true,
+    "type": "json_merge"
+}

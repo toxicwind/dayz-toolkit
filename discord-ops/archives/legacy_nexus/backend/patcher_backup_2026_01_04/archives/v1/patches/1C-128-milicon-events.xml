@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  DYNAMIC CONTAINER EVENTS - Xbox Safe
+  Enhanced with randomization and tiered distribution
+  Generated: 2025-12-24
+-->
+<events>
+  <!-- Main Container Event: Spawns all 4 types with weighted distribution -->
+  <event name="StaticContainerLocked">
+    <nominal>40</nominal>      <!-- More containers active -->
+    <min>25</min>              <!-- Minimum always present -->
+    <max>40</max>              <!-- Maximum cap -->
+    <lifetime>604800</lifetime> <!-- 1 week persistence -->
+    <restock>0</restock>
+    <saferadius>200</saferadius>
+    <distanceradius>500</distanceradius>
+    <cleanupradius>150</cleanupradius>
+    <flags deletable="0" init_random="1" remove_damaged="0"/>  <!-- DYNAMIC: init_random=1 -->
+    <position>fixed</position>
+    <limit>mixed</limit>
+    <active>1</active>
+    <children>
+      <!-- Blue: Most common (35% weight) -->
+      <child type="Land_ContainerLocked_Blue_DE" min="35" max="0"/>
+      <!-- Yellow: Common (30% weight) -->
+      <child type="Land_ContainerLocked_Yellow_DE" min="30" max="0"/>
+      <!-- Orange: Uncommon (20% weight) -->
+      <child type="Land_ContainerLocked_Orange_DE" min="20" max="0"/>
+      <!-- Red: Rare (15% weight) -->
+      <child type="Land_ContainerLocked_Red_DE" min="15" max="0"/>
+    </children>
+  </event>
+</events>

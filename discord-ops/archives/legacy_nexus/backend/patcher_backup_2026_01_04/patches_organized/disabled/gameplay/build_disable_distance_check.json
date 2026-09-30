@@ -1,0 +1,7 @@
+{
+  "BaseBuildingData": {
+    "ConstructionData": {
+      "disableDistanceCheck": true
+    }
+  }
+}

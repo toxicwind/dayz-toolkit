@@ -1,0 +1,18 @@
+{
+  "id": "no_weather_effects",
+  "name": "No Wind or Rain",
+  "description": "Disable wind and rain weather effects",
+  "target": "cfgweather.xml",
+  "type": "xml_patch",
+  "xpath": "/weather",
+  "values": {
+    "enable": "1"
+  },
+  "complex_patches": [
+    { "xpath": "//rain/limits", "values": { "min": "0.0", "max": "0.0" } },
+    { "xpath": "//rain/current", "values": { "actual": "0.0" } },
+    { "xpath": "//windMagnitude/limits", "values": { "min": "0.0", "max": "0.0" } },
+    { "xpath": "//windMagnitude/current", "values": { "actual": "0.0" } }
+  ],
+  "enabled": true
+}

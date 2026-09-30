@@ -1,0 +1,420 @@
+{
+  "meta": {
+    "name": "dayz_json_patcher_bundle",
+    "base": "dayzOffline.chernarusplus",
+    "note": "Toggle patches by setting enabled=true. Order controls override precedence."
+  },
+  "patches": [
+    {
+      "name": "Build: disable roof check",
+      "description": "Allows building even if roof check would block it.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/build_disable_roof_check.json",
+      "enabled": false,
+      "order": 10,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Build: disable collision check",
+      "description": "Allows building when collision check would block it.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/build_disable_collision_check.json",
+      "enabled": false,
+      "order": 11,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Build: disable distance check",
+      "description": "Allows building outside normal distance checks.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/build_disable_distance_check.json",
+      "enabled": false,
+      "order": 12,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Base damage off",
+      "description": "Disables base damage.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/disable_base_damage.json",
+      "enabled": false,
+      "order": 20,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Container damage off",
+      "description": "Disables container damage.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/disable_container_damage.json",
+      "enabled": false,
+      "order": 21,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Respawn dialog off",
+      "description": "Skips the respawn dialog UI.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/disable_respawn_dialog.json",
+      "enabled": false,
+      "order": 30,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Respawn while unconscious off",
+      "description": "Disables respawn in unconsciousness.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/disable_respawn_unconscious.json",
+      "enabled": false,
+      "order": 31,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Personal light off",
+      "description": "Disables player personal light.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/disable_personal_light.json",
+      "enabled": false,
+      "order": 40,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Stamina: soft infinite",
+      "description": "High stamina + tiny drain, effectively infinite for normal play.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/stamina_soft_infinite.json",
+      "enabled": false,
+      "order": 50,
+      "strict": "warn",
+      "conflicts": [
+        "Stamina: no drain"
+      ]
+    },
+    {
+      "name": "Stamina: no drain",
+      "description": "Zeroes stamina drains (most modifiers set to 0).",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/stamina_no_drain.json",
+      "enabled": false,
+      "order": 51,
+      "strict": "warn",
+      "conflicts": [
+        "Stamina: soft infinite"
+      ]
+    },
+    {
+      "name": "Movement: no stamina inertia",
+      "description": "Stops stamina from affecting inertia.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/no_stamina_inertia.json",
+      "enabled": false,
+      "order": 60,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Movement: faster sprint start",
+      "description": "Speeds up sprint ramp-up timings.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/faster_sprint_start.json",
+      "enabled": false,
+      "order": 61,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Shock: faster refill",
+      "description": "Faster shock refill (conscious/unconscious).",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/faster_shock_refill.json",
+      "enabled": false,
+      "order": 70,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Weapon obstruction off",
+      "description": "Turns weapon obstruction modes off (static/dynamic to 0).",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/weapon_obstruction_off.json",
+      "enabled": false,
+      "order": 80,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Map: ignore ownership",
+      "description": "Allows map use regardless of map item ownership requirements.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/map_ignore_map_ownership.json",
+      "enabled": false,
+      "order": 90,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Map: ignore nav items ownership",
+      "description": "Allows nav item use regardless of ownership requirements.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/map_ignore_nav_items_ownership.json",
+      "enabled": false,
+      "order": 91,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Map: display player position",
+      "description": "Shows player position on map.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/map_display_player_position.json",
+      "enabled": false,
+      "order": 92,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Map: display nav info",
+      "description": "Shows nav info on map.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/gameplay/map_display_nav_info.json",
+      "enabled": false,
+      "order": 93,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "UI: enable 3D map",
+      "description": "Enables 3D map UI.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/ui/enable_3d_map.json",
+      "enabled": false,
+      "order": 110,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "UI: hit indication off",
+      "description": "Disables hit indication post-process.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/ui/hit_indication_off.json",
+      "enabled": false,
+      "order": 111,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "UI: hit direction override on",
+      "description": "Enables hit direction override.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/ui/hit_direction_override_on.json",
+      "enabled": false,
+      "order": 112,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "World: summer temps",
+      "description": "Warmer monthly min/max temperature arrays.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/world/summer_temps.json",
+      "enabled": false,
+      "order": 130,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "World: low wetness weight penalty",
+      "description": "Reduces wetness-based weight modifiers.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/world/wetness_penalty_low.json",
+      "enabled": false,
+      "order": 131,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Vehicles: no boat decay",
+      "description": "Sets boatDecayMultiplier to 0.",
+      "type": "json_merge",
+      "target": "cfggameplay.json",
+      "file": "patches/vehicles/no_boat_decay.json",
+      "enabled": false,
+      "order": 150,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Weather: enable & reset",
+      "description": "Forces cfgweather.xml enabled=1 reset=1 so the file actually applies.",
+      "type": "xml_ops",
+      "target": "cfgweather.xml",
+      "file": "patches/world/weather_enable_reset.xml.json",
+      "enabled": false,
+      "order": 200,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Weather: no fog",
+      "description": "Forces fog to 0.0.",
+      "type": "xml_ops",
+      "target": "cfgweather.xml",
+      "file": "patches/world/weather_no_fog.xml.json",
+      "enabled": false,
+      "order": 201,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Weather: no rain",
+      "description": "Forces rain to 0.0.",
+      "type": "xml_ops",
+      "target": "cfgweather.xml",
+      "file": "patches/world/weather_no_rain.xml.json",
+      "enabled": false,
+      "order": 202,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Weather: clear skies",
+      "description": "Forces overcast to 0.0.",
+      "type": "xml_ops",
+      "target": "cfgweather.xml",
+      "file": "patches/world/weather_clear_skies.xml.json",
+      "enabled": false,
+      "order": 203,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Globals: food decay off",
+      "description": "Sets FoodDecay=0.",
+      "type": "xml_ops",
+      "target": "db/globals.xml",
+      "file": "patches/economy/globals_food_decay_off.xml.json",
+      "enabled": false,
+      "order": 300,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Globals: pristine loot",
+      "description": "LootDamageMin=0.0 LootDamageMax=0.05 (near-pristine spawns).",
+      "type": "xml_ops",
+      "target": "db/globals.xml",
+      "file": "patches/economy/globals_pristine_loot.xml.json",
+      "enabled": false,
+      "order": 301,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Globals: more animals",
+      "description": "AnimalMaxCount=400.",
+      "type": "xml_ops",
+      "target": "db/globals.xml",
+      "file": "patches/economy/globals_more_animals.xml.json",
+      "enabled": false,
+      "order": 302,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Globals: more zombies",
+      "description": "ZombieMaxCount=2000.",
+      "type": "xml_ops",
+      "target": "db/globals.xml",
+      "file": "patches/economy/globals_more_zombies.xml.json",
+      "enabled": false,
+      "order": 303,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Globals: loot lasts longer",
+      "description": "Raises cleanup lifetimes (default + ruined).",
+      "type": "xml_ops",
+      "target": "db/globals.xml",
+      "file": "patches/economy/globals_loot_lasts_longer.xml.json",
+      "enabled": false,
+      "order": 304,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Events: more heli crashes",
+      "description": "StaticHeliCrash nominal=8.",
+      "type": "xml_ops",
+      "target": "db/events.xml",
+      "file": "patches/economy/events_more_heli.xml.json",
+      "enabled": false,
+      "order": 350,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Events: more military convoys",
+      "description": "StaticMilitaryConvoy nominal=10.",
+      "type": "xml_ops",
+      "target": "db/events.xml",
+      "file": "patches/economy/events_more_convoys.xml.json",
+      "enabled": false,
+      "order": 351,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Events: more santa crashes",
+      "description": "StaticSantaCrash nominal=8.",
+      "type": "xml_ops",
+      "target": "db/events.xml",
+      "file": "patches/economy/events_more_santa.xml.json",
+      "enabled": false,
+      "order": 352,
+      "strict": "warn",
+      "conflicts": []
+    },
+    {
+      "name": "Vehicles: cars fully kitted",
+      "description": "Sets chance=1.00 for wheels/engine parts/body panels across stock car types in cfgspawnabletypes.xml.",
+      "type": "xml_ops",
+      "target": "cfgspawnabletypes.xml",
+      "file": "patches/vehicles/cars_fully_kitted.xml.json",
+      "enabled": false,
+      "order": 400,
+      "strict": "warn",
+      "conflicts": []
+    }
+  ]
+}

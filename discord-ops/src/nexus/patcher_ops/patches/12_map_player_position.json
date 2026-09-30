@@ -1,0 +1,13 @@
+{
+  "id": "map_player_position",
+  "name": "Show Player Position On Map",
+  "description": "Enable map ownership ignore and display player position/direction on the in-game map.",
+  "target": "cfggameplay.json",
+  "path": "MapData",
+  "values": {
+    "ignoreMapOwnership": true,
+    "displayPlayerPosition": true,
+    "displayNavigationInfo": true
+  },
+  "enabled": true
+}

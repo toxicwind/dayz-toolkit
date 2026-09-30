@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+import os
+import sys
+import subprocess
+import argparse
+from pathlib import Path
+
+# Paths
+REPO_ROOT = Path("/home/toxic/dayz_workspace/dayz_discord_ops_repo")
+DEDI_OPS_ROOT = Path("/home/toxic/development/dedi-ops")
+DEFAULT_COMPOSE_FILES = ["docker-compose.modern.yml", "docker-compose.app.yml"]
+
+def run_cmd(cmd, cwd=REPO_ROOT, check=True):
+    """Run a shell command."""
+    print(f"🚀 Running: {' '.join(cmd)}")
+    try:
+        subprocess.run(cmd, cwd=cwd, check=check)
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Command failed with exit code {e.returncode}")
+        if check:
+            sys.exit(e.returncode)
+
+def main():
+    parser = argparse.ArgumentParser(description="Dedi Ops Wrapper")
+    parser.add_argument("-p", "--project", default="dayz-ops", help="Docker Compose project name (default: dayz-ops)")
+    parser.add_argument("-f", "--file", action="append", help="Specify compose files (relative to dedi-ops root)")
+    
+    subparsers = parser.add_subparsers(dest="command", help="Commands")
+
+    # Build
+    subparsers.add_parser("build", help="Build bot and dashboard images")
+
+    # Up
+    up_parser = subparsers.add_parser("up", help="Deploy the stack")
+    up_parser.add_argument("-d", "--detach", action="store_true", default=True, help="Run in background (default: True)")
+
+    # Down
+    subparsers.add_parser("down", help="Stop the stack")
+
+    # Status
+    subparsers.add_parser("status", help="Show container status")
+
+    # Logs
+    logs_parser = subparsers.add_parser("logs", help="Stream logs")
+    logs_parser.add_argument("service", nargs="?", help="Service name (optional)")
+    logs_parser.add_argument("-f", "--follow", action="store_true", help="Follow log output")
+
+    # Deploy (Build + Up)
+    deploy_parser = subparsers.add_parser("deploy", help="Build and then deploy the stack")
+    deploy_parser.add_argument("-d", "--detach", action="store_true", default=True, help="Run in background (default: True)")
+
+    args = parser.parse_args()
+
+    # Determine compose files
+    files = args.file if args.file else DEFAULT_COMPOSE_FILES
+    compose_args = ["docker", "compose", "-p", args.project]
+    for f in files:
+        compose_args.extend(["-f", str(DEDI_OPS_ROOT / f)])
+
+    if not args.command:
+        parser.print_help()
+        return
+
+    if args.command == "build" or args.command == "deploy":
+        print("🔨 Building images...")
+        # Build bot
+        run_cmd(["docker", "build", "-t", "dayz-discord-bot:latest", "."], cwd=REPO_ROOT)
+        # Build dashboard
+        run_cmd(["docker", "build", "-t", "dayz-discord-dashboard:latest", "./dashboard"], cwd=REPO_ROOT)
+        if args.command == "build":
+            return
+
+    if args.command == "up" or args.command == "deploy":
+        cmd = compose_args + ["up"]
+        if args.detach:
+            cmd.append("-d")
+        run_cmd(cmd, cwd=DEDI_OPS_ROOT)
+
+    elif args.command == "down":
+        run_cmd(compose_args + ["down"], cwd=DEDI_OPS_ROOT)
+
+    elif args.command == "status":
+        run_cmd(compose_args + ["ps"], cwd=DEDI_OPS_ROOT)
+
+    elif args.command == "logs":
+        cmd = compose_args + ["logs"]
+        if args.follow:
+            cmd.append("-f")
+        if args.service:
+            cmd.append(args.service)
+        run_cmd(cmd, cwd=DEDI_OPS_ROOT)
+
+if __name__ == "__main__":
+    main()

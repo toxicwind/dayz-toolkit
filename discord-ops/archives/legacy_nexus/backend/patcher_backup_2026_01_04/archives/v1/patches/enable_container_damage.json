@@ -1,0 +1,10 @@
+{
+    "id": "enable_container_damage",
+    "type": "gameplay_patch",
+    "target": "cfggameplay.json",
+    "description": "Enables damage to containers (tents, barrels, etc).",
+    "path": "GeneralData",
+    "values": {
+        "disableContainerDamage": false
+    }
+}

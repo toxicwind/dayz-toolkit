@@ -1,0 +1,116 @@
+{
+    "Objects": [
+        {
+            "name": "HatchbackWheel",
+            "pos": [
+                14050.3046875,
+                131.32205200195313,
+                14705.0673828125
+            ],
+            "ypr": [
+                0.0,
+                -0.0,
+                -0.0
+            ],
+            "scale": 0.9999997615814209,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "HatchbackWheel",
+            "pos": [
+                14050.0361328125,
+                131.32205200195313,
+                14705.0673828125
+            ],
+            "ypr": [
+                0.0,
+                -0.0,
+                -0.0
+            ],
+            "scale": 0.9999997019767761,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "HatchbackWheel",
+            "pos": [
+                14049.794921875,
+                131.32205200195313,
+                14705.0673828125
+            ],
+            "ypr": [
+                0.0,
+                -0.0,
+                -0.0
+            ],
+            "scale": 0.9999997019767761,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "CarBattery",
+            "pos": [
+                14050.1337890625,
+                130.94398498535157,
+                14705.62109375
+            ],
+            "ypr": [
+                0.0,
+                -0.0,
+                -0.0
+            ],
+            "scale": 0.9999997615814209,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "SparkPlug",
+            "pos": [
+                14050.013671875,
+                131.02749633789063,
+                14705.6455078125
+            ],
+            "ypr": [
+                0.0,
+                -0.0,
+                -0.0
+            ],
+            "scale": 0.9999997615814209,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "CarRadiator",
+            "pos": [
+                14049.5595703125,
+                130.94464111328126,
+                14705.5537109375
+            ],
+            "ypr": [
+                0.0,
+                -0.0,
+                -0.0
+            ],
+            "scale": 0.9999997615814209,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "CanisterGasoline",
+            "pos": [
+                14050.2578125,
+                131.1688995361328,
+                14705.9287109375
+            ],
+            "ypr": [
+                0.0,
+                -0.0,
+                -0.0
+            ],
+            "scale": 0.9999997615814209,
+            "enableCEPersistency": 0,
+            "customString": ""
+        }
+    ]
+}

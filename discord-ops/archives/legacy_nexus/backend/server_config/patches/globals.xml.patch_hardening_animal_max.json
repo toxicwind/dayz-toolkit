@@ -1,0 +1,7 @@
+[
+    {
+        "op": "replace",
+        "xpath": "//var[@name='AnimalMaxCount']/@value",
+        "value": "200"
+    }
+]

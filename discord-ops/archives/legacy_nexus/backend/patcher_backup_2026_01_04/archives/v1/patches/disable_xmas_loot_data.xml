@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PATCH 21: Disable Xmas Giftbox Loot -->
+<spawnabletypes>
+    <type name="GiftBox_Small_1"></type>
+    <type name="GiftBox_Small_2"></type>
+    <type name="GiftBox_Small_3"></type>
+    <type name="GiftBox_Small_4"></type>
+
+    <type name="GiftBox_Medium_1"></type>
+    <type name="GiftBox_Medium_2"></type>
+    <type name="GiftBox_Medium_3"></type>
+    <type name="GiftBox_Medium_4"></type>
+
+    <type name="GiftBox_Large_1"></type>
+    <type name="GiftBox_Large_2"></type>
+    <type name="GiftBox_Large_3"></type>
+    <type name="GiftBox_Large_4"></type>
+</spawnabletypes>

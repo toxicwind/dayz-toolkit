@@ -1,0 +1,59 @@
+# Environment & Config
+.env
+.env*.local
+*.env
+config/env/
+config/environments/
+
+# Bot State & Secrets
+state/
+*.pyc
+__pycache__/
+.venv/
+venv/
+.python-version
+dist/
+build/
+*.egg-info/
+
+# Logs & Data
+logs/
+data/
+backups/
+mysql_data/
+backend_data/
+proofpack/
+remote_inspect.json
+
+# Next.js / Dashboard
+dashboard/node_modules/
+dashboard/.next/
+dashboard/out/
+.next/
+node_modules/
+
+# OS / Tools
+.DS_Store
+.vscode/
+.idea/
+.gh-search-data/
+*.swp
+*.swo
+
+# Project specific
+bot/cogs/__pycache__/
+data/trader_items.csv
+!data/trader_items.csv.example
+player_intel.db
+12
+*.adm
+*.log
+*.tar.gz
+Building CapRover Replacement.mdvendor/nitrado_api_lib
+
+# token-scrub 2026-09-14: never commit secrets
+*.pat
+github_*_pat.json
+.env*
+*secret*
+*token*

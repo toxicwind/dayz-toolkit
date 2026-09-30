@@ -1,0 +1,6 @@
+{
+    "id": "tony_wolf_territories",
+    "target": "env/wolf_territories.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

@@ -1,0 +1,21 @@
+import { NextResponse } from 'next/server';
+
+export async function GET() {
+  try {
+    const botResponse = await fetch(`http://bot:43200/economy`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+      cache: 'no-store'
+    });
+
+    if (!botResponse.ok) {
+      return NextResponse.json({ error: `Bot API Error: ${botResponse.statusText}` }, { status: botResponse.status });
+    }
+
+    const data = await botResponse.json();
+    return NextResponse.json(data);
+  } catch (error) {
+    console.error('Economy Error:', error);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+  }
+}

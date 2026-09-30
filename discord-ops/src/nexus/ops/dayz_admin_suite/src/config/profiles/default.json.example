@@ -1,0 +1,97 @@
+{
+  "general": {
+    "data_directory": "data",
+    "debug": false,
+    "backup_directory": "backups",
+    "log_level": "DEBUG",
+    "output_path": "output",
+    "log_download_path": "logs"
+  },
+    "log_filtering": {
+    "default_patterns": ["*.RPT", "*.ADM"]
+  },
+  "log": {
+    "filter_profiles_dir": "~/.config/dayz_admin_tools/log_profiles"
+  },
+  "nitrado_server": {
+    "mission_directory": "dayzOffline.chernarusplus",
+    "remote_base_path": "/gameservers/file_server",
+    "ssl_verify": false
+  },
+  "duping_detector": {
+    "proximity_threshold": 10,
+    "time_threshold": 60,
+    "login_threshold": 300,
+    "login_count_threshold": 3
+  },
+  "search_overtime_finder": {
+    "patterns": {
+      "overtime": "Item \\[\\d+\\] causing search overtime: \"(.*?)\"",
+      "hard_to_place": "LootRespawner\\] \\(PRIDummy\\) :: Item \\[\\d+\\] is hard to place, performance drops: \"(.*?)\""
+    }
+  },
+  "object_spawner": {
+    "default_filename": "16355842-shop.json",
+    "default_coordinates": "10106.6:8.5:1696.5"
+  },
+  "event_counter": {
+    "default_output_file": "event_loot.csv"
+  },
+  "_comment_event_definitions": "Define static event types for the generic event counter. Each event type specifies the pattern to match, group to analyze, output file, and optional ignore list.",
+  "event_definitions": {
+    "static_builder": {
+      "description": "Static Builder Events - Base building materials",
+      "event_pattern": "StaticBuilder_",
+      "group_name": "SkullsMaterials",
+      "output_file": "sb_loot.csv",
+      "ignore_types": []
+    },
+    "mildrop_standard": {
+      "description": "Standard Military Drop Events",
+      "event_pattern": "StaticMildrop",
+      "group_name": "Mildrop",
+      "output_file": "md_loot.csv",
+      "ignore_types": ["Land_Container_1Moh_DE", "Wreck_UH1Y"]
+    },
+    "mildrop_special": {
+      "description": "Special Military Drop Events",
+      "event_pattern": "StaticMildropSpecial",
+      "group_name": "MildropSpecial",
+      "output_file": "md_special_loot.csv",
+      "ignore_types": ["Land_Container_1Moh_DE", "Wreck_UH1Y"]
+    }
+  },
+  "event_spawn_plotter": {
+    "map_file": "/path/to/your/map.jpg",
+    "map_width": 15360,
+    "map_height": 15360,
+    "output_dpi": 300,
+    "marker_size": 50,
+    "marker_color": "red",
+    "marker_alpha": 0.7,
+    "show_coordinates": true,
+    "show_legend": true,
+    "default_spawn_type": "fresh"
+  },
+  "paths": {
+    "types_file": "/path/to/your/types.xml",
+    "types_file_ref": "/path/to/your/types_ref.xml",
+    "mapgroupproto_file": "/path/to/your/mapgroupproto.xml",
+    "cfglimitsdefinition_file": "/path/to/your/cfglimitsdefinition.xml",
+    "events_file": "/path/to/your/events.xml",
+    "eventspawns_file": "/path/to/your/cfgeventspawns.xml",
+    "event_groups_file": "/path/to/your/cfgeventgroups.xml",
+    "player_spawns_file": "/path/to/your/cfgplayerspawnpoints.xml"
+  },
+  "special_events": {
+    "enabled": true,
+    "special_events": {
+    "enabled": true,
+    "events": [
+      {
+        "name": "treasure_hunt",
+        "regexp": "Player \\\"[^\\\"]+\\\"\\s*\\(id=[A-F0-9]+\\s*pos=<[0-9.-]+,\\s*[0-9.-]+,\\s*[0-9.-]+>\\)Player [^<]+<[^>]+> Dug out [^<]+<[^>]+> at position 0x[0-9a-f]+ \\{<[0-9.-]+,[0-9.-]+,[0-9.-]+>\\}"
+      }
+    ]
+  }
+}

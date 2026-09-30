@@ -1,0 +1,22 @@
+{
+  "assignments": {
+    "ops.status": "1459508528778707111",
+    "ops.admin": "1459508530225745964",
+    "ops.killfeed": "1459508531182174393",
+    "ops.changefeed": "1459508532465504328",
+    "ops.deathfeed": "1459508533727985669",
+    "ops.server_status": "1459508534877360222",
+    "ops.loot_events": "1459508535682666519",
+    "ops.todo": "1459508536810930177",
+    "ops.connections": "1459508538253512797",
+    "ops.stats_server": "1459626024974418131",
+    "ops.stats_online": "1459626026119467183",
+    "ops.stats_members": "1459626027017048096",
+    "ops.livefeed": "1459628265663758510",
+    "ops.livepoller": "1459628331178790943"
+  },
+  "metadata": {
+    "last_migration": "2026-01-10T19:21:52.844277",
+    "audit_reset": "2026-01-10T12:00:00Z"
+  }
+}

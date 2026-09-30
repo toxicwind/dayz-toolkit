@@ -1,0 +1,11 @@
+{
+  "WorldsData": {
+    "wetnessWeightModifiers": [
+      1.0,
+      1.0,
+      1.05,
+      1.1,
+      1.15
+    ]
+  }
+}

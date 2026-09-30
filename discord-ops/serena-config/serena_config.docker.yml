@@ -1,0 +1,21 @@
+# Minimal Docker-optimized Serena configuration
+# Mounted to /workspaces/serena/config/ in the container
+
+# Disable GUI log window (not available in containers)
+gui_log_window: False
+# Make web dashboard accessible from hosts
+web_dashboard_listen_address: 0.0.0.0
+web_dashboard_open_on_launch: False
+# Default context to use (avoid deprecated 'ide-assistant')
+default_context: claude-code
+# Avoid opening browser on launch
+web_dashboard_open_on_launch: False
+# Lower verbosity for logs in container
+log_level: INFO
+# Bind dashboard port
+web_dashboard_port: 24282
+# Set MCP server options defaults
+mcp:
+  host: 0.0.0.0
+  port: 9121
+  transport: sse

@@ -1,0 +1,11 @@
+{
+    "patches": [
+        {
+            "file": "tony_128/cfggameplay.json",
+            "enabled": true
+        }
+    ],
+    "order": [
+        "tony_128/cfggameplay.json"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pristine_loot",
+  "name": "Pristine Loot",
+  "description": "Force all spawned items to be pristine (0 damage)",
+  "target": "db/globals.xml",
+  "type": "xml_patch",
+  "complex_patches": [
+    {
+      "xpath": "//var[@name='LootDamageMin']",
+      "values": { "value": 0.0 }
+    },
+    {
+      "xpath": "//var[@name='LootDamageMax']",
+      "values": { "value": 0.0 }
+    }
+  ],
+  "notes": "Keeps minimum and maximum loot damage at 0 so items spawn pristine.",
+  "enabled": true
+}

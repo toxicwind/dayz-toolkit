@@ -1,0 +1,7 @@
+{
+    "id": "tony_messages",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/messages_data.xml",
+    "target": "db/messages.xml",
+    "enabled": true
+}

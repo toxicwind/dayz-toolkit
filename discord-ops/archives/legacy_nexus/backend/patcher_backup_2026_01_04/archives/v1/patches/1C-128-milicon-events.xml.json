@@ -1,0 +1,7 @@
+{
+    "id": "tony_raw_1C-128-milicon-events",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/1C-128-milicon-events.xml",
+    "target": "custom/1C-128-milicon-events.xml",
+    "enabled": true
+}

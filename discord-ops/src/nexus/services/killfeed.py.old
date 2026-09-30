@@ -1,0 +1,142 @@
+from __future__ import annotations
+
+import asyncio
+import io
+import logging
+import re
+from collections import deque
+from pathlib import Path
+
+import discord
+
+from src.mildlyawesome.core.database import Database
+from src.mildlyawesome.core.types import CombatEvent, CombatEventType, PlayerIdentity
+from src.mildlyawesome.services.view import ViewService
+from .log_streamer import LogEvent, get_streamer
+from .poi_manager import get_poi_manager
+
+log = logging.getLogger("mildlyawesome.services.killfeed")
+
+class KillfeedManager:
+    """Orchestrates combat log ingestion and Discord emission using hardened interfaces."""
+
+    def __init__(
+        self,
+        bot: discord.Client,
+        kill_channel_id: int,
+        death_channel_id: int | None = None,
+        db: Database | None = None,
+    ) -> None:
+        self.bot = bot
+        self.kill_channel_id = kill_channel_id
+        self.death_channel_id = death_channel_id or kill_channel_id
+        self.db = db
+        self.streamer = get_streamer()
+        self._listener_registered = False
+        self._recent: deque[str] = deque(maxlen=200)
+        self._queue: asyncio.Queue[CombatEvent] = asyncio.Queue()
+        self._task: asyncio.Task | None = None
+
+    async def start(self) -> None:
+        if not self.streamer.tasks:
+            await self.streamer.start()
+
+        if not self._listener_registered:
+            self.streamer.add_listener(self._handle_log_event)
+            self._listener_registered = True
+
+        if self._task is None:
+            self._task = asyncio.create_task(self._worker())
+
+    async def stop(self) -> None:
+        if self._listener_registered:
+            self.streamer.remove_listener(self._handle_log_event)
+            self._listener_registered = False
+        if self._task:
+            self._task.cancel()
+            try:
+                await self._task
+            except asyncio.CancelledError:
+                pass
+            self._task = None
+
+    async def _handle_log_event(self, event: LogEvent) -> None:
+        if event.level != "combat":
+            return
+
+        payload = event.raw or event.message or ""
+        # Use the bot's log parser which we've already hardened
+        parsed_entry = self.bot.log_parser.parse_line(payload)
+        if not parsed_entry or parsed_entry.activity_type not in ("KILL", "COMBAT_HIT"):
+            return
+
+        # Map LogEntry metadata to CombatEvent
+        metadata = parsed_entry.metadata
+        
+        # Determine event type
+        event_type = CombatEventType.PVP_KILL
+        if "hit by" in payload and "DEAD" not in payload:
+            event_type = CombatEventType.PVP_HIT
+
+        event = CombatEvent(
+            event_type=event_type,
+            timestamp=parsed_entry.timestamp,
+            victim=PlayerIdentity(
+                gamertag=metadata.get("victim_name") or metadata.get("player_name") or "Unknown",
+                player_id=metadata.get("victim_id") or metadata.get("player_id")
+            ),
+            killer=PlayerIdentity(
+                gamertag=metadata.get("attacker_name") or metadata.get("killer") or "Environment",
+                player_id=metadata.get("attacker_id") or metadata.get("killer_id")
+            ) if metadata.get("attacker_name") or metadata.get("killer") else None,
+            weapon=metadata.get("weapon"),
+            distance_m=float(metadata.get("distance", 0)) if metadata.get("distance") else 0.0,
+            location_name="Unknown",
+            raw_message=payload
+        )
+
+        # Create deduplication key
+        key = f"{event.event_type}:{event.victim.gamertag}:{event.killer.gamertag if event.killer else 'none'}:{event.timestamp}"
+        if key in self._recent:
+            return
+        self._recent.append(key)
+
+        await self._queue.put(event)
+
+    async def _worker(self) -> None:
+        poi_manager = get_poi_manager()
+        from .image_generator import get_image_generator
+        image_generator = get_image_generator()
+
+        while True:
+            event = await self._queue.get()
+            try:
+                # 1. Resolve Location
+                location_name = "Wilderness"
+                # Logic to resolve location from metadata...
+                event.location_name = location_name
+
+                # 2. Discord Emission via ViewService
+                target_channel_id = self.kill_channel_id if event.is_pvp else self.death_channel_id
+                target_channel = self.bot.get_channel(target_channel_id)
+                
+                if target_channel:
+                    # Generate Embed via Service
+                    embed = ViewService.create_kill_embed(event)
+                    await target_channel.send(embed=embed)
+
+                # 3. Log to DB
+                if self.db:
+                    await self.db.log_combat(
+                        org_id=getattr(self.bot.settings, "org_id", "mildlyawesome"),
+                        killer=event.killer.gamertag if event.killer else "Environment",
+                        victim=event.victim.gamertag,
+                        weapon=event.weapon,
+                        distance=event.distance_m,
+                        location=event.location_name,
+                        raw=event.raw_message
+                    )
+
+            except Exception as e:
+                log.exception(f"Killfeed worker error: {e}")
+                await asyncio.sleep(1)

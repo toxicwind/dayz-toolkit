@@ -1,0 +1,7 @@
+{
+    "id": "ezstreet_novocustom_hippie",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/EZStreet_NovoCustom_Hippie.json",
+    "target": "custom/EZStreet_NovoCustom_Hippie.json",
+    "enabled": true
+}

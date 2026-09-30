@@ -1,0 +1,12 @@
+{
+  "description": "Tony's spawnable types overhaul (tested Jan 4, 2026)",
+  "target_file": "cfgspawnabletypes.xml",
+  "note": "FULL FILE REPLACEMENT RECOMMENDED",
+  "source": "exploration/tony-fixes/original_files/cfgspawnabletypes.xml",
+  "operations": [
+    {
+      "op": "replace_entire_file",
+      "reason": "Too many changes for surgical patching"
+    }
+  ]
+}

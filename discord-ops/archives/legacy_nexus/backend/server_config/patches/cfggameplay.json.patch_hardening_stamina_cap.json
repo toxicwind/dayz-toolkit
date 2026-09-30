@@ -1,0 +1,7 @@
+[
+    {
+        "op": "replace",
+        "path": "/PlayerData/StaminaData/staminaMinCap",
+        "value": 10.0
+    }
+]

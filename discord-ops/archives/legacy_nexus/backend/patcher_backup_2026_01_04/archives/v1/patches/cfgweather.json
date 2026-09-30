@@ -1,0 +1,6 @@
+{
+    "id": "tony_cfgweather",
+    "target": "cfgweather.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

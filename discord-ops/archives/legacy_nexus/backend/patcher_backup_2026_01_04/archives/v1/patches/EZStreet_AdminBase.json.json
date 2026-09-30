@@ -1,0 +1,7 @@
+{
+    "id": "ezstreet_adminbase",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/EZStreet_AdminBase.json",
+    "target": "custom/EZStreet_AdminBase.json",
+    "enabled": true
+}

@@ -1,0 +1,10 @@
+{
+  "id": "disable_xmas_loot",
+  "name": "Disable Xmas Giftbox Loot",
+  "description": "Removes cargo presets from all GiftBox_* variants to match ezstreet staging (no seasonal clutter or duped gifts).",
+  "target": "cfgspawnabletypes.xml",
+  "type": "xml_patch",
+  "enabled": true,
+  "category": "economy",
+  "notes": "Derived from live ezstreet vs nitrado diff on 2025-12-28; gift boxes become empty shells (no cargo/attachments)."
+}

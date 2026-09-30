@@ -1,0 +1,61 @@
+{
+    "meta": {
+        "name": "EZStreet Ultimate Consolidated Patches",
+        "version": "3.0",
+        "date": "2026-01-04",
+        "note": "The 'Golden State' recovery build"
+    },
+    "patch_groups": [
+        {
+            "name": "Core Economy Fixes",
+            "category": "economy",
+            "status": "ACTIVE",
+            "patches": [
+                {
+                    "file": "01_economy/keys_fix.xml.json",
+                    "target": "db/types.xml",
+                    "enabled": true
+                },
+                {
+                    "file": "01_economy/static_container_event.xml.json",
+                    "target": "db/events.xml",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Vehicle Logic",
+            "category": "vehicles",
+            "status": "ACTIVE",
+            "patches": [
+                {
+                    "file": "02_vehicles/admin_vehicle.xml.json",
+                    "target": "cfgeventspawns.xml",
+                    "enabled": true
+                },
+                {
+                    "file": "02_vehicles/spawnable_types_overhaul.xml.json",
+                    "target": "cfgspawnabletypes.xml",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "Gameplay Tuning",
+            "category": "gameplay",
+            "status": "ACTIVE",
+            "patches": [
+                {
+                    "file": "03_gameplay/stamina_settings.json.json",
+                    "target": "cfggameplay.json",
+                    "enabled": true
+                },
+                {
+                    "file": "03_gameplay/global_settings.xml.json",
+                    "target": "db/globals.xml",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}

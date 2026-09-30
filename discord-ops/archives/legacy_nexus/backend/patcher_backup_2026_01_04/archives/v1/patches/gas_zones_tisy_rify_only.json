@@ -1,0 +1,24 @@
+{
+    "id": "gas_zones_tisy_rify_only",
+    "name": "Gas Zones - Tisy & Rify Only (Permanent)",
+    "description": "Remove all contaminated zones except Tisy and Rify, make those permanent",
+    "target": "cfgenvironment.xml",
+    "operations": [
+        {
+            "type": "remove_territories",
+            "exclude": [
+                "ContaminatedArea_Static_Tisy",
+                "ContaminatedArea_Static_Rify"
+            ]
+        },
+        {
+            "type": "set_permanent",
+            "territories": [
+                "ContaminatedArea_Static_Tisy",
+                "ContaminatedArea_Static_Rify"
+            ],
+            "inactiveTime": -1
+        }
+    ],
+    "enabled": true
+}

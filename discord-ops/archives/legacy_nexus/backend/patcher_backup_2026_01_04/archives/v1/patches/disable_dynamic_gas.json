@@ -1,0 +1,17 @@
+{
+    "id": "disable_dynamic_gas",
+    "type": "xml_patch",
+    "target": "db/events.xml",
+    "description": "Disable dynamic gas zones (StaticContaminatedArea).",
+    "complex_patches": [
+        {
+            "xpath": "//event[@name='StaticContaminatedArea']",
+            "values": {
+                "active": "0",
+                "nominal": "0",
+                "min": "0",
+                "max": "0"
+            }
+        }
+    ]
+}

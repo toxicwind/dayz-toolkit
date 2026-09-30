@@ -1,0 +1,18 @@
+{
+  "ops": [
+    {
+      "op": "set_attr",
+      "xpath": ".//var[@name='CleanupLifetimeDefault']",
+      "set": {
+        "value": "120"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//var[@name='CleanupLifetimeRuined']",
+      "set": {
+        "value": "1200"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+    "id": "tony_cfgspawnabletypes",
+    "target": "cfgspawnabletypes.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

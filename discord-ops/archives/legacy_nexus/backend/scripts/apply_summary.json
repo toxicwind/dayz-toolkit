@@ -1,0 +1,182 @@
+[
+  {
+    "patch": "economy/sanitize_animal_events.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.183995"
+  },
+  {
+    "patch": "economy/increased_animals.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.186038"
+  },
+  {
+    "patch": "vehicles/boats_equipped.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.259761"
+  },
+  {
+    "patch": "vehicles/cars_fully_equipped.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.268921"
+  },
+  {
+    "patch": "core/20_welcome_messages.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.269848"
+  },
+  {
+    "patch": "economy/disable_xmas_loot.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.277097"
+  },
+  {
+    "patch": "world/add_fox_territories.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.278365"
+  },
+  {
+    "patch": "world/map_trader_zone.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.278895"
+  },
+  {
+    "patch": "world/map_locked_containers.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.279194"
+  },
+  {
+    "patch": "world/map_custom_missions.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.279475"
+  },
+  {
+    "patch": "tony_128/cfgspawnabletypes.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.425423"
+  },
+  {
+    "patch": "tony_128/init.c.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.471055"
+  },
+  {
+    "patch": "tony_128/init.c.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.471773"
+  },
+  {
+    "patch": "tony_128/db/events.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.479500"
+  },
+  {
+    "patch": "tony_128/db/messages.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.480077"
+  },
+  {
+    "patch": "tony_128/custom/1C-vehicles-types.xml.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.480287"
+  },
+  {
+    "patch": "tony_128/custom/1C-128-rubberboats-spawnabletypes.xml.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.480495"
+  },
+  {
+    "patch": "tony_128/custom/1C-128-milicon-types.xml.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.480721"
+  },
+  {
+    "patch": "tony_128/custom/1C-128-milicon-events.xml.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.480929"
+  },
+  {
+    "patch": "tony_128/custom/1C-vehicles-types.xml.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.481143"
+  },
+  {
+    "patch": "tony_128/custom/1C-128-rubberboats-spawnabletypes.xml.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.481356"
+  },
+  {
+    "patch": "tony_128/custom/1C-128-milicon-types.xml.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.481570"
+  },
+  {
+    "patch": "tony_128/custom/1C-128-milicon-events.xml.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.481815"
+  },
+  {
+    "patch": "atomic/enable_container_damage.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.502016"
+  },
+  {
+    "patch": "tony_128/custom/EZStreet_NovoCustom_Hippie.json.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.502442"
+  },
+  {
+    "patch": "tony_128/custom/EZStreet_BuildTrailer_Zeleno.json.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.502691"
+  },
+  {
+    "patch": "tony_128/custom/EZStreet_BuildTrailer_Ropka.json.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.502913"
+  },
+  {
+    "patch": "tony_128/custom/EZStreet_TopoCustom_Dylan.json.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.503119"
+  },
+  {
+    "patch": "tony_128/custom/EZStreet_Trader.json.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.503334"
+  },
+  {
+    "patch": "tony_128/custom/EZStreet_FightCage_Nwaf.json.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.503535"
+  },
+  {
+    "patch": "tony_128/custom/EZStreet_AdminBase.json.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.503737"
+  },
+  {
+    "patch": "tony_128/custom/EZStreet_BuildTrailer_Zap.json.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.503949"
+  },
+  {
+    "patch": "tony_128/custom/EZStreet_bm_Trader.json.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.504155"
+  },
+  {
+    "patch": "tony_128/custom/EZStreet_Loadout_Fresh.json.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.504358"
+  },
+  {
+    "patch": "atomic/disable_dynamic_gas.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.506211"
+  },
+  {
+    "patch": "atomic/boost_heli_crashes.json",
+    "status": "applied",
+    "timestamp": "2026-01-02T14:10:01.507811"
+  }
+]

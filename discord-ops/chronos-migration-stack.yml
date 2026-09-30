@@ -1,0 +1,75 @@
+version: '3.8'
+services:
+  reverse-effusiongallery:
+    container_name: reverse-effusiongallery
+    image: img-captain-reverse-effusiongallery:16
+    restart: always
+    environment:
+    - UPSTREAM_HTTP_ADDRESS=http://172.96.160.178:17110
+    - CLIENT_MAX_BODY_SIZE=1256M
+    networks:
+    - web_net
+    - internal_net
+    labels:
+    - traefik.enable=true
+    - traefik.http.routers.reverse-effusiongallery.rule=Host(`galleryeffusion.com`)
+    - traefik.http.services.reverse-effusiongallery.loadbalancer.server.port=17110
+  mysticfoxmyco-web:
+    container_name: mysticfoxmyco-web
+    image: caprover/nginx-reverse-proxy:latest
+    restart: always
+    environment:
+    - UPSTREAM_HTTP_ADDRESS=http://172.96.160.178:17210
+    - CLIENT_MAX_BODY_SIZE=3256M
+    networks:
+    - web_net
+    - internal_net
+    labels:
+    - traefik.enable=true
+    - traefik.http.routers.mysticfoxmyco-web.rule=Host(`mysticfoxmyco.com`)
+    - traefik.http.services.mysticfoxmyco-web.loadbalancer.server.port=80
+  arlockworks-web:
+    container_name: arlockworks-web
+    image: caprover/nginx-reverse-proxy:1-ef5ffcb
+    restart: always
+    environment:
+    - UPSTREAM_HTTP_ADDRESS=http://172.96.160.178:17310
+    - CLIENT_MAX_BODY_SIZE=4256M
+    networks:
+    - web_net
+    - internal_net
+    labels:
+    - traefik.enable=true
+    - traefik.http.routers.arlockworks-web.rule=Host(`arlockworks.com`)
+    - traefik.http.services.arlockworks-web.loadbalancer.server.port=80
+  effusion-labs:
+    container_name: effusion-labs
+    image: img-captain-effusion-labs:2
+    restart: always
+    environment:
+    - UPSTREAM_HTTP_ADDRESS=http://172.96.160.178:18400
+    - CLIENT_MAX_BODY_SIZE=1256M
+    networks:
+    - web_net
+    - internal_net
+    labels:
+    - traefik.enable=true
+    - traefik.http.routers.effusion-labs.rule=Host(`effusionlabs.com`)
+    - traefik.http.services.effusion-labs.loadbalancer.server.port=80
+  twest:
+    container_name: twest
+    image: caprover/nginx-reverse-proxy:1-ef5ffcb
+    restart: always
+    environment:
+    - UPSTREAM_HTTP_ADDRESS=http://172.96.160.178:18400/
+    - CLIENT_MAX_BODY_SIZE=256M
+    networks:
+    - web_net
+    - internal_net
+    labels:
+    - traefik.enable=true
+networks:
+  web_net:
+    external: true
+  internal_net:
+    external: true

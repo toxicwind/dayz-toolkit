@@ -1,0 +1,15 @@
+# syntax=docker/dockerfile:1.4
+FROM oven/bun:1
+
+WORKDIR /app
+
+# 1. Install dependencies
+COPY package.json bun.lock* ./
+RUN --mount=type=cache,target=/root/.bun/install/cache \
+    bun install
+
+# 2. Expose Next.js dev port
+EXPOSE 3000
+
+# Start development server with hot-reloading
+CMD ["bun", "run", "dev"]

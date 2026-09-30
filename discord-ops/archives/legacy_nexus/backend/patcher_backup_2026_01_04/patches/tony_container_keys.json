@@ -1,0 +1,51 @@
+{
+  "description": "Tony's container keys fix - remove incorrect spawn categories",
+  "target_file": "db/types.xml",
+  "operations": [
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Orange']/category[@name='weapons']",
+      "comment": "Remove weapon category from ShippingContainerKeys_Orange"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Orange']/usage[@name='Military']",
+      "comment": "Remove military usage from ShippingContainerKeys_Orange"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Orange']/value[@name='Tier4']",
+      "comment": "Remove tier4 value from ShippingContainerKeys_Orange"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Yellow']/category[@name='weapons']",
+      "comment": "Remove weapon category from ShippingContainerKeys_Yellow"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Yellow']/usage[@name='Military']",
+      "comment": "Remove military usage from ShippingContainerKeys_Yellow"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Yellow']/value[@name='Tier4']",
+      "comment": "Remove tier4 value from ShippingContainerKeys_Yellow"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Blue']/category[@name='weapons']",
+      "comment": "Remove weapon category from ShippingContainerKeys_Blue"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Blue']/usage[@name='Military']",
+      "comment": "Remove military usage from ShippingContainerKeys_Blue"
+    },
+    {
+      "op": "remove",
+      "xpath": "//type[@name='ShippingContainerKeys_Blue']/value[@name='Tier4']",
+      "comment": "Remove tier4 value from ShippingContainerKeys_Blue"
+    }
+  ]
+}

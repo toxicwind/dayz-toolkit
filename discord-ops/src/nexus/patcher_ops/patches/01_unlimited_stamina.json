@@ -1,0 +1,19 @@
+{
+  "id": "unlimited_stamina",
+  "name": "Unlimited Stamina",
+  "description": "Remove stamina drain for sprinting, swimming, melee, etc.",
+  "target": "cfggameplay.json",
+  "path": "PlayerData.StaminaData",
+  "values": {
+    "sprintStaminaModifierErc": 0.0,
+    "sprintStaminaModifierCro": 0.0,
+    "staminaMax": 1200.0,
+    "staminaKgToStaminaPercentPenalty": 0.0,
+    "sprintSwimmingStaminaModifier": 0.0,
+    "sprintLadderStaminaModifier": 0.0,
+    "meleeStaminaModifier": 0.0,
+    "obstacleTraversalStaminaModifier": 0.0,
+    "holdBreathStaminaModifier": 0.0
+  },
+  "enabled": true
+}

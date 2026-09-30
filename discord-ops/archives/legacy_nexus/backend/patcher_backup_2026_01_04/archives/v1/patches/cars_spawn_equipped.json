@@ -1,0 +1,71 @@
+{
+    "id": "cars_spawn_equipped",
+    "name": "Cars Spawn Fully Equipped",
+    "description": "Cars spawn with all panels, tires, radiator, battery, and spark/glow plugs",
+    "target": "cfgspawnabletypes.xml",
+    "operations": [
+        {
+            "type": "add_attachments",
+            "xpath": "//type[contains(@name, 'OffroadHatchback') or contains(@name, 'Sedan') or contains(@name, 'CivilianSedan')]",
+            "attachments": [
+                {
+                    "classname": "SparkPlug"
+                },
+                {
+                    "classname": "CarRadiator"
+                },
+                {
+                    "classname": "CarBattery"
+                },
+                {
+                    "classname": "HatchbackWheel",
+                    "quantity": 4
+                },
+                {
+                    "classname": "HatchbackDoors_CoDriver"
+                },
+                {
+                    "classname": "HatchbackDoors_Driver"
+                },
+                {
+                    "classname": "HatchbackHood"
+                },
+                {
+                    "classname": "HatchbackTrunk"
+                }
+            ]
+        },
+        {
+            "type": "add_attachments",
+            "xpath": "//type[contains(@name, 'Truck')]",
+            "attachments": [
+                {
+                    "classname": "GlowPlug"
+                },
+                {
+                    "classname": "TruckRadiator"
+                },
+                {
+                    "classname": "TruckBattery"
+                },
+                {
+                    "classname": "Truck_01_Wheel",
+                    "quantity": 4
+                },
+                {
+                    "classname": "Truck_01_Door_1_1"
+                },
+                {
+                    "classname": "Truck_01_Door_2_1"
+                },
+                {
+                    "classname": "Truck_01_Hood"
+                },
+                {
+                    "classname": "Truck_01_WoodenCrate"
+                }
+            ]
+        }
+    ],
+    "enabled": true
+}

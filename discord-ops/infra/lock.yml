@@ -1,0 +1,32 @@
+services:
+  mildlyawesome:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    image: dayz-mildlyawesome:latest
+    container_name: mildlyawesome-prod
+    env_file: ../.env
+    environment:
+      - HOT_RELOAD=false
+    ports:
+      - "8080:8080"
+      - "9108:9108"
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  mysql:
+    image: mysql:8.0
+    container_name: mildlyawesome-db-prod
+    env_file: ../.env
+    volumes:
+      - mildlyawesome_db_prod_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  mildlyawesome_db_prod_data:

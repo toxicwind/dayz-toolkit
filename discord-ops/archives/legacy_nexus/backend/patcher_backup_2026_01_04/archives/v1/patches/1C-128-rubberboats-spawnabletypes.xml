@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spawnabletypes>
+  <type name="Boat_01_Black">
+    <attachments chance="1.0">
+      <item name="SparkPlug" chance="1.0"/>
+    </attachments>
+    <cargo chance="1.0">
+      <item name="CanisterGasoline" chance="1.0"/>
+    </cargo>
+  </type>
+  <type name="Boat_01_Blue">
+    <attachments chance="1.0">
+      <item name="SparkPlug" chance="1.0"/>
+    </attachments>
+    <cargo chance="1.0">
+      <item name="CanisterGasoline" chance="1.0"/>
+    </cargo>
+  </type>
+  <type name="Boat_01_Camo">
+    <attachments chance="1.0">
+      <item name="SparkPlug" chance="1.0"/>
+    </attachments>
+    <cargo chance="1.0">
+      <item name="CanisterGasoline" chance="1.0"/>
+    </cargo>
+  </type>
+  <type name="Boat_01_Orange">
+    <attachments chance="1.0">
+      <item name="SparkPlug" chance="1.0"/>
+    </attachments>
+    <cargo chance="1.0">
+      <item name="CanisterGasoline" chance="1.0"/>
+    </cargo>
+  </type>
+</spawnabletypes>

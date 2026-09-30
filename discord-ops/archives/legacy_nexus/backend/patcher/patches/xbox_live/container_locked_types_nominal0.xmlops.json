@@ -1,0 +1,204 @@
+{
+  "ops": [
+    {
+      "op": "upsert",
+      "parent_xpath": ".",
+      "tag": "type",
+      "key_attrs": {
+        "name": "Land_ContainerLocked_Blue_DE"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "0"
+        },
+        {
+          "tag": "lifetime",
+          "text": "0"
+        },
+        {
+          "tag": "restock",
+          "text": "0"
+        },
+        {
+          "tag": "min",
+          "text": "0"
+        },
+        {
+          "tag": "quantmin",
+          "text": "-1"
+        },
+        {
+          "tag": "quantmax",
+          "text": "-1"
+        },
+        {
+          "tag": "cost",
+          "text": "100"
+        },
+        {
+          "tag": "flags",
+          "attributes": {
+            "count_in_cargo": "0",
+            "count_in_hoarder": "0",
+            "count_in_map": "0",
+            "count_in_player": "0",
+            "crafted": "0",
+            "deloot": "0"
+          }
+        }
+      ]
+    },
+    {
+      "op": "upsert",
+      "parent_xpath": ".",
+      "tag": "type",
+      "key_attrs": {
+        "name": "Land_ContainerLocked_Orange_DE"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "0"
+        },
+        {
+          "tag": "lifetime",
+          "text": "0"
+        },
+        {
+          "tag": "restock",
+          "text": "0"
+        },
+        {
+          "tag": "min",
+          "text": "0"
+        },
+        {
+          "tag": "quantmin",
+          "text": "-1"
+        },
+        {
+          "tag": "quantmax",
+          "text": "-1"
+        },
+        {
+          "tag": "cost",
+          "text": "100"
+        },
+        {
+          "tag": "flags",
+          "attributes": {
+            "count_in_cargo": "0",
+            "count_in_hoarder": "0",
+            "count_in_map": "0",
+            "count_in_player": "0",
+            "crafted": "0",
+            "deloot": "0"
+          }
+        }
+      ]
+    },
+    {
+      "op": "upsert",
+      "parent_xpath": ".",
+      "tag": "type",
+      "key_attrs": {
+        "name": "Land_ContainerLocked_Red_DE"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "0"
+        },
+        {
+          "tag": "lifetime",
+          "text": "14400"
+        },
+        {
+          "tag": "restock",
+          "text": "0"
+        },
+        {
+          "tag": "min",
+          "text": "0"
+        },
+        {
+          "tag": "quantmin",
+          "text": "-1"
+        },
+        {
+          "tag": "quantmax",
+          "text": "-1"
+        },
+        {
+          "tag": "cost",
+          "text": "100"
+        },
+        {
+          "tag": "flags",
+          "attributes": {
+            "count_in_cargo": "0",
+            "count_in_hoarder": "0",
+            "count_in_map": "1",
+            "count_in_player": "0",
+            "crafted": "0",
+            "deloot": "0"
+          }
+        }
+      ]
+    },
+    {
+      "op": "upsert",
+      "parent_xpath": ".",
+      "tag": "type",
+      "key_attrs": {
+        "name": "Land_ContainerLocked_Yellow_DE"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "0"
+        },
+        {
+          "tag": "lifetime",
+          "text": "0"
+        },
+        {
+          "tag": "restock",
+          "text": "0"
+        },
+        {
+          "tag": "min",
+          "text": "0"
+        },
+        {
+          "tag": "quantmin",
+          "text": "-1"
+        },
+        {
+          "tag": "quantmax",
+          "text": "-1"
+        },
+        {
+          "tag": "cost",
+          "text": "100"
+        },
+        {
+          "tag": "flags",
+          "attributes": {
+            "count_in_cargo": "0",
+            "count_in_hoarder": "0",
+            "count_in_map": "0",
+            "count_in_player": "0",
+            "crafted": "0",
+            "deloot": "0"
+          }
+        }
+      ]
+    }
+  ]
+}

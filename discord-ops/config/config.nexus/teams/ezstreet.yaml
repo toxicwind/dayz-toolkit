@@ -1,0 +1,38 @@
+# ============================================
+# EZSTREET SERVICE CONFIGURATION
+# ============================================
+server_name: "〖LIVE〗 EZSTREET ALPHA"
+platform: "pc"
+
+discord:
+  guild_id: 1418315612005994650
+  use_presence: true
+  
+  # Channel Mapping (Recovered)
+  status_channel_id: 1452830604633571348
+  admin_channel_id: 1452830719582933054
+  query_channel_id: 1452830824742523026
+  
+  # Forward mapping for MildlyAwesome Services
+  killfeed_channel_id: 1452830824742523026
+  changefeed_channel_id: 1452830604633571348
+  stat_channels_json: '{"members_total":1452830604633571348,"members_online":1452830719582933054,"dayz_players":1452830824742523026}'
+
+nitrado:
+  service_id: 18302446
+  email: "Higlak115@gmail.com"
+
+query:
+  host: "85.190.156.145"
+  port: 11603
+
+ftp:
+  host: "usla352.gamedata.io"
+  port: 21
+  log_path: "/games/ni12435433_1/ftproot/dayzxb/config"
+  mission_path: "/games/ni123456/ftproot/dayzxb_missions/dayzOffline.chernarusplus"
+
+paths:
+  state_dir: "./state/ezstreet"
+  mission: "./staging/ezstreet/dayzxb_missions/dayzOffline.chernarusplus"
+  ftp_ingest: "./staging/ezstreet"

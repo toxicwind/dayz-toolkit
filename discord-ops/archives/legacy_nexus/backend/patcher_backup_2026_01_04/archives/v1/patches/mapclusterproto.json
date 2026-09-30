@@ -1,0 +1,6 @@
+{
+    "id": "tony_mapclusterproto",
+    "target": "mapclusterproto.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

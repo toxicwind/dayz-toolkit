@@ -1,0 +1,49 @@
+# ============================================
+# EZSTREET SERVICE CONFIGURATION
+# ============================================
+server_name: "〖LIVE〗 EZSTREET ALPHA"
+platform: "pc"
+service_password: "REDACTED#9!a"  # Matches user credential style
+
+# SECRETS (Forcefully populated per user trust)
+discord:
+  token: "MTREDACTED_DISCORD_TOKENeINxdk_s6gw"
+  guild_id: 1418315612005994650
+  use_presence: true
+  
+  # Channel Mapping
+  status_channel_id: 1452830604633571348
+  admin_channel_id: 1452830719582933054
+  query_channel_id: 1452830824742523026
+  killfeed_channel_id: 1452830824742523026
+  changefeed_channel_id: 1452830604633571348
+  stat_channels_json: '{"members_total":1452830604633571348,"members_online":1452830719582933054,"dayz_players":1452830824742523026}'
+
+nitrado:
+  api_token: "yuZzSgKGyRczGisJtlhEWuFXxoPH8mATaoLl83un7Sb5A5fKVtZMnC-HFAlhV5Kex-slb7PS_ABt-4q8YkyMv5tiTjwIzIQoWeDJ"
+  service_id: 18302446
+  email: "Higlak115@gmail.com"
+
+query:
+  host: "85.190.156.145"
+  port: 11603
+  rcon_password: "REDACTED"
+
+ftp:
+  host: "usla352.gamedata.io"
+  port: 21
+  user: "ni12435433_1"
+  password: "REDACTED"
+  log_path: "/games/ni12435433_1/ftproot/dayzxb/config"
+
+bot_mysql:
+  host: "usla352.gamedata.io"
+  port: 3306
+  user: "ni12435433_1_DB"
+  password: "REDACTED"
+  database: "ni12435433_1_DB"
+
+paths:
+  state_dir: "./state/ezstreet"
+  mission: "./staging/ezstreet/dayzxb_missions/dayzOffline.chernarusplus"
+  ftp_ingest: "./staging/ezstreet"

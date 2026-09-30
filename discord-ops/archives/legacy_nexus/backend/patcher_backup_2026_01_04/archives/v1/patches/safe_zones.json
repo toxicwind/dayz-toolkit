@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "DayZ Xbox Safe Zone Configuration for Discord Bot Integration",
+    "generatedAt": "2025-12-24T23:15:00Z"
+  },
+  "safeZones": [
+    {
+      "id": "trader_berezino",
+      "name": "Berezino Trader",
+      "type": "trader",
+      "center": {
+        "x": 12240.0,
+        "y": 25.0,
+        "z": 14245.0
+      },
+      "radius": 100,
+      "rules": {
+        "pvpEnabled": false,
+        "damageEnabled": false,
+        "stealingAllowed": false,
+        "vehiclesAllowed": true
+      },
+      "discordChannel": "trader-activity",
+      "notifications": {
+        "playerEnter": true,
+        "playerExit": true,
+        "tradeActivity": true
+      }
+    }
+  ],
+  "traderInventory": {
+    "keys": [
+      {
+        "item": "ShippingContainerKeys_Blue",
+        "price": 5000,
+        "stock": 3,
+        "restockInterval": 3600
+      },
+      {
+        "item": "ShippingContainerKeys_Yellow",
+        "price": 8000,
+        "stock": 2,
+        "restockInterval": 5400
+      },
+      {
+        "item": "ShippingContainerKeys_Orange",
+        "price": 15000,
+        "stock": 1,
+        "restockInterval": 7200
+      },
+      {
+        "item": "ShippingContainerKeys_Red",
+        "price": 25000,
+        "stock": 1,
+        "restockInterval": 14400
+      }
+    ]
+  },
+  "discordIntegration": {
+    "enabled": true,
+    "webhookEvents": [
+      "player_enter_safezone",
+      "player_exit_safezone",
+      "key_purchased",
+      "container_opened"
+    ],
+    "rconCommands": {
+      "kickFromSafeZone": "kick {playerId} Safe Zone Violation",
+      "announceRestock": "say -1 Trader has restocked rare keys!"
+    }
+  },
+  "autonomous": {
+    "autoRestock": true,
+    "restockAnnouncements": true,
+    "violationLogging": true,
+    "databaseTable": "trader_transactions"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "id": "tony_pig_territories",
+    "target": "env/pig_territories.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

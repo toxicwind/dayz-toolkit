@@ -1,0 +1,7 @@
+{
+    "id": "ezstreet_bm_trader",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/EZStreet_bm_Trader.json",
+    "target": "custom/EZStreet_bm_Trader.json",
+    "enabled": true
+}

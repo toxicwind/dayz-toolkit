@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Remove unwanted loot: cargo nets, chemlights, pox items, flags -->
+<types>
+    <!-- Cargo Nets -->
+    <type name="CamoNet">
+        <nominal>0</nominal>
+    </type>
+    <type name="CargoNet">
+        <nominal>0</nominal>
+    </type>
+    
+    <!-- Chemlights -->
+    <type name="Chemlight_Blue">
+        <nominal>0</nominal>
+    </type>
+    <type name="Chemlight_Green">
+        <nominal>0</nominal>
+    </type>
+    <type name="Chemlight_Red">
+        <nominal>0</nominal>
+    </type>
+    <type name="Chemlight_White">
+        <nominal>0</nominal>
+    </type>
+    <type name="Chemlight_Yellow">
+        <nominal>0</nominal>
+    </type>
+    
+    <!-- Pox Items -->
+    <type name="PoxAntidote">
+        <nominal>0</nominal>
+    </type>
+    <type name="PoxVial">
+        <nominal>0</nominal>
+    </type>
+    <type name="Grenade_Pox">
+        <nominal>0</nominal>
+    </type>
+    
+    <!-- Flags -->
+    <type name="Flag_Altis">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_APA">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_Bohemia">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_BrainZ">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_CDF">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_Chernarus">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_CHEL">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_Chedaki">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_CMC">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_DayZ">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_Livonia">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_LivoniaArmy">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_LivoniaPolice">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_NAPA">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_NSahrani">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_Pirate">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_REF">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_Russia">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_SSahrani">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_TEC">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_UEC">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_UN">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_USMC">
+        <nominal>0</nominal>
+    </type>
+    <type name="Flag_White">
+        <nominal>0</nominal>
+    </type>
+</types>

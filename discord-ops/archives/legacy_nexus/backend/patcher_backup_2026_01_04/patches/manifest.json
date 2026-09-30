@@ -1,0 +1,49 @@
+{
+    "meta": {
+        "name": "live_xbox_rollup",
+        "description": "Console-safe patches (GOOPSTA/Tony + live stamina/globals)",
+        "organized_date": "2026-01-05",
+        "platform": "xbox"
+    },
+    "categories": {
+        "live_xbox": "Active Xbox/Nitrado patches from Tony/GOOPSTA and live server",
+        "tony_fixes": "Source patches from Tony (Jan 4, 2026)",
+        "ezstreet_live": "Live gameplay/global overrides"
+    },
+    "patches": [
+        {
+            "file": "live_xbox/vehicle_admin.xml.json",
+            "target": "cfgeventspawns.xml",
+            "enabled": true,
+            "category": "live_xbox",
+            "description": "Replace VehicleHatchback02Admin with Vehicle02Admin (tested on Xbox)"
+        },
+        {
+            "file": "live_xbox/container_keys.xml.json",
+            "target": "db/types.xml",
+            "enabled": true,
+            "category": "live_xbox",
+            "description": "Clean ShippingContainerKeys categories/usages for Xbox spawn pool"
+        },
+        {
+            "file": "live_xbox/cfggameplay.json.patch_gameplay_settings.json",
+            "target": "cfggameplay.json",
+            "enabled": true,
+            "category": "live_xbox",
+            "description": "StaminaMax 100 (console-safe gameplay override)"
+        },
+        {
+            "file": "live_xbox/db/globals.xml.patch_manual_override.json",
+            "target": "db/globals.xml",
+            "enabled": true,
+            "category": "live_xbox",
+            "description": "Zombie/Animal counts + loot damage window tuned for live Xbox"
+        }
+    ],
+    "order": [
+        "live_xbox/vehicle_admin.xml.json",
+        "live_xbox/container_keys.xml.json",
+        "live_xbox/cfggameplay.json.patch_gameplay_settings.json",
+        "live_xbox/db/globals.xml.patch_manual_override.json"
+    ]
+}

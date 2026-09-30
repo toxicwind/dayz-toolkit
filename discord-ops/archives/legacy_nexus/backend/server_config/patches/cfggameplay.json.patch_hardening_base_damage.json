@@ -1,0 +1,7 @@
+[
+    {
+        "op": "replace",
+        "path": "/GeneralData/disableBaseDamage",
+        "value": true
+    }
+]

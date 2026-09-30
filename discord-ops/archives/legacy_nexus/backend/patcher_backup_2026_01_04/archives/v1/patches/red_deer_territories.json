@@ -1,0 +1,6 @@
+{
+    "id": "tony_red_deer_territories",
+    "target": "env/red_deer_territories.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

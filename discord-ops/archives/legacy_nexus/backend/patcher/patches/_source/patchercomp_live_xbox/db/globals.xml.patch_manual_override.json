@@ -1,0 +1,26 @@
+[
+    {
+        "op": "set_attr",
+        "xpath": "//var[@name='ZombieMaxCount']",
+        "attr": "value",
+        "value": 1234
+    },
+    {
+        "op": "set_attr",
+        "xpath": "//var[@name='AnimalMaxCount']",
+        "attr": "value",
+        "value": 200
+    },
+    {
+        "op": "set_attr",
+        "xpath": "//var[@name='LootDamageMin']",
+        "attr": "value",
+        "value": 0.0
+    },
+    {
+        "op": "set_attr",
+        "xpath": "//var[@name='LootDamageMax']",
+        "attr": "value",
+        "value": 0.82
+    }
+]

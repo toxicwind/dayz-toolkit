@@ -1,0 +1,13 @@
+{
+  "id": "no_food_decay",
+  "name": "No Food Decay",
+  "description": "Disable food spoilage",
+  "target": "db/globals.xml",
+  "type": "xml_patch",
+  "xpath": "//var[@name='FoodDecay']",
+  "values": {
+    "value": 0
+  },
+  "notes": "Set FoodDecay value to 0 in globals.xml",
+  "enabled": true
+}

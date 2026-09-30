@@ -1,0 +1,7 @@
+{
+    "id": "ezstreet_fightcage_nwaf",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/EZStreet_FightCage_Nwaf.json",
+    "target": "custom/EZStreet_FightCage_Nwaf.json",
+    "enabled": true
+}

@@ -1,0 +1,6 @@
+{
+    "id": "tony_mapgroupproto",
+    "target": "mapgroupproto.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

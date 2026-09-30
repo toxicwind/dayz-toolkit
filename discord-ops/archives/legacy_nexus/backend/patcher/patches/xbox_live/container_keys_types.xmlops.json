@@ -1,0 +1,100 @@
+{
+  "ops": [
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Blue']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Blue']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Blue']/value[@name='Tier4']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Orange']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Orange']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Orange']/value[@name='Tier4']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Yellow']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Yellow']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Yellow']/value[@name='Tier4']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Red']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Red']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKeys_Red']/value[@name='Tier4']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Blue']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Blue']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Blue']/value[@name='Tier4']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Orange']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Orange']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Orange']/value[@name='Tier4']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Yellow']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Yellow']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Yellow']/value[@name='Tier4']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Red']/category[@name='weapons']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Red']/usage[@name='Military']"
+    },
+    {
+      "op": "remove",
+      "xpath": ".//type[@name='ShippingContainerKey_Red']/value[@name='Tier4']"
+    }
+  ]
+}

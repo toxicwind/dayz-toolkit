@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<variables>
+  <var name="ZombieMaxCount" value="800" type="0"/>
+</variables>

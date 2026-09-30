@@ -1,0 +1,15 @@
+# ============================================
+# DEVELOPMENT ENVIRONMENT OVERRIDES
+# ============================================
+# This file overrides global.yaml for local development
+
+metrics:
+  enabled: true
+  port: 9110
+
+bot_mysql:
+  host: "localhost"
+  port: 3306
+
+# Enable self-play for testing
+# Set ENABLE_SELFPLAY=true in .env to activate

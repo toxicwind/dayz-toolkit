@@ -1,0 +1,6 @@
+{
+    "id": "add_locked_containers_event",
+    "type": "xml_patch",
+    "target": "db/events.xml",
+    "description": "Injects the StaticContainerLocked event definition."
+}

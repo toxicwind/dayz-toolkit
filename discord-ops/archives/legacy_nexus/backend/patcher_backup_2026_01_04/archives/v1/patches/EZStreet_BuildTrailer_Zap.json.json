@@ -1,0 +1,7 @@
+{
+    "id": "ezstreet_buildtrailer_zap",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/EZStreet_BuildTrailer_Zap.json",
+    "target": "custom/EZStreet_BuildTrailer_Zap.json",
+    "enabled": true
+}

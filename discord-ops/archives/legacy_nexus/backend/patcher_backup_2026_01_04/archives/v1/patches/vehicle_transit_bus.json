@@ -1,0 +1,9 @@
+{
+  "id": "vehicle_transit_bus_event",
+  "name": "Add VehicleTransitBus event",
+  "description": "Adds TransitBus dynamic event so cfgeventspawns entry resolves",
+  "type": "xml_patch",
+  "target": "db/events.xml",
+  "notes": "Appends TransitBus event; CE warning 'non-existing event VehicleTransitBus' goes away",
+  "enabled": true
+}

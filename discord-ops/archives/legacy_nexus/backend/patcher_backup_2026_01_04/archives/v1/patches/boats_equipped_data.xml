@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PATCH 17: Boats Spawn Equipped -->
+<spawnabletypes>
+    <type name="Boat_01_Black">
+        <attachments chance="1.00">
+            <item name="SparkPlug" chance="1.00"/>
+        </attachments>
+        <cargo chance="1.00">
+            <item name="CanisterGasoline" chance="1.00"/>
+        </cargo>
+    </type>
+    <type name="Boat_01_Blue">
+        <attachments chance="1.00">
+            <item name="SparkPlug" chance="1.00"/>
+        </attachments>
+        <cargo chance="1.00">
+            <item name="CanisterGasoline" chance="1.00"/>
+        </cargo>
+    </type>
+    <type name="Boat_01_Camo">
+        <attachments chance="1.00">
+            <item name="SparkPlug" chance="1.00"/>
+        </attachments>
+        <cargo chance="1.00">
+            <item name="CanisterGasoline" chance="1.00"/>
+        </cargo>
+    </type>
+    <type name="Boat_01_Orange">
+        <attachments chance="1.00">
+            <item name="SparkPlug" chance="1.00"/>
+        </attachments>
+        <cargo chance="1.00">
+            <item name="CanisterGasoline" chance="1.00"/>
+        </cargo>
+    </type>
+</spawnabletypes>

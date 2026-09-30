@@ -1,0 +1,404 @@
+{
+  "channels": [
+    {
+      "id": 1459130448214229024,
+      "name": "\u3010\ud83c\udfaf\u3011bounty",
+      "type": "text",
+      "category_id": 1459130440832254083,
+      "position": 33
+    },
+    {
+      "id": 1459508528778707111,
+      "name": "\ud83d\udfe2-server-status",
+      "type": "text",
+      "category_id": 1454365349918277704,
+      "position": 0
+    },
+    {
+      "id": 1452545382734106685,
+      "name": "\u3016\ud83d\udea8\u3017build-rules",
+      "type": "text",
+      "category_id": 1452543531422847058,
+      "position": 7
+    },
+    {
+      "id": 1459130450571427944,
+      "name": "\u3010\ud83d\udd25\u3011heatmaps",
+      "type": "text",
+      "category_id": 1459130440832254083,
+      "position": 35
+    },
+    {
+      "id": 1459130441587228673,
+      "name": "\u3010\ud83d\udc80\u3011kill-feed",
+      "type": "text",
+      "category_id": 1452551481776406528,
+      "position": 10
+    },
+    {
+      "id": 1459508533727985669,
+      "name": "\u26b0-deathfeed",
+      "type": "text",
+      "category_id": 1454365349918277704,
+      "position": 4
+    },
+    {
+      "id": 1418315613448699929,
+      "name": "\u3016\ud83e\udea9\u3017The-Hangout",
+      "type": "voice",
+      "category_id": 1418315613448699928,
+      "position": 1
+    },
+    {
+      "id": 1453694422557397088,
+      "name": "\u3016\ud83d\udcc4\u3017help-and-support-ticket",
+      "type": "text",
+      "category_id": 1452543531422847058,
+      "position": 5
+    },
+    {
+      "id": 1459130458108334215,
+      "name": "\u3010\ud83d\udd28\u3011build-feed",
+      "type": "text",
+      "category_id": 1459130440832254083,
+      "position": 28
+    },
+    {
+      "id": 1458420631384359036,
+      "name": "\u3010\ud83d\uddc4\ufe0f\u3011help-ticket-script-logs",
+      "type": "text",
+      "category_id": 1459130440832254083,
+      "position": 31
+    },
+    {
+      "id": 1452542522814627910,
+      "name": "\u3016\ud83d\uddfa\ufe0f\u3017ezstreet-poi",
+      "type": "text",
+      "category_id": 1452534696037580860,
+      "position": 3
+    },
+    {
+      "id": 1459508530225745964,
+      "name": "\ud83d\udee1-admin-alerts",
+      "type": "text",
+      "category_id": 1454365349918277704,
+      "position": 1
+    },
+    {
+      "id": 1452543024096608277,
+      "name": "\u3016\ud83d\udc68\u200d\u2696\ufe0f\u3017The Counsel",
+      "type": "voice",
+      "category_id": 1418315613448699928,
+      "position": 0
+    },
+    {
+      "id": 1453392470544220160,
+      "name": "\u3016\ud83d\udca4\u3017Big-Sleeperz",
+      "type": "voice",
+      "category_id": 1418315613448699928,
+      "position": 3
+    },
+    {
+      "id": 1459508532465504328,
+      "name": "\u2728-deploy-feed",
+      "type": "text",
+      "category_id": 1454365349918277704,
+      "position": 3
+    },
+    {
+      "id": 1459130443306635406,
+      "name": "\u3010\ud83e\udddf\u3011death-feed",
+      "type": "text",
+      "category_id": 1452551481776406528,
+      "position": 11
+    },
+    {
+      "id": 1459130444611325982,
+      "name": "\u3010\ud83d\udd17\u3011link-gamertag",
+      "type": "text",
+      "category_id": 1452534696037580860,
+      "position": 1
+    },
+    {
+      "id": 1453392846617972928,
+      "name": "\u3016\ud83c\udfae\u3017Gamers-Lounge",
+      "type": "voice",
+      "category_id": 1418315613448699928,
+      "position": 2
+    },
+    {
+      "id": 1452688868548808888,
+      "name": "\u3016\ud83d\udccb\u3017player-business-application",
+      "type": "text",
+      "category_id": 1452553822982635520,
+      "position": 21
+    },
+    {
+      "id": 1459130449690497158,
+      "name": "\u3010\ud83d\udd75\ufe0f\u3011bounty-tracking",
+      "type": "text",
+      "category_id": 1459130440832254083,
+      "position": 34
+    },
+    {
+      "id": 1452545248860311552,
+      "name": "\u3016\ud83d\udea8\u3017server-rules",
+      "type": "text",
+      "category_id": 1452543531422847058,
+      "position": 6
+    },
+    {
+      "id": 1459130453742194731,
+      "name": "\u3010\ud83c\udfb0\u3011gamblers-paradise",
+      "type": "text",
+      "category_id": 1452557275871842445,
+      "position": 23
+    },
+    {
+      "id": 1459508531182174393,
+      "name": "\ud83d\udc80-killfeed",
+      "type": "text",
+      "category_id": 1454365349918277704,
+      "position": 2
+    },
+    {
+      "id": 1452554365574582345,
+      "name": "\u3016\ud83c\udfea\u3017trader-items",
+      "type": "text",
+      "category_id": 1452689076775030824,
+      "position": 24
+    },
+    {
+      "id": 1452552880337850551,
+      "name": "\u3016\ud83d\udcb0\u3017p2p-sales",
+      "type": "text",
+      "category_id": 1452552480721207379,
+      "position": 15
+    },
+    {
+      "id": 1459508536810930177,
+      "name": "\ud83d\udcdd-ops-todo",
+      "type": "text",
+      "category_id": 1454365349918277704,
+      "position": 7
+    },
+    {
+      "id": 1459130458993332502,
+      "name": "\u3010\u26d4\u3011admin-alerts",
+      "type": "text",
+      "category_id": 1459130440832254083,
+      "position": 29
+    },
+    {
+      "id": 1459508535682666519,
+      "name": "\ud83d\udce6-loot-drops",
+      "type": "text",
+      "category_id": 1454365349918277704,
+      "position": 6
+    },
+    {
+      "id": 1452561942102413322,
+      "name": "\u3016\ud83d\udcbb\u3017ezstreet-informational-links",
+      "type": "text",
+      "category_id": 1452534696037580860,
+      "position": 4
+    },
+    {
+      "id": 1459130452722978846,
+      "name": "\u3010\ud83d\udcb5\u3011economy",
+      "type": "text",
+      "category_id": 1452557275871842445,
+      "position": 22
+    },
+    {
+      "id": 1459508538253512797,
+      "name": "\ud83d\udfe2-server-connections",
+      "type": "text",
+      "category_id": 1454365349918277704,
+      "position": 8
+    },
+    {
+      "id": 1452539604233093252,
+      "name": "\u3016\ud83d\udce2\u3017announcements",
+      "type": "text",
+      "category_id": 1452534696037580860,
+      "position": 2
+    },
+    {
+      "id": 1459508534877360222,
+      "name": "\ud83d\udcca-metrics",
+      "type": "text",
+      "category_id": 1454365349918277704,
+      "position": 5
+    },
+    {
+      "id": 1452551956597051494,
+      "name": "\u3016\ud83c\udfa4\u3017server-advertisement",
+      "type": "text",
+      "category_id": 1452543531422847058,
+      "position": 8
+    },
+    {
+      "id": 1452686910131798056,
+      "name": "\u3016\ud83c\udfae\u3017server-game-clips",
+      "type": "text",
+      "category_id": 1452552480721207379,
+      "position": 19
+    },
+    {
+      "id": 1452558780402499696,
+      "name": "\u3016\ud83d\ude95\u3017take-off-taxi-service",
+      "type": "text",
+      "category_id": 1452553822982635520,
+      "position": 20
+    },
+    {
+      "id": 1453120915461115984,
+      "name": "\u3016\ud83d\udea7\u3017base-add-ons",
+      "type": "text",
+      "category_id": 1452552364266360884,
+      "position": 13
+    },
+    {
+      "id": 1453904357497110720,
+      "name": "\u3016\ud83c\udfea\u3017trader-ticket",
+      "type": "text",
+      "category_id": 1452689076775030824,
+      "position": 25
+    },
+    {
+      "id": 1459225414819123364,
+      "name": "\u3010\ud83d\uddc4\ufe0f\u3011trader-ticket-script-logs",
+      "type": "text",
+      "category_id": 1459130440832254083,
+      "position": 32
+    },
+    {
+      "id": 1459130460989821043,
+      "name": "\u3010\ud83e\uddfb\u3011admin-logs",
+      "type": "text",
+      "category_id": 1459130440832254083,
+      "position": 30
+    },
+    {
+      "id": 1456138484719947806,
+      "name": "\u3016\u2754\u3017player-quests",
+      "type": "text",
+      "category_id": 1452552480721207379,
+      "position": 17
+    },
+    {
+      "id": 1452593227960942643,
+      "name": "\u3016\ud83d\udc51\u3017vip-tiers",
+      "type": "text",
+      "category_id": 1452552364266360884,
+      "position": 12
+    },
+    {
+      "id": 1452535146044461227,
+      "name": "\u3016\ud83d\udc4b\u3017welcome",
+      "type": "text",
+      "category_id": 1452534696037580860,
+      "position": 0
+    },
+    {
+      "id": 1459130456707698821,
+      "name": "\u3010\ud83d\udfe2\u3011connections",
+      "type": "text",
+      "category_id": 1459130440832254083,
+      "position": 27
+    },
+    {
+      "id": 1453397055275008177,
+      "name": "\u3016\ud83d\udd28\u3017the-counsel-chat",
+      "type": "text",
+      "category_id": 1459130440832254083,
+      "position": 26
+    },
+    {
+      "id": 1456148116242956312,
+      "name": "\u3016\ud83d\udc65\u3017faction-hub",
+      "type": "text",
+      "category_id": 1452552480721207379,
+      "position": 16
+    },
+    {
+      "id": 1459130445881938107,
+      "name": "\u3010\ud83d\udcca\u3011stats-leaderboards",
+      "type": "text",
+      "category_id": 1452552480721207379,
+      "position": 18
+    },
+    {
+      "id": 1452552700800794755,
+      "name": "\u3016\ud83d\udcac\u3017general-chat",
+      "type": "text",
+      "category_id": 1452552480721207379,
+      "position": 14
+    },
+    {
+      "id": 1459130447090155555,
+      "name": "\u3010\ud83d\udd03\u3011auto-leaderboard",
+      "type": "text",
+      "category_id": 1452543531422847058,
+      "position": 9
+    }
+  ],
+  "categories": [
+    {
+      "id": 1418315613448699928,
+      "name": "VOICE CHAT",
+      "position": 0
+    },
+    {
+      "id": 1452534696037580860,
+      "name": "EZStreet - PVE",
+      "position": 1
+    },
+    {
+      "id": 1452543531422847058,
+      "name": "SERVER INFO",
+      "position": 2
+    },
+    {
+      "id": 1452551481776406528,
+      "name": "FEED INFORMATION",
+      "position": 3
+    },
+    {
+      "id": 1452552364266360884,
+      "name": "SERVER DONATONS",
+      "position": 4
+    },
+    {
+      "id": 1452552480721207379,
+      "name": "PLAYER-HUB",
+      "position": 5
+    },
+    {
+      "id": 1452553822982635520,
+      "name": "COMMUNITY-BUSINESSES",
+      "position": 6
+    },
+    {
+      "id": 1452557275871842445,
+      "name": "ECONOMY",
+      "position": 7
+    },
+    {
+      "id": 1452689076775030824,
+      "name": "TRADER-HUB",
+      "position": 8
+    },
+    {
+      "id": 1459130440832254083,
+      "name": "HDB Killfeed - EZStreet Admin Hub",
+      "position": 10
+    },
+    {
+      "id": 1454365349918277704,
+      "name": "\ud83e\uddea Ops",
+      "position": 11
+    }
+  ]
+}

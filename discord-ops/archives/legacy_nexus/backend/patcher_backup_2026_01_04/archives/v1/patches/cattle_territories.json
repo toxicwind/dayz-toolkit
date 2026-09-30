@@ -1,0 +1,6 @@
+{
+    "id": "tony_cattle_territories",
+    "target": "env/cattle_territories.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

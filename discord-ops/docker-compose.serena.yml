@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  serena:
+    image: ghcr.io/oraios/serena:latest
+    restart: unless-stopped
+    environment:
+      - SERENA_DOCKER=1
+      - SERENA_PORT=9121
+      - SERENA_DASHBOARD_PORT=24282
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "9121:9121"    # MCP server port
+      - "24282:24282"  # Dashboard
+    volumes:
+      - ./serena-config:/workspaces/serena/config:rw
+      - ./:/workspaces/projects/my-project:ro
+    # Use installed serena CLI inside the image (do not build local package in-container)
+    command: ["serena", "start-mcp-server", "--transport", "sse", "--port", "9121", "--host", "0.0.0.0", "--context", "claude-code", "--project", "/workspaces/projects/my-project"]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9121/ || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+# Usage:
+# docker compose -f docker-compose.serena.yml up -d
+# or add this file into your existing compose stack using -f flags or by merging

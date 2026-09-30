@@ -1,0 +1,21 @@
+{
+    "id": "boats_spawn_equipped",
+    "name": "Boats Spawn Fully Equipped",
+    "description": "Boats spawn with fuel and spark plugs installed",
+    "target": "cfgspawnabletypes.xml",
+    "operations": [
+        {
+            "type": "add_attachments",
+            "xpath": "//type[contains(@name, 'Boat') or contains(@name, 'PBX')]",
+            "attachments": [
+                {
+                    "classname": "SparkPlug"
+                },
+                {
+                    "classname": "CanisterGasoline"
+                }
+            ]
+        }
+    ],
+    "enabled": true
+}

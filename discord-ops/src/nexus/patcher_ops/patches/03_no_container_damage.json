@@ -1,0 +1,11 @@
+{
+  "id": "no_container_damage",
+  "name": "No Container Damage",
+  "description": "Disable damage to storage containers",
+  "target": "cfggameplay.json",
+  "path": "GeneralData",
+  "values": {
+    "disableContainerDamage": true
+  },
+  "enabled": true
+}

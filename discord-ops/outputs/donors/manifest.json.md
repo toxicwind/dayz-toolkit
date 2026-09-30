@@ -1,0 +1,109 @@
+# Donor: patcher/patches/manifest.json
+
+```text
+{
+  "meta": {
+    "version": "1.0",
+    "description": "DayZ Server Patch Manifest - Modular Feature Toggles",
+    "generatedAt": "2025-12-24"
+  },
+  "patches": [
+    {
+      "file": "01_unlimited_stamina.json",
+      "enabled": true,
+      "category": "gameplay"
+    },
+    {
+      "file": "02_no_base_damage.json",
+      "enabled": true,
+      "category": "base"
+    },
+    {
+      "file": "03_no_container_damage.json",
+      "enabled": true,
+      "category": "base"
+    },
+    {
+      "file": "04_build_anywhere.json",
+      "enabled": true,
+      "category": "base"
+    },
+    {
+      "file": "05_custom_loadout.json",
+      "enabled": true,
+      "category": "spawn"
+    },
+    {
+      "file": "06_increased_animals.json",
+      "enabled": true,
+      "category": "economy"
+    },
+    {
+      "file": "07_increased_vehicles.json",
+      "enabled": true,
+      "category": "economy"
+    },
+    {
+      "file": "08_vehicles_equipped.json",
+      "enabled": true,
+      "category": "economy"
+    },
+    {
+      "file": "09_no_food_decay.json",
+      "enabled": true,
+      "category": "gameplay"
+    },
+    {
+      "file": "10_no_weather.json",
+      "enabled": true,
+      "category": "world"
+    },
+    {
+      "file": "11_pristine_loot.json",
+      "enabled": true,
+      "category": "economy"
+    },
+    {
+      "file": "12_map_player_position.json",
+      "enabled": true,
+      "category": "gameplay"
+    },
+    {
+      "file": "13_locked_containers_types.xml",
+      "enabled": false,
+      "category": "economy"
+    },
+    {
+      "file": "14_locked_containers_event.xml",
+      "enabled": false,
+      "category": "economy"
+    },
+    {
+      "file": "15_locked_containers_mapgroupproto.xml",
+      "enabled": false,
+      "category": "economy"
+    },
+    {
+      "file": "16_locked_containers_presets.json",
+      "enabled": false,
+      "category": "economy"
+    }
+  ],
+  "categories": {
+    "gameplay": "Player mechanics (stamina, food, etc.)",
+    "base": "Base building and protection",
+    "spawn": "Player spawn configuration",
+    "economy": "Loot, vehicles, animals",
+    "world": "Weather, environment"
+  }
+}
+
+```
+
+---
+
+{
+  "source": "patcher/patches/manifest.json",
+  "size": 2132,
+  "mtime": "2026-01-08T05:46:26.274175Z"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "add_fox_territories",
+    "name": "Add fox territories file",
+    "description": "Copy fox_territories.xml from DZ_128 baseline into mission env/",
+    "type": "raw_copy",
+    "source": "staging/baselines/dz_128/dayzOffline.chernarusplus/env/fox_territories.xml",
+    "target": "env/fox_territories.xml",
+    "enabled": true
+}

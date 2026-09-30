@@ -1,0 +1,17 @@
+{
+  "description": "Tony's Vehicle02Admin fix (tested Jan 4, 2026 night)",
+  "target_file": "cfgeventspawns.xml",
+  "operations": [
+    {
+      "op": "remove",
+      "xpath": "//event[@name='VehicleHatchback02Admin']",
+      "comment": "Remove old admin hatchback"
+    },
+    {
+      "op": "add",
+      "xpath": "/eventposdef",
+      "position": "0",
+      "element": "<event name=\"Vehicle02Admin\">\n\t\t<pos x=\"10376.90\" z=\"14214.80\" a=\"63.438690\" />\n\t\t</event>"
+    }
+  ]
+}

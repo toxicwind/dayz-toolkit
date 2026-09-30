@@ -1,0 +1,71 @@
+{
+    "meta": {
+        "version": "2.0",
+        "description": "DayZ Xbox/Console Modular Patch Manifest"
+    },
+    "patches": [
+        {
+            "name": "Unlimited Stamina",
+            "description": "Zero stamina drain for sprinting",
+            "type": "json_merge",
+            "target": "cfggameplay.json",
+            "file": "gameplay/20_unlimited_stamina.json",
+            "enabled": true,
+            "order": 20
+        },
+        {
+            "name": "Enable Container Damage",
+            "description": "Allow tents and barrels to take damage",
+            "type": "json_merge",
+            "target": "cfggameplay.json",
+            "file": "gameplay/21_enable_container_damage.json",
+            "enabled": true,
+            "order": 21
+        },
+        {
+            "name": "No Fog",
+            "description": "Disable fog globally",
+            "type": "xml_ops",
+            "target": "cfgweather.xml",
+            "file": "events/30_no_fog.json",
+            "enabled": true,
+            "order": 30
+        },
+        {
+            "name": "Disable Dynamic Gas",
+            "description": "Turn off contamination zones",
+            "type": "xml_ops",
+            "target": "db/events.xml",
+            "file": "events/31_disable_dynamic_gas.json",
+            "enabled": true,
+            "order": 31
+        },
+        {
+            "name": "Boost Heli Crashes",
+            "description": "Increase crash events to 15",
+            "type": "xml_ops",
+            "target": "db/events.xml",
+            "file": "events/32_boost_heli_crashes.json",
+            "enabled": true,
+            "order": 32
+        },
+        {
+            "name": "Remove Junk Loot",
+            "description": "Zero out nominals for unwanted items",
+            "type": "xml_ops",
+            "target": "db/types.xml",
+            "file": "economy/10_remove_junk.json",
+            "enabled": true,
+            "order": 10
+        },
+        {
+            "name": "Add Custom Loot",
+            "description": "Inject Cannabis, Cigs, Keys",
+            "type": "xml_ops",
+            "target": "db/types.xml",
+            "file": "economy/11_add_custom_loot.json",
+            "enabled": true,
+            "order": 11
+        }
+    ]
+}

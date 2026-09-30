@@ -1,0 +1,9 @@
+{
+  "id": "boats_equipped",
+  "name": "Boats Spawn Equipped",
+  "description": "Attach spark plug and stash a gas can in cargo for all Boat_01 variants.",
+  "target": "cfgspawnabletypes.xml",
+  "type": "xml_patch",
+  "notes": "Ensures boats are usable immediately after spawn.",
+  "enabled": true
+}

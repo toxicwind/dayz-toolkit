@@ -1,0 +1,11 @@
+{
+  "id": "vehicles_fully_equipped_deprecated",
+  "name": "[DEPRECATED] Vehicles Fully Equipped (v1)",
+  "description": "Legacy two-car patch superseded by 18_cars_fully_equipped.json. Leave disabled.",
+  "target": "cfgspawnabletypes.xml",
+  "type": "xml_patch",
+  "notes": "Deprecated in favor of 18_cars_fully_equipped.json (covers full car set + cargo can). Kept for history; do not re-enable.",
+  "enabled": false,
+  "deprecated": true,
+  "superseded_by": "18_cars_fully_equipped"
+}

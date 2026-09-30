@@ -1,0 +1,13 @@
+{
+    "id": "player_map_gps",
+    "name": "Player Map GPS & Direction",
+    "description": "Enable debug monitor to show player position and direction on map",
+    "target": "cfggameplay.json",
+    "path": "UIData",
+    "values": {
+        "enableDebugMonitor": 1,
+        "enableCrosshair": 1
+    },
+    "enabled": true,
+    "type": "json_merge"
+}

@@ -1,0 +1,102 @@
+# ============================================
+# GLOBAL CONFIGURATION
+# ============================================
+# This file contains shared defaults for all environments and services.
+# Override with env/{env}.yaml or teams/{service}.yaml
+# Secrets should be set via environment variables.
+
+server_name: "DayZ Server"
+platform: "pc"
+
+# ============================================
+# Discord Settings
+# ============================================
+discord:
+  token: ""  # Override with DISCORD_TOKEN env var (REQUIRED)
+  guild_id: 0  # Override with DISCORD_GUILD_ID env var or in teams/{service}.yaml
+  admin_role_ids: []
+  admin_channel_id: 0
+  status_channel_id: 0
+  changefeed_channel_id: 0
+  killfeed_channel_id: 0
+  deathfeed_channel_id: 0
+  server_status_channel_id: 0
+  admin_log_channel_id: 0
+  loot_events_channel_id: 0
+  use_presence: true
+  stat_channels_json: ""
+
+# ============================================
+# Nitrado API Settings
+# ============================================
+nitrado:
+  api_token: ""  # Override with EZSTREET_NITRADO_TOKEN env var
+  service_id: 0
+  email: null
+  password: null
+
+# ============================================
+# FTP Settings (Read-Only by default)
+# ============================================
+ftp:
+  host: ""
+  port: 21
+  user: ""  # Override with EZSTREET_FTP_USER env var
+  password: ""  # Override with EZSTREET_FTP_PASSWORD env var
+  log_path: "/games/ni123456/ftproot/dayzxb/config"
+  base_path: "/"
+  mission_path: "/games/ni123456/ftproot/dayzxb_missions/dayzOffline.chernarusplus"
+
+# ============================================
+# MySQL Database Settings
+# ============================================
+bot_mysql:
+  host: "localhost"
+  port: 3306
+  user: "dayzbot"
+  password: ""  # Override with MYSQL_PASSWORD env var
+  database: "dayz_metrics"
+
+nitrado_mysql:
+  host: ""
+  port: 3306
+  user: ""
+  password: ""
+  database: ""
+
+# ============================================
+# Query Settings
+# ============================================
+query:
+  host: ""
+  port: 2302
+
+# ============================================
+# A2S Query Settings
+# ============================================
+a2s:
+  timeout: 3.0
+  retries: 2
+  retry_backoff: 1.0
+  cache_ttl: 5.0
+  port_offsets: [0]
+
+# ============================================
+# Metrics & Monitoring
+# ============================================
+metrics:
+  enabled: false
+  port: 9110
+
+# ============================================
+# Feature Flags
+# ============================================
+killfeed_enabled: true
+
+# ============================================
+# Paths
+# ============================================
+paths:
+  state_dir: "./state/default"
+  mission: "./staging/default/dayzxb_missions/dayzOffline.chernarusplus"
+  ftp_ingest: "./staging/default"

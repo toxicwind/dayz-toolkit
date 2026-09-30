@@ -1,0 +1,7 @@
+{
+    "id": "tony_cfggameplay_raw",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/cfggameplay_data.json",
+    "target": "cfggameplay.json",
+    "enabled": true
+}

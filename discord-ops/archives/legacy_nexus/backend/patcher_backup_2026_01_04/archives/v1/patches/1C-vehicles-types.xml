@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Vehicle Types Patch - Increased Spawns
+  Adds to custom/ folder, referenced via cfgeconomycore.xml
+  - Increases nominal for all base vehicles
+  - Sets min to ensure vehicles always available
+-->
+<types>
+    <!-- Hatchback_02 (Main body) -->
+    <type name="Hatchback_02">
+        <nominal>15</nominal>
+        <lifetime>3888000</lifetime>
+        <restock>0</restock>
+        <min>8</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="vehicles"/>
+    </type>
+    <type name="Hatchback_02_Black">
+        <nominal>5</nominal>
+        <lifetime>3888000</lifetime>
+        <restock>0</restock>
+        <min>3</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="vehicles"/>
+    </type>
+    <type name="Hatchback_02_Blue">
+        <nominal>5</nominal>
+        <lifetime>3888000</lifetime>
+        <restock>0</restock>
+        <min>3</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="vehicles"/>
+    </type>
+    
+    <!-- Sedan_02 -->
+    <type name="Sedan_02">
+        <nominal>15</nominal>
+        <lifetime>3888000</lifetime>
+        <restock>0</restock>
+        <min>8</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="vehicles"/>
+    </type>
+    
+    <!-- CivilianSedan -->
+    <type name="CivilianSedan">
+        <nominal>15</nominal>
+        <lifetime>3888000</lifetime>
+        <restock>0</restock>
+        <min>8</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="vehicles"/>
+    </type>
+    
+    <!-- OffroadHatchback -->
+    <type name="OffroadHatchback">
+        <nominal>15</nominal>
+        <lifetime>3888000</lifetime>
+        <restock>0</restock>
+        <min>8</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="vehicles"/>
+    </type>
+    
+    <!-- Offroad_02 -->
+    <type name="Offroad_02">
+        <nominal>10</nominal>
+        <lifetime>3888000</lifetime>
+        <restock>0</restock>
+        <min>5</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="vehicles"/>
+    </type>
+    
+    <!-- Truck_01 -->
+    <type name="Truck_01_Covered">
+        <nominal>8</nominal>
+        <lifetime>3888000</lifetime>
+        <restock>0</restock>
+        <min>4</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="vehicles"/>
+    </type>
+</types>

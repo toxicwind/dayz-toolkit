@@ -1,0 +1,60 @@
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/cogs/selfplay_driver.py:        # User requested specific ID: 1452535146044461227
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/cogs/selfplay_driver.py:        specific_ids = [1452535146044461227, 1453978341076893868] 
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/routers/discord_ops.py:    "casino": 1452554475909812366,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/routers/discord_ops.py:    "killfeed": 1453504155388874906,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/routers/discord_ops.py:    "deathfeed": 1453504309634531490,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/routers/discord_ops.py:    "status": 1453978341076893868,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/routers/discord_ops.py:    "todo": 1454568932051783918,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/routers/discord_ops.py:    "admin": 1454365351365316713,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/routers/discord_ops.py:    "sandbox": 1454646232374055116,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/routers/discord_ops.py:    "deploy": 1454362669510561854,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/casino.py:        self.channel_id = 1452554475909812366
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord_registry.py:            1454356540587905075,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord_registry.py:            1452830719582933054,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord_registry.py:            1452830604633571348,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord_registry.py:            1459130454874525739,
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord_registry.py:        self.target_category_id = 1454365349918277704
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/tickets.py:        self.panel_channel_id = 1452557811497177143
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/trader.py:        TRADE_CHANNEL_ID = 1452554365574582345
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/ops/audit_category.py:TARGET_CATEGORY_ID = 1454365349918277704
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/ops/discord_ops/check_channels.py:    "status": "1453978341076893868",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/ops/discord_ops/check_channels.py:    "killfeed": "1453504155388874906",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/ops/discord_ops/check_channels.py:    "deathfeed": "1453504309634531490",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/ops/discord_ops/check_channels.py:    "changefeed": "1452830206141399071",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/ops/discord_ops/check_channels.py:    "ops_category": "1454365349918277704",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/ops/discord_ops/check_channels.py:    "todo": "1454568932051783918",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/ops/discord_ops/seed_todo_channel.py:    todo_channel_id = "1454568932051783918"
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/ops/reconstitute_discord.py:        # ezstreet guild_id: 1418315612005994650
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_spec.json:    "target_category_id": "1454365349918277704",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_spec.json:            "legacy_id": "1452830604633571348",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_spec.json:            "legacy_id": "1452830719582933054",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_spec.json:            "legacy_id": "1452830824742523026",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_spec.json:            "legacy_id": "1459130454874525739",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_spec.json:            "legacy_id": "1454356540587905075",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_spec.json:            "name": "archive-1454356540587905075",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_state.json:    "ops.status": "1459469236295565533",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_state.json:    "ops.admin": "1459469238464155659",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_state.json:    "ops.killfeed": "1459469240305324062",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_state.json:    "ops.changefeed": "1459469242435895470",
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/discord/channel_state.json:    "legacy.unknown_1": "1459469245028110367"
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/src/mildlyawesome/data/server/ezstreet/config_legacy.json.bak:    "killfeed_channel_id": 1452540476451197042
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/config.mildlyawesome/teams/ezstreet.yaml:  guild_id: 1418315612005994650
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/config.mildlyawesome/teams/ezstreet.yaml:  status_channel_id: 1452830604633571348
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/config.mildlyawesome/teams/ezstreet.yaml:  admin_channel_id: 1452830719582933054
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/config.mildlyawesome/teams/ezstreet.yaml:  query_channel_id: 1452830824742523026
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/config.mildlyawesome/teams/ezstreet.yaml:  killfeed_channel_id: 1452830824742523026
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/config.mildlyawesome/teams/ezstreet.yaml:  changefeed_channel_id: 1452830604633571348
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/config.mildlyawesome/teams/ezstreet.yaml:  stat_channels_json: '{"members_total":1452830604633571348,"members_online":1452830719582933054,"dayz_players":1452830824742523026}'
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/environments/.env.global:DISCORD_GUILD_ID=1418315612005994650
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/environments/.env.global:DISCORD_ADMIN_ROLE_IDS=1418315612005994650
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/environments/.env.global:DISCORD_STATUS_CHANNEL_ID=1452830604633571348
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/environments/.env.global:DISCORD_RCON_CHANNEL_ID=1452830719582933054
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/environments/.env.global:DISCORD_QUERY_CHANNEL_ID=1452830824742523026
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/environments/.env.global:STAT_CHANNELS_JSON={"members_total":1452830604633571348,"members_online":1452830719582933054,"dayz_players":1452830824742523026}
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/teams/ezstreet.yaml:  guild_id: 1418315612005994650
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/teams/ezstreet.yaml:  status_channel_id: 1452830604633571348
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/teams/ezstreet.yaml:  admin_channel_id: 1452830719582933054
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/teams/ezstreet.yaml:  query_channel_id: 1452830824742523026
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/teams/ezstreet.yaml:  killfeed_channel_id: 1452830824742523026
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/teams/ezstreet.yaml:  changefeed_channel_id: 1452830604633571348
+/home/toxic/dayz_workspace/dayz_discord_ops_repo/config/teams/ezstreet.yaml:  stat_channels_json: '{"members_total":1452830604633571348,"members_online":1452830719582933054,"dayz_players":1452830824742523026}'

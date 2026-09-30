@@ -1,0 +1,20 @@
+{
+  "id": "sanitize_animal_events",
+  "name": "Fix NaN animal events",
+  "description": "Replace NaN nominal/min values on animal events with baseline counts",
+  "type": "xml_patch",
+  "target": "db/events.xml",
+  "complex_patches": [
+    { "xpath": "//event[@name='AnimalBear']", "values": { "nominal": 0, "min": 2 } },
+    { "xpath": "//event[@name='AnimalCow']", "values": { "nominal": 7, "min": 2 } },
+    { "xpath": "//event[@name='AnimalDeer']", "values": { "nominal": 9, "min": 2 } },
+    { "xpath": "//event[@name='AnimalGoat']", "values": { "nominal": 8, "min": 1 } },
+    { "xpath": "//event[@name='AnimalPig']", "values": { "nominal": 6, "min": 1 } },
+    { "xpath": "//event[@name='AnimalRoeDeer']", "values": { "nominal": 10, "min": 2 } },
+    { "xpath": "//event[@name='AnimalSheep']", "values": { "nominal": 5, "min": 4 } },
+    { "xpath": "//event[@name='AnimalWildBoar']", "values": { "nominal": 7, "min": 1 } },
+    { "xpath": "//event[@name='AnimalWolf']", "values": { "nominal": 8, "min": 4 } }
+  ],
+  "notes": "Cleans tool-corrupted NaN attributes so CE stops skipping these events",
+  "enabled": true
+}

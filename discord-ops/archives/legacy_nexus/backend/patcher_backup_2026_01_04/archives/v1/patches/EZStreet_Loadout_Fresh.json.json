@@ -1,0 +1,7 @@
+{
+    "id": "ezstreet_loadout_fresh",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/EZStreet_Loadout_Fresh.json",
+    "target": "custom/EZStreet_Loadout_Fresh.json",
+    "enabled": true
+}

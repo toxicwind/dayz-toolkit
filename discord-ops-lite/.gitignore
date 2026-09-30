@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+logs/
+data/
+
+# token-scrub 2026-09-14: never commit secrets
+*.pat
+github_*_pat.json
+.env*
+*secret*
+*token*

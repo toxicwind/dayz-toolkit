@@ -1,0 +1,13 @@
+{
+    "id": "restore_hatchback_spawns",
+    "type": "xml_patch",
+    "target": "cfgeventspawns.xml",
+    "description": "Restore spawn points for VehicleAdminHatchback02",
+    "complex_patches": [
+        {
+            "xpath": "/eventposdef",
+            "mode": "append",
+            "data_xml": "<event name=\"VehicleAdminHatchback02\"><pos x=\"10376.90\" z=\"14214.80\" a=\"63.438690\" /></event>"
+        }
+    ]
+}

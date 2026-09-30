@@ -1,0 +1,20 @@
+{
+  "id": "welcome_messages",
+  "name": "Server Welcome Messages",
+  "description": "Set MOTD lines to include brief welcome, discord invite, restart cadence.",
+  "target": "db/messages.xml",
+  "type": "xml_patch",
+  "notes": "Minimal MOTD; keep immersion.",
+  "complex_patches": [
+    {
+      "xpath": "/messages",
+      "replace_children_with": [
+        "<message><onconnect>1</onconnect><delay>1</delay><text>Welcome to EZStreet — survive, trade, ambush.</text></message>",
+        "<message><repeat>60</repeat><text>Discord: https://discord.gg/CrYx8jwS</text></message>",
+        "<message><repeat>90</repeat><text>EZStreet runs 2h cycles — PVE with hot zones; stash and park before timer hits.</text></message>",
+        "<message><deadline>10</deadline><shutdown>0</shutdown><text>EZStreet reset in #tmin — stash loot, kill engines, fade into the treeline.</text></message>"
+      ]
+    }
+  ],
+  "enabled": true
+}

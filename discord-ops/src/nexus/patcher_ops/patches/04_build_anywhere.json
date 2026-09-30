@@ -1,0 +1,20 @@
+{
+  "id": "build_anywhere",
+  "name": "Build Anywhere",
+  "description": "Disable all placement restrictions for base building",
+  "target": "cfggameplay.json",
+  "path": "BaseBuildingData.HologramData",
+  "values": {
+    "disableIsCollidingBBoxCheck": true,
+    "disableIsCollidingPlayerCheck": true,
+    "disableIsClippingRoofCheck": true,
+    "disableIsBaseViableCheck": true,
+    "disableIsCollidingGPlotCheck": true,
+    "disableIsCollidingAngleCheck": true,
+    "disableIsPlacementPermittedCheck": true,
+    "disableHeightPlacementCheck": true,
+    "disableIsUnderwaterCheck": true,
+    "disableIsInTerrainCheck": true
+  },
+  "enabled": true
+}

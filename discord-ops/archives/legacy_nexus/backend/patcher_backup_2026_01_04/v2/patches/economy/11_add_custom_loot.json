@@ -1,0 +1,167 @@
+{
+  "ops": [
+    {
+      "op": "upsert",
+      "tag": "type",
+      "key_attrs": {
+        "name": "CannabisSeedsPack"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "30"
+        },
+        {
+          "tag": "lifetime",
+          "text": "3600"
+        },
+        {
+          "tag": "restock",
+          "text": "1800"
+        },
+        {
+          "tag": "min",
+          "text": "15"
+        },
+        {
+          "tag": "quantmin",
+          "text": "-1"
+        },
+        {
+          "tag": "quantmax",
+          "text": "-1"
+        },
+        {
+          "tag": "cost",
+          "text": "100"
+        },
+        {
+          "tag": "category",
+          "attributes": {
+            "name": "food"
+          }
+        },
+        {
+          "tag": "usage",
+          "attributes": {
+            "name": "Farm"
+          }
+        },
+        {
+          "tag": "usage",
+          "attributes": {
+            "name": "Village"
+          }
+        },
+        {
+          "tag": "usage",
+          "attributes": {
+            "name": "Town"
+          }
+        },
+        {
+          "tag": "flags",
+          "attributes": {
+            "count_in_cargo": "0",
+            "count_in_hoarder": "0",
+            "count_in_map": "1",
+            "count_in_player": "0",
+            "crafted": "0",
+            "deloot": "0"
+          }
+        }
+      ]
+    },
+    {
+      "op": "upsert",
+      "tag": "type",
+      "key_attrs": {
+        "name": "CigarettePack_Chernamorka"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "80"
+        },
+        {
+          "tag": "min",
+          "text": "40"
+        }
+      ]
+    },
+    {
+      "op": "upsert",
+      "tag": "type",
+      "key_attrs": {
+        "name": "ShippingContainerKeys_Blue"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "10"
+        },
+        {
+          "tag": "min",
+          "text": "5"
+        }
+      ]
+    },
+    {
+      "op": "upsert",
+      "tag": "type",
+      "key_attrs": {
+        "name": "ShippingContainerKeys_Yellow"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "10"
+        },
+        {
+          "tag": "min",
+          "text": "5"
+        }
+      ]
+    },
+    {
+      "op": "upsert",
+      "tag": "type",
+      "key_attrs": {
+        "name": "ShippingContainerKeys_Red"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "10"
+        },
+        {
+          "tag": "min",
+          "text": "5"
+        }
+      ]
+    },
+    {
+      "op": "upsert",
+      "tag": "type",
+      "key_attrs": {
+        "name": "ShippingContainerKeys_Orange"
+      },
+      "replace_children": true,
+      "children": [
+        {
+          "tag": "nominal",
+          "text": "10"
+        },
+        {
+          "tag": "min",
+          "text": "5"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "vehicles_fully_equipped",
+  "name": "Vehicles Fully Equipped",
+  "description": "Spawn vehicles with all parts attached",
+  "target": "cfgspawnabletypes.xml",
+  "type": "xml_patch",
+  "notes": "Add cargo presets with vehicle parts to all vehicle types",
+  "enabled": true
+}

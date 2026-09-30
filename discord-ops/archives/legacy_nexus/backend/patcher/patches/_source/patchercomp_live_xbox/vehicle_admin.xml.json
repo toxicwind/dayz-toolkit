@@ -1,0 +1,17 @@
+{
+  "description": "Replace VehicleHatchback02Admin with Vehicle02Admin",
+  "tested": "2026-01-04 night by GOOPSTA",
+  "result": "100% cars spawning confirmed",
+  "operations": [
+    {
+      "op": "remove",
+      "xpath": "//event[@name='VehicleHatchback02Admin']"
+    },
+    {
+      "op": "add_xml",
+      "xpath": "/eventposdef",
+      "position": 0,
+      "xml": "<event name=\"Vehicle02Admin\"><pos x=\"10376.90\" z=\"14214.80\" a=\"63.438690\" /></event>"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "ops": [
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='CargoNet']",
+      "set": {
+        "nominal": "0",
+        "min": "0"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='PoxVirus']",
+      "set": {
+        "nominal": "0",
+        "min": "0"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='PoxAntivirusInjector']",
+      "set": {
+        "nominal": "0",
+        "min": "0"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='ChristmasLights']",
+      "set": {
+        "nominal": "0",
+        "min": "0"
+      }
+    },
+    {
+      "op": "set_attr",
+      "xpath": ".//type[@name='ConstructionLight']",
+      "set": {
+        "nominal": "0",
+        "min": "0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "container_damage_on",
+    "name": "Enable Container Damage",
+    "description": "Turn ON container damage to fix tents getting stuck",
+    "target": "cfggameplay.json",
+    "path": "BaseBuildingData",
+    "values": {
+        "containerDamageEnabled": true,
+        "baseDestruction": true
+    },
+    "enabled": true,
+    "type": "json_merge"
+}

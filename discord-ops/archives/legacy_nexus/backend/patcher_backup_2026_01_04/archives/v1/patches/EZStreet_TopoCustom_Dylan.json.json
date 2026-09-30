@@ -1,0 +1,7 @@
+{
+    "id": "ezstreet_topocustom_dylan",
+    "type": "raw_copy",
+    "source": "backend/patcher/patches/EZStreet_TopoCustom_Dylan.json",
+    "target": "custom/EZStreet_TopoCustom_Dylan.json",
+    "enabled": true
+}

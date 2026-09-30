@@ -1,0 +1,29 @@
+{
+    "id": "increase_heli_crashes",
+    "name": "Increase Helicopter Crash Spawn Rate",
+    "description": "Boost helicopter crash site spawn rate for better loot rotations",
+    "target": "events.xml",
+    "operations": [
+        {
+            "type": "modify_event",
+            "event_name": "StaticHeliCrash",
+            "values": {
+                "min": 3,
+                "max": 5,
+                "lifetime": 3600,
+                "restock": 0
+            }
+        },
+        {
+            "type": "modify_event",
+            "event_name": "DynamicHeliCrash",
+            "values": {
+                "min": 2,
+                "max": 4,
+                "lifetime": 2700,
+                "restock": 0
+            }
+        }
+    ],
+    "enabled": true
+}

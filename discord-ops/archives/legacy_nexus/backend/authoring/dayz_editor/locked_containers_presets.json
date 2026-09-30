@@ -1,0 +1,9 @@
+{
+  "id": "locked_containers_presets",
+  "type": "generate_presets",
+  "source": "server/ezstreet/EZStreet_Containers.json",
+  "target": "custom/Loot_Presets_Library.json",
+  "radius": 50,
+  "description": "Generate presets from EZStreet_Containers anchors/items and write Loot_Presets_Library.json into the mission custom folder.",
+  "enabled": false
+}

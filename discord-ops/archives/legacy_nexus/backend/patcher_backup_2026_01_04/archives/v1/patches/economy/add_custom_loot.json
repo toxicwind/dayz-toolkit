@@ -1,0 +1,9 @@
+{
+    "id": "add_custom_loot",
+    "name": "Add Custom Loot Items",
+    "description": "Add MJ packs, cigarettes, and container keys to loot pool",
+    "target": "types.xml",
+    "type": "xml_patch",
+    "notes": "GOOPSTA requirement: add tradeable items to loot",
+    "enabled": true
+}

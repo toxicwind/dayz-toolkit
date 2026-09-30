@@ -1,0 +1,6 @@
+{
+    "id": "tony_zombie_territories",
+    "target": "env/zombie_territories.xml",
+    "type": "xml_patch",
+    "enabled": true
+}

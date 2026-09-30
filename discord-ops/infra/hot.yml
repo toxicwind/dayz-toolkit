@@ -1,0 +1,17 @@
+services:
+  mildlyawesome-hot:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: mildlyawesome-hot-reload
+    command: uvicorn src.mildlyawesome.main:app --host 0.0.0.0 --port 8080 --reload
+    env_file: ../.env
+    volumes:
+      - ../src:/app/src
+      - ../config:/app/config
+      - ../data:/app/data
+    ports:
+      - "8080:8080"
+    environment:
+      - WATCHPACK_POLLING=true # For file change detection stability
+    restart: unless-stopped

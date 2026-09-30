@@ -1,0 +1,11 @@
+{
+  "ops": [
+    {
+      "op": "set_attr",
+      "xpath": ".//var[@name='AnimalMaxCount']",
+      "set": {
+        "value": "400"
+      }
+    }
+  ]
+}

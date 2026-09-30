@@ -1,0 +1,10 @@
+{
+    "id": "map_custom_missions",
+    "name": "Custom Missions Map Objects",
+    "description": "Copy custom mission compositions into mission custom/ for object spawner usage.",
+    "type": "raw_copy",
+    "source": "backend/patcher/resources/custom/map_missions.json",
+    "target": "custom/map_missions.json",
+    "enabled": true,
+    "category": "world"
+}

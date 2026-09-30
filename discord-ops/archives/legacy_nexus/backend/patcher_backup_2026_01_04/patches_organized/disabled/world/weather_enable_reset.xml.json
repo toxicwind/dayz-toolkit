@@ -1,0 +1,12 @@
+{
+  "ops": [
+    {
+      "op": "set_attr",
+      "xpath": ".",
+      "set": {
+        "enable": "1",
+        "reset": "1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Add custom loot: Cannabis seeds, cigarettes, container keys -->
+<types>
+    <!-- Cannabis Seeds (MJ packs) -->
+    <type name="CannabisSeedsPack">
+        <nominal>30</nominal>
+        <lifetime>3600</lifetime>
+        <restock>1800</restock>
+        <min>15</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="food"/>
+        <usage name="Farm"/>
+        <usage name="Village"/>
+        <usage name="Town"/>
+    </type>
+    
+    <!-- Cigarettes (increase spawn) -->
+    <type name="CigarettePack_Chernamorka">
+        <nominal>80</nominal>
+        <min>40</min>
+    </type>
+    
+    <!-- Shipping Container Keys -->
+    <type name="ShippingContainerKeys_Blue">
+        <nominal>10</nominal>
+        <min>5</min>
+    </type>
+    
+    <type name="ShippingContainerKeys_Yellow">
+        <nominal>10</nominal>
+        <min>5</min>
+    </type>
+    
+    <type name="ShippingContainerKeys_Red">
+        <nominal>10</nominal>
+        <min>5</min>
+    </type>
+    
+    <type name="ShippingContainerKeys_Orange">
+        <nominal>10</nominal>
+        <min>5</min>
+    </type>
+</types>

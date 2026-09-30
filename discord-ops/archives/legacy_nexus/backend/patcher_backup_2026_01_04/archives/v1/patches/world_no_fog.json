@@ -1,0 +1,16 @@
+{
+    "id": "no_fog",
+    "name": "Remove Fog",
+    "description": "Disable fog weather effects for better visibility",
+    "target": "cfggameplay.json",
+    "path": "WorldsData",
+    "values": {
+        "lightingConfig": 1,
+        "objectViewDistance": 4000,
+        "preferredObjectViewDistance": 2500,
+        "fogDensity": 0.0,
+        "fogHeight": 0.0
+    },
+    "enabled": true,
+    "type": "json_merge"
+}
